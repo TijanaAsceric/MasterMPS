@@ -159,5 +159,22 @@
       <ref role="20lvS9" node="6vxUGDK57zJ" resolve="AbstractTip" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7SfWm$Ovhu$">
+    <property role="EcuMT" value="9083744407584053156" />
+    <property role="TrG5h" value="Asocijacija" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7SfWm$Ovhu_" role="1TKVEi">
+      <property role="IQ2ns" value="9083744407584053157" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pocetak" />
+      <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
+    </node>
+    <node concept="1TJgyj" id="7SfWm$OvhuB" role="1TKVEi">
+      <property role="IQ2ns" value="9083744407584053159" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="kraj" />
+      <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
+    </node>
+  </node>
 </model>
 

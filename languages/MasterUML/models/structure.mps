@@ -21,13 +21,19 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -55,14 +61,24 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operacije" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6QHSR_7PJo5" resolve="Operacija" />
+      <ref role="20lvS9" node="7loC2atBb1q" resolve="SpecifikacijaOperacije" />
     </node>
-    <node concept="1TJgyj" id="6vxUGDK57zG" role="1TKVEi">
-      <property role="IQ2ns" value="7485522210851158252" />
+    <node concept="1TJgyj" id="7loC2atAYfs" role="1TKVEi">
+      <property role="IQ2ns" value="8455684370921677788" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="atributi" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6vxUGDK57zC" resolve="Atribut" />
+      <ref role="20lvS9" node="7loC2atAYeu" resolve="SpecifikacijaAtributa" />
+    </node>
+    <node concept="1TJgyi" id="7loC2atAvLc" role="1TKVEl">
+      <property role="IQ2nx" value="8455684370921552972" />
+      <property role="TrG5h" value="enumTip" />
+      <ref role="AX2Wp" node="6QHSR_7PJnl" resolve="EnumPredefinisaniTip" />
+    </node>
+    <node concept="1TJgyi" id="7loC2atAvLe" role="1TKVEl">
+      <property role="IQ2nx" value="8455684370921552974" />
+      <property role="TrG5h" value="enumKardinalnost" />
+      <ref role="AX2Wp" node="6QHSR_7PJnD" resolve="EnumKardinalnosti" />
     </node>
   </node>
   <node concept="AxPO7" id="6QHSR_7PJnl">
@@ -109,54 +125,25 @@
       <property role="1uS6qv" value="1..1" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6QHSR_7PJo5">
-    <property role="EcuMT" value="7903223031140906501" />
-    <property role="TrG5h" value="Operacija" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6vxUGDK57zE" role="1TKVEi">
-      <property role="IQ2ns" value="7485522210851158250" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parametri" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6vxUGDK57zD" resolve="Parametar" />
-    </node>
-    <node concept="1TJgyj" id="6vxUGDK57zL" role="1TKVEi">
-      <property role="IQ2ns" value="7485522210851158257" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tip" />
-      <ref role="20lvS9" node="6vxUGDK57zJ" resolve="AbstractTip" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6vxUGDK57zC">
-    <property role="EcuMT" value="7485522210851158248" />
-    <property role="TrG5h" value="Atribut" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="6vxUGDK57zD">
     <property role="EcuMT" value="7485522210851158249" />
     <property role="TrG5h" value="Parametar" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6vxUGDK57zO" role="1TKVEi">
-      <property role="IQ2ns" value="7485522210851158260" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tip" />
-      <ref role="20lvS9" node="6vxUGDK57zJ" resolve="AbstractTip" />
+    <node concept="1TJgyi" id="7loC2atBb2w" role="1TKVEl">
+      <property role="IQ2nx" value="8455684370921730208" />
+      <property role="TrG5h" value="tipParametra" />
+      <ref role="AX2Wp" node="6QHSR_7PJnl" resolve="EnumPredefinisaniTip" />
+    </node>
+    <node concept="PrWs8" id="7loC2atBb2G" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6vxUGDK57zJ">
     <property role="EcuMT" value="7485522210851158255" />
     <property role="TrG5h" value="AbstractTip" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6vxUGDK57zK">
-    <property role="EcuMT" value="7485522210851158256" />
-    <property role="TrG5h" value="PrimtivniTipPodataka" />
-    <ref role="1TJDcQ" node="6vxUGDK57zJ" resolve="AbstractTip" />
-    <node concept="1TJgyj" id="6vxUGDK57zQ" role="1TKVEi">
-      <property role="IQ2ns" value="7485522210851158262" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tip" />
-      <ref role="20lvS9" node="6vxUGDK57zJ" resolve="AbstractTip" />
+    <node concept="PrWs8" id="7loC2atB5Ot" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7SfWm$Ovhu$">
@@ -174,6 +161,75 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="kraj" />
       <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7loC2atAvJz">
+    <property role="EcuMT" value="8455684370921552867" />
+    <property role="TrG5h" value="Kompozicija" />
+    <ref role="1TJDcQ" node="7SfWm$Ovhu$" resolve="Asocijacija" />
+  </node>
+  <node concept="1TIwiD" id="7loC2atAvJQ">
+    <property role="EcuMT" value="8455684370921552886" />
+    <property role="TrG5h" value="Agregacija" />
+    <ref role="1TJDcQ" node="7SfWm$Ovhu$" resolve="Asocijacija" />
+  </node>
+  <node concept="1TIwiD" id="7loC2atAvQu">
+    <property role="EcuMT" value="8455684370921553310" />
+    <property role="TrG5h" value="DijagramKlasa" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7loC2atAvQv" role="1TKVEi">
+      <property role="IQ2ns" value="8455684370921553311" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="klase" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7loC2atAYeu">
+    <property role="EcuMT" value="8455684370921677726" />
+    <property role="TrG5h" value="SpecifikacijaAtributa" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7loC2atAZQn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7loC2atB7_r" role="1TKVEl">
+      <property role="IQ2nx" value="8455684370921716059" />
+      <property role="TrG5h" value="tip" />
+      <ref role="AX2Wp" node="6QHSR_7PJnl" resolve="EnumPredefinisaniTip" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7loC2atB5O5">
+    <property role="EcuMT" value="8455684370921708805" />
+    <property role="TrG5h" value="PredefinisaneVrednosti" />
+    <ref role="1TJDcQ" node="6vxUGDK57zJ" resolve="AbstractTip" />
+    <node concept="PrWs8" id="7loC2atB5O6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7loC2atB5O8" role="1TKVEl">
+      <property role="IQ2nx" value="8455684370921708808" />
+      <property role="TrG5h" value="enumTip" />
+      <ref role="AX2Wp" node="6QHSR_7PJnl" resolve="EnumPredefinisaniTip" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7loC2atBb1q">
+    <property role="EcuMT" value="8455684370921730138" />
+    <property role="TrG5h" value="SpecifikacijaOperacije" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7loC2atBb1r" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7loC2atBb1z" role="1TKVEl">
+      <property role="IQ2nx" value="8455684370921730147" />
+      <property role="TrG5h" value="tipPovratneVrednosti" />
+      <ref role="AX2Wp" node="6QHSR_7PJnl" resolve="EnumPredefinisaniTip" />
+    </node>
+    <node concept="1TJgyj" id="7loC2atBb23" role="1TKVEi">
+      <property role="IQ2ns" value="8455684370921730179" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parametri" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6vxUGDK57zD" resolve="Parametar" />
     </node>
   </node>
 </model>

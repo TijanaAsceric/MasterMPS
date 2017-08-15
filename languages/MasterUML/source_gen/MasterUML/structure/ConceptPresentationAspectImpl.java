@@ -10,11 +10,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_AbstractTip = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Atribut = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Agregacija = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Asocijacija = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DijagramKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Klasa = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Operacija = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Kompozicija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Parametar = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PrimtivniTipPodataka = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PredefinisaneVrednosti = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_SpecifikacijaAtributa = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_SpecifikacijaOperacije = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -24,15 +28,23 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 0:
         return props_AbstractTip;
       case 1:
-        return props_Atribut;
+        return props_Agregacija;
       case 2:
-        return props_Klasa;
+        return props_Asocijacija;
       case 3:
-        return props_Operacija;
+        return props_DijagramKlasa;
       case 4:
-        return props_Parametar;
+        return props_Klasa;
       case 5:
-        return props_PrimtivniTipPodataka;
+        return props_Kompozicija;
+      case 6:
+        return props_Parametar;
+      case 7:
+        return props_PredefinisaneVrednosti;
+      case 8:
+        return props_SpecifikacijaAtributa;
+      case 9:
+        return props_SpecifikacijaOperacije;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

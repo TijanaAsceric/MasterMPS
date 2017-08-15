@@ -9,7 +9,7 @@ package MasterUML.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Operacija_BehaviorDescriptor {
+public class PredefinisaneVrednosti_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

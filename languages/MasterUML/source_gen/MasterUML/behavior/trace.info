@@ -13,8 +13,20 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="MasterUML.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="BidirekcionaAsocijacija_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.BidirekcionaAsocijacija_BehaviorDescriptor" />
+    </file>
     <file name="DijagramKlasa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.DijagramKlasa_BehaviorDescriptor" />
+    </file>
+    <file name="ElementiDijagramaKlasa_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.ElementiDijagramaKlasa_BehaviorDescriptor" />
+    </file>
+    <file name="ElementiVeze_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.ElementiVeze_BehaviorDescriptor" />
+    </file>
+    <file name="Interfejs_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Interfejs_BehaviorDescriptor" />
     </file>
     <file name="Klasa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Klasa_BehaviorDescriptor" />
@@ -22,17 +34,26 @@
     <file name="Kompozicija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Kompozicija_BehaviorDescriptor" />
     </file>
+    <file name="Nasledjivanje_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Nasledjivanje_BehaviorDescriptor" />
+    </file>
     <file name="Parametar_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Parametar_BehaviorDescriptor" />
     </file>
     <file name="PredefinisaneVrednosti_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.PredefinisaneVrednosti_BehaviorDescriptor" />
     </file>
+    <file name="Realizacija_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Realizacija_BehaviorDescriptor" />
+    </file>
     <file name="SpecifikacijaAtributa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.SpecifikacijaAtributa_BehaviorDescriptor" />
     </file>
     <file name="SpecifikacijaOperacije_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.SpecifikacijaOperacije_BehaviorDescriptor" />
+    </file>
+    <file name="UnidirekcionaAsocijacija_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.UnidirekcionaAsocijacija_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

@@ -12,13 +12,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AbstractTip = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Agregacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Asocijacija = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_BidirekcionaAsocijacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DijagramKlasa = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ElementiDijagramaKlasa = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ElementiVeze = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Interfejs = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Klasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kompozicija = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Nasledjivanje = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Parametar = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PredefinisaneVrednosti = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Realizacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaAtributa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaOperacije = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_UnidirekcionaAsocijacija = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -32,19 +39,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 2:
         return props_Asocijacija;
       case 3:
-        return props_DijagramKlasa;
+        return props_BidirekcionaAsocijacija;
       case 4:
-        return props_Klasa;
+        return props_DijagramKlasa;
       case 5:
-        return props_Kompozicija;
+        return props_ElementiDijagramaKlasa;
       case 6:
-        return props_Parametar;
+        return props_ElementiVeze;
       case 7:
-        return props_PredefinisaneVrednosti;
+        return props_Interfejs;
       case 8:
-        return props_SpecifikacijaAtributa;
+        return props_Klasa;
       case 9:
+        return props_Kompozicija;
+      case 10:
+        return props_Nasledjivanje;
+      case 11:
+        return props_Parametar;
+      case 12:
+        return props_PredefinisaneVrednosti;
+      case 13:
+        return props_Realizacija;
+      case 14:
+        return props_SpecifikacijaAtributa;
+      case 15:
         return props_SpecifikacijaOperacije;
+      case 16:
+        return props_UnidirekcionaAsocijacija;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

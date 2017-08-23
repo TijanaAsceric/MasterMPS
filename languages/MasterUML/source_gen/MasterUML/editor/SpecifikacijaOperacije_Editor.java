@@ -37,11 +37,12 @@ public class SpecifikacijaOperacije_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_fyhwta_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_fyhwta_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_fyhwta_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_fyhwta_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_fyhwta_e0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_fyhwta_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_fyhwta_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_fyhwta_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_fyhwta_f0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_fyhwta_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_fyhwta_g0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_fyhwta_h0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_fyhwta_a0(EditorContext editorContext, SNode node) {
@@ -55,6 +56,21 @@ public class SpecifikacijaOperacije_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createProperty_fyhwta_b0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("vidljivost");
+    provider.setNoTargetText("<no vidljivost>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_vidljivost");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createProperty_fyhwta_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -72,21 +88,21 @@ public class SpecifikacijaOperacije_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_fyhwta_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_fyhwta_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_fyhwta_c0");
+    editorCell.setCellId("Constant_fyhwta_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_fyhwta_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new SpecifikacijaOperacije_Editor.parametriListHandler_fyhwta_d0(node, "parametri", editorContext);
+  private EditorCell createRefNodeList_fyhwta_e0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new SpecifikacijaOperacije_Editor.parametriListHandler_fyhwta_e0(node, "parametri", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_parametri");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class parametriListHandler_fyhwta_d0 extends RefNodeListHandler {
-    public parametriListHandler_fyhwta_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class parametriListHandler_fyhwta_e0 extends RefNodeListHandler {
+    public parametriListHandler_fyhwta_e0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -109,7 +125,7 @@ public class SpecifikacijaOperacije_Editor extends DefaultNodeEditor {
     }
     public EditorCell createEmptyCell(EditorContext editorContext) {
       editorContext.getCellFactory().pushCellContext();
-      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(parametriListHandler_fyhwta_d0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9cb05aL, 0x7558a0229d9cb083L, "parametri")));
+      editorContext.getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(parametriListHandler_fyhwta_e0.this.getOwner(), MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9cb05aL, 0x7558a0229d9cb083L, "parametri")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell(editorContext);
@@ -132,19 +148,19 @@ public class SpecifikacijaOperacije_Editor extends DefaultNodeEditor {
       }
     }
   }
-  private EditorCell createConstant_fyhwta_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_fyhwta_e0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
   private EditorCell createConstant_fyhwta_f0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
     editorCell.setCellId("Constant_fyhwta_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_fyhwta_g0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_fyhwta_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_fyhwta_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_fyhwta_h0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("tipPovratneVrednosti");
     provider.setNoTargetText("<no tipPovratneVrednosti>");

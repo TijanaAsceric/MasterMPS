@@ -7,11 +7,11 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum EnumPredefinisaniTip {
-  String("String", "String"),
-  Boolean("Boolean", "Boolean"),
-  Integer("Integer", "Integer"),
-  Double("Double", "Double"),
-  Date("Date", "Date");
+  string("string", "string"),
+  boolean_2scwt4_b("boolean", "boolean"),
+  int_2scwt4_c("int", "int"),
+  double_2scwt4_d("double", "double"),
+  date("date", "date");
 
   private final String myName;
   public String getName() {
@@ -30,34 +30,34 @@ public enum EnumPredefinisaniTip {
   }
   public static List<EnumPredefinisaniTip> getConstants() {
     List<EnumPredefinisaniTip> list = ListSequence.fromList(new LinkedList<EnumPredefinisaniTip>());
-    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.String);
-    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.Boolean);
-    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.Integer);
-    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.Double);
-    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.Date);
+    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.string);
+    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.boolean_2scwt4_b);
+    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.int_2scwt4_c);
+    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.double_2scwt4_d);
+    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.date);
     return list;
   }
   public static EnumPredefinisaniTip getDefault() {
-    return EnumPredefinisaniTip.String;
+    return EnumPredefinisaniTip.string;
   }
   public static EnumPredefinisaniTip parseValue(String value) {
     if (value == null) {
       return EnumPredefinisaniTip.getDefault();
     }
-    if (value.equals(EnumPredefinisaniTip.String.getValueAsString())) {
-      return EnumPredefinisaniTip.String;
+    if (value.equals(EnumPredefinisaniTip.string.getValueAsString())) {
+      return EnumPredefinisaniTip.string;
     }
-    if (value.equals(EnumPredefinisaniTip.Boolean.getValueAsString())) {
-      return EnumPredefinisaniTip.Boolean;
+    if (value.equals(EnumPredefinisaniTip.boolean_2scwt4_b.getValueAsString())) {
+      return EnumPredefinisaniTip.boolean_2scwt4_b;
     }
-    if (value.equals(EnumPredefinisaniTip.Integer.getValueAsString())) {
-      return EnumPredefinisaniTip.Integer;
+    if (value.equals(EnumPredefinisaniTip.int_2scwt4_c.getValueAsString())) {
+      return EnumPredefinisaniTip.int_2scwt4_c;
     }
-    if (value.equals(EnumPredefinisaniTip.Double.getValueAsString())) {
-      return EnumPredefinisaniTip.Double;
+    if (value.equals(EnumPredefinisaniTip.double_2scwt4_d.getValueAsString())) {
+      return EnumPredefinisaniTip.double_2scwt4_d;
     }
-    if (value.equals(EnumPredefinisaniTip.Date.getValueAsString())) {
-      return EnumPredefinisaniTip.Date;
+    if (value.equals(EnumPredefinisaniTip.date.getValueAsString())) {
+      return EnumPredefinisaniTip.date;
     }
     return EnumPredefinisaniTip.getDefault();
   }

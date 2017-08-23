@@ -22,7 +22,23 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
+  <dependency className="MasterUML.behavior.BidirekcionaAsocijacija_BehaviorDescriptor" file="BidirekcionaAsocijacija_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="MasterUML.behavior.DijagramKlasa_BehaviorDescriptor" file="DijagramKlasa_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.ElementiDijagramaKlasa_BehaviorDescriptor" file="ElementiDijagramaKlasa_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.ElementiVeze_BehaviorDescriptor" file="ElementiVeze_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.Interfejs_BehaviorDescriptor" file="Interfejs_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -34,6 +50,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="MasterUML.behavior.Nasledjivanje_BehaviorDescriptor" file="Nasledjivanje_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="MasterUML.behavior.Parametar_BehaviorDescriptor" file="Parametar_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -42,11 +62,19 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="MasterUML.behavior.Realizacija_BehaviorDescriptor" file="Realizacija_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="MasterUML.behavior.SpecifikacijaAtributa_BehaviorDescriptor" file="SpecifikacijaAtributa_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="MasterUML.behavior.SpecifikacijaOperacije_BehaviorDescriptor" file="SpecifikacijaOperacije_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.UnidirekcionaAsocijacija_BehaviorDescriptor" file="UnidirekcionaAsocijacija_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

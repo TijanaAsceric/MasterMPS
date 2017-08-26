@@ -12,6 +12,11 @@
       <concept id="3818255834763981400" name="MasterUML.structure.Klasa" flags="ng" index="2gl_$F">
         <child id="8455684370921677788" name="atributi" index="3CKOfY" />
       </concept>
+      <concept id="9138236088538829569" name="MasterUML.structure.Nasledjivanje" flags="ng" index="_ODDf" />
+      <concept id="9083744407584053156" name="MasterUML.structure.Asocijacija" flags="ng" index="1asIrd">
+        <reference id="9138236088538770893" name="kraj" index="_OUi3" />
+        <reference id="9138236088538770874" name="pocetak" index="_OUjO" />
+      </concept>
       <concept id="8455684370921553310" name="MasterUML.structure.DijagramKlasa" flags="ng" index="3CKlQW">
         <child id="9138236088538672009" name="elementiDijagramaKlasa" index="_Oib7" />
       </concept>
@@ -31,7 +36,10 @@
     <node concept="2gl_$F" id="7VhykTr0cMZ" role="_Oib7">
       <property role="TrG5h" value="nekaKlasa" />
       <node concept="3CKOeW" id="7VhykTr0cN1" role="3CKOfY">
-        <property role="TrG5h" value="prvi" />
+        <property role="TrG5h" value="idprva" />
+      </node>
+      <node concept="3CKOeW" id="7_0_EbDVhAl" role="3CKOfY">
+        <property role="TrG5h" value="idsm" />
       </node>
       <node concept="3CKOeW" id="7VhykTr0cN3" role="3CKOfY">
         <property role="TrG5h" value="drugi" />
@@ -41,6 +49,38 @@
         <property role="2gBdzK" value="privatni" />
         <property role="3CLd_T" value="int" />
       </node>
+    </node>
+    <node concept="2gl_$F" id="7_0_EbDUfzf" role="_Oib7">
+      <property role="TrG5h" value="drugaKlasa" />
+      <node concept="3CKOeW" id="7_0_EbDUfzm" role="3CKOfY">
+        <property role="TrG5h" value="druga" />
+      </node>
+      <node concept="3CKOeW" id="7_0_EbDUfzo" role="3CKOfY">
+        <property role="TrG5h" value="drugeklasa" />
+      </node>
+    </node>
+    <node concept="_ODDf" id="7_0_EbDUfz$" role="_Oib7">
+      <ref role="_OUjO" node="7VhykTr0cMZ" resolve="nekaKlasa" />
+      <ref role="_OUi3" node="7_0_EbDUfzf" resolve="drugaKlasa" />
+    </node>
+    <node concept="2gl_$F" id="7_0_EbDVmjf" role="_Oib7">
+      <property role="TrG5h" value="tri" />
+      <node concept="3CKOeW" id="7_0_EbDVmjr" role="3CKOfY">
+        <property role="TrG5h" value="triid" />
+      </node>
+      <node concept="3CKOeW" id="7_0_EbDVmjt" role="3CKOfY">
+        <property role="TrG5h" value="trinest9" />
+      </node>
+    </node>
+    <node concept="2gl_$F" id="7_0_EbDVmjI" role="_Oib7">
+      <property role="TrG5h" value="cetri" />
+      <node concept="3CKOeW" id="7_0_EbDVmjX" role="3CKOfY">
+        <property role="TrG5h" value="dsID" />
+      </node>
+    </node>
+    <node concept="_ODDf" id="7_0_EbDVmkf" role="_Oib7">
+      <ref role="_OUi3" node="7_0_EbDVmjf" resolve="tri" />
+      <ref role="_OUjO" node="7_0_EbDVmjI" resolve="cetri" />
     </node>
   </node>
 </model>

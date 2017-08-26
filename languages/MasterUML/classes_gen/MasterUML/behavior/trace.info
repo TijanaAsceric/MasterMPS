@@ -46,6 +46,12 @@
     <file name="Realizacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Realizacija_BehaviorDescriptor" />
     </file>
+    <file name="Relacija_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Relacija_BehaviorDescriptor" />
+    </file>
+    <file name="RelacioniModel_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.RelacioniModel_BehaviorDescriptor" />
+    </file>
     <file name="SpecifikacijaAtributa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.SpecifikacijaAtributa_BehaviorDescriptor" />
     </file>

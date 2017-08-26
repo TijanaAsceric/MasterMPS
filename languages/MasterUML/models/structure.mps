@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -71,6 +72,13 @@
       <property role="20kJfa" value="atributi" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7loC2atAYeu" resolve="SpecifikacijaAtributa" />
+    </node>
+    <node concept="1TJgyj" id="2Dr6XcdTFTf" role="1TKVEi">
+      <property role="IQ2ns" value="3052063765758918223" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="veze" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7SfWm$Ovhu$" resolve="Asocijacija" />
     </node>
     <node concept="1TJgyi" id="7loC2atAvLc" role="1TKVEl">
       <property role="IQ2nx" value="8455684370921552972" />
@@ -195,7 +203,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7VhykTr0aI7" resolve="ElementiDijagramaKlasa" />
     </node>
-    <node concept="PrWs8" id="7_0_EbDSgqD" role="PzmwI">
+    <node concept="PrWs8" id="2Dr6XcdUzlf" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
+    <node concept="PrWs8" id="2Dr6XcdUzll" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
@@ -271,6 +282,12 @@
     <node concept="PrWs8" id="7VhykTr0iHr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="2FBG$OXEF38" role="1TKVEi">
+      <property role="IQ2ns" value="3091635714029957320" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="relacioniModel" />
+      <ref role="20lvS9" node="7ckz86bo6TE" resolve="RelacioniModel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7VhykTr0INt">
     <property role="EcuMT" value="9138236088538819805" />
@@ -341,6 +358,43 @@
     <node concept="M4N5e" id="7_0_EbDR4Td" role="M5hS2">
       <property role="1uS6qv" value="paketni" />
       <property role="1uS6qo" value="~" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3TYp751npIj">
+    <property role="EcuMT" value="4503147115007810451" />
+    <property role="TrG5h" value="Relacija" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3TYp751npIk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2FBG$OXDGok" role="1TKVEi">
+      <property role="IQ2ns" value="3091635714029700628" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elemntiRelacije" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7VhykTr0aI7" resolve="ElementiDijagramaKlasa" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ckz86bo6TE">
+    <property role="EcuMT" value="8292407301912948330" />
+    <property role="TrG5h" value="RelacioniModel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2FBG$OXFdW2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7ckz86bo7I2" role="1TKVEi">
+      <property role="IQ2ns" value="8292407301912951682" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="relacije" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
+    </node>
+    <node concept="1TJgyj" id="2FBG$OXHhiA" role="1TKVEi">
+      <property role="IQ2ns" value="3091635714030638246" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="klasa" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
     </node>
   </node>
 </model>

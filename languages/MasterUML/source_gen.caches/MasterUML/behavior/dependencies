@@ -66,6 +66,14 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="MasterUML.behavior.Relacija_BehaviorDescriptor" file="Relacija_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.RelacioniModel_BehaviorDescriptor" file="RelacioniModel_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="MasterUML.behavior.SpecifikacijaAtributa_BehaviorDescriptor" file="SpecifikacijaAtributa_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />

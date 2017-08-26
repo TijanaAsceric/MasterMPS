@@ -1,0 +1,17 @@
+CREATE DATABASE Proba;
+CREATE TABLE nekaKlasa(
+idprva  VARCHAR (255)PRIMARY KEY,
+idsm  VARCHAR (255)PRIMARY KEY,
+drugi  VARCHAR (255),
+treci  int,
+CREATE TABLE drugaKlasa(
+druga  VARCHAR (255),
+drugeklasa  VARCHAR (255),
+string proba[idprva, idsm, drugi, treci]idprvaVARCHAR (255)PRIMARY KEYidsmVARCHAR (255)PRIMARY KEY
+)CREATE TABLE tri(
+triid  VARCHAR (255)PRIMARY KEY,
+trinest9  VARCHAR (255),
+CREATE TABLE cetri(
+dsID  VARCHAR (255),
+string proba[dsID]
+)

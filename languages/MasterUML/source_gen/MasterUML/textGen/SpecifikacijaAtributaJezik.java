@@ -11,26 +11,40 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public abstract class SpecifikacijaAtributaJezik {
-  public static void autributiSpec(SNode atribut, final TextGenContext ctx) {
+  public static void autributiSpecPrimarini(SNode atribut, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append(SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.indent();
     if (SPropertyOperations.hasValue(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
-      tgs.append("VARCHAR (255)");
+      tgs.append(" VARCHAR (255)");
     } else {
       ctx.getBuffer().area().increaseIndent();
       tgs.append(SPropertyOperations.getString_def(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
       ctx.getBuffer().area().decreaseIndent();
     }
+
+  }
+  public static void atributiSpecOstali(SNode atribut, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    if (!(SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toUpperCase().contains("ID"))) {
+      tgs.append(SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      tgs.indent();
+      if (SPropertyOperations.hasValue(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
+        tgs.append(" VARCHAR (255)");
+      } else {
+        ctx.getBuffer().area().increaseIndent();
+        tgs.append(SPropertyOperations.getString_def(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
+        ctx.getBuffer().area().decreaseIndent();
+      }
+      tgs.append(",");
+      tgs.newLine();
+
+    }
   }
   public static void dodeliPrimarniKljuc(SNode atributprimarniKljuc, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    if (SPropertyOperations.getString(atributprimarniKljuc, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains("id")) {
-      SpecifikacijaAtributaJezik.autributiSpec(atributprimarniKljuc, ctx);
-      tgs.append("PRIMARY KEY");
-    } else {
-      SpecifikacijaAtributaJezik.autributiSpec(atributprimarniKljuc, ctx);
-    }
+    SpecifikacijaAtributaJezik.autributiSpecPrimarini(atributprimarniKljuc, ctx);
+    tgs.append(" PRIMARY KEY");
     tgs.append(",");
     tgs.newLine();
   }
@@ -44,14 +58,17 @@ public abstract class SpecifikacijaAtributaJezik {
     tgs.append(k);
     for (SNode atrNasledjivanje : ListSequence.fromList(atributiNasledjivanje)) {
       if (SPropertyOperations.getString(atrNasledjivanje, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains("id")) {
-        SpecifikacijaAtributaJezik.autributiSpec(atrNasledjivanje, ctx);
+        SpecifikacijaAtributaJezik.autributiSpecPrimarini(atrNasledjivanje, ctx);
         tgs.append("PRIMARY KEY");
       }
     }
     tgs.newLine();
   }
-  public static void dodeliSpoljniKljuc(final TextGenContext ctx) {
+  public static void dodeliSpoljniKljuc(SNode atributSpoljniKljuc, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("FOREIGN KEY");
+    SpecifikacijaAtributaJezik.autributiSpecPrimarini(atributSpoljniKljuc, ctx);
+    tgs.append(" FOREIGN KEY");
+    tgs.newLine();
+
   }
 }

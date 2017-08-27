@@ -180,6 +180,9 @@
       <property role="TrG5h" value="kardinalnost" />
       <ref role="AX2Wp" node="6QHSR_7PJnD" resolve="EnumKardinalnosti" />
     </node>
+    <node concept="PrWs8" id="2VkpzAOglxG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7loC2atAvJz">
     <property role="EcuMT" value="8455684370921552867" />

@@ -12,17 +12,16 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import java.util.Iterator;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJezik {
   public static void kreirajTabele(SNode nod, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     List<SNode> sve = new ArrayList<SNode>();
 
-    sve = specifikacijaDijagramaKlasa.vratiAsocijacije(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
-    tgs.append(sve.size() + "sveeeeeeeeeeeeeeeee asoci");
-
+    specifikacijaDijagramaKlasa.proveriKlaseBezVeza(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
     specifikacijaDijagramaKlasa.proveriVezeKlasa(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
   }
   protected static void specKlasu(SNode klasa, final TextGenContext ctx) {
@@ -37,7 +36,6 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
   protected static void proveriVeze(List<SNode> elementi, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     List<SNode> sveveze = (List<SNode>) specifikacijaDijagramaKlasa.vratiAsocijacije(elementi, ctx);
-    tgs.append(sveveze.size() + "velicna");
     String imString = "";
     for (SNode el : ListSequence.fromList(sveveze)) {
       {
@@ -86,6 +84,23 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
       }
     }
   }
+  protected static void proveriKlaseBezVeza(List<SNode> elementi, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    List<SNode> sveveze = (List<SNode>) specifikacijaDijagramaKlasa.vratiAsocijacije(elementi, ctx);
+    for (SNode element : ListSequence.fromList(elementi)) {
+      {
+        final SNode klasa = element;
+        if (SNodeOperations.isInstanceOf(klasa, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, "MasterUML.structure.Klasa"))) {
+          SNode kl = specifikacijaDijagramaKlasa.vratiKlaseBezAsocijacije(sveveze, element, ctx);
+          if ((kl != null)) {
+            specifikacijaDijagramaKlasa.specKlasu(kl, ctx);
+            specifikacijaDijagramaKlasa.doPrimarniKljuc(kl, ctx);
+            specifikacijaDijagramaKlasa.doOstaliAtributi(kl, ctx);
+          }
+        }
+      }
+    }
+  }
   protected static void proveriVezeKlasa(List<SNode> elementi, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     List<SNode> sveveze = (List<SNode>) specifikacijaDijagramaKlasa.vratiAsocijacije(elementi, ctx);
@@ -94,8 +109,6 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     for (SNode klasa : ListSequence.fromList(listaKlasa)) {
       List<SNode> listaVezaKlase = specifikacijaDijagramaKlasa.vratiVezeKlase(klasa, sveveze, ctx);
       for (SNode as : ListSequence.fromList(listaVezaKlase)) {
-        tgs.append(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(as));
-        tgs.append(" veza");
         if (!(ListSequence.fromList(kreiraneTabele).contains(klasa))) {
           specifikacijaDijagramaKlasa.specKlasu(klasa, ctx);
           ListSequence.fromList(kreiraneTabele).addElement(klasa);
@@ -104,6 +117,7 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
         specifikacijaDijagramaKlasa.specVezuSpoljniKljuc(as, listaVezaKlase, ctx);
       }
       specifikacijaDijagramaKlasa.doOstaliAtributi(klasa, ctx);
+
     }
 
   }
@@ -155,7 +169,15 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     final TextGenSupport tgs = new TextGenSupport(ctx);
     for (SNode atr : ListSequence.fromList(SLinkOperations.getChildren(ostaliAtributi, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")))) {
       SpecifikacijaAtributaJezik.atributiSpecOstali(atr, ctx);
+      if (ListSequence.fromList(SLinkOperations.getChildren(ostaliAtributi, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi"))).indexOf(atr) != SLinkOperations.getChildren(ostaliAtributi, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")).size() - 1 && !(SPropertyOperations.getString(atr, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toUpperCase().contains("ID"))) {
+        tgs.append(",");
+        tgs.newLine();
+      } else if ((int) ListSequence.fromList(SLinkOperations.getChildren(ostaliAtributi, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi"))).indexOf(atr) == SLinkOperations.getChildren(ostaliAtributi, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")).size() - 1 && !(SPropertyOperations.getString(atr, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toUpperCase().contains("ID"))) {
+        tgs.append(")");
+      }
+
     }
+
   }
   protected static void izvuciSpoljniKljuc(SNode spoljniKljuc, List<SNode> veze, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
@@ -192,7 +214,12 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     }
     for (SNode atribut : ListSequence.fromList(spoljniKljucevi)) {
       SpecifikacijaAtributaJezik.dodeliSpoljniKljuc(atribut, ctx);
+      tgs.append("roditelje je ");
+      tgs.append(SNodeOperations.getConcept(SNodeOperations.getParent(atribut)).getName());
+      SNode rod = SNodeOperations.asNode(SNodeOperations.getConcept(SNodeOperations.getParent(atribut)));
+
     }
+
   }
   protected static boolean jeKompozicija(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
@@ -210,6 +237,22 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
       }
     }
     return lista;
+  }
+  protected static SNode vratiKlaseBezAsocijacije(List<SNode> sveAsocijacije, SNode klasa, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    if (!(ListSequence.fromList(sveAsocijacije).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")) != null);
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj"));
+      }
+    }).contains(klasa))) {
+      return klasa;
+    } else {
+      return null;
+    }
   }
   protected static List<SNode> vratiKlaseUVezi(List<SNode> ascocijacije, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);

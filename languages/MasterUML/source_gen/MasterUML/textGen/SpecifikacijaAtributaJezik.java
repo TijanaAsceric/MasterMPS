@@ -18,9 +18,8 @@ public abstract class SpecifikacijaAtributaJezik {
     if (SPropertyOperations.hasValue(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
       tgs.append(" VARCHAR (255)");
     } else {
-      ctx.getBuffer().area().increaseIndent();
+      tgs.append(" ");
       tgs.append(SPropertyOperations.getString_def(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
-      ctx.getBuffer().area().decreaseIndent();
     }
 
   }
@@ -32,12 +31,9 @@ public abstract class SpecifikacijaAtributaJezik {
       if (SPropertyOperations.hasValue(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
         tgs.append(" VARCHAR (255)");
       } else {
-        ctx.getBuffer().area().increaseIndent();
+        tgs.append(" ");
         tgs.append(SPropertyOperations.getString_def(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
-        ctx.getBuffer().area().decreaseIndent();
       }
-      tgs.append(",");
-      tgs.newLine();
 
     }
   }
@@ -68,6 +64,7 @@ public abstract class SpecifikacijaAtributaJezik {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     SpecifikacijaAtributaJezik.autributiSpecPrimarini(atributSpoljniKljuc, ctx);
     tgs.append(" FOREIGN KEY");
+    tgs.append(",");
     tgs.newLine();
 
   }

@@ -20,7 +20,6 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
   public static void kreirajTabele(SNode nod, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     List<SNode> sve = new ArrayList<SNode>();
-
     specifikacijaDijagramaKlasa.proveriKlaseBezVeza(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
     specifikacijaDijagramaKlasa.proveriVezeKlasa(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
   }
@@ -32,57 +31,6 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     tgs.append(" (");
     tgs.newLine();
 
-  }
-  protected static void proveriVeze(List<SNode> elementi, final TextGenContext ctx) {
-    final TextGenSupport tgs = new TextGenSupport(ctx);
-    List<SNode> sveveze = (List<SNode>) specifikacijaDijagramaKlasa.vratiAsocijacije(elementi, ctx);
-    String imString = "";
-    for (SNode el : ListSequence.fromList(sveveze)) {
-      {
-        final SNode nasledjivanje = el;
-        if (SNodeOperations.isInstanceOf(nasledjivanje, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b031301L, "MasterUML.structure.Nasledjivanje"))) {
-          if (SPropertyOperations.getString(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) != imString) {
-            specifikacijaDijagramaKlasa.specKlasu(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
-            specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
-            imString = SPropertyOperations.getString(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-            for (SNode atr : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")))) {
-              SpecifikacijaAtributaJezik.atributiSpecOstali(atr, ctx);
-              tgs.append("ovde");
-              tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-            }
-
-          }
-        }
-      }
-      {
-        final SNode kompozicija = el;
-        if (SNodeOperations.isInstanceOf(kompozicija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L, "MasterUML.structure.Kompozicija"))) {
-          if (SPropertyOperations.getString(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) != imString) {
-            tgs.append("klasaaaaaaa");
-            tgs.append(imString);
-            specifikacijaDijagramaKlasa.specKlasu(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
-            specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
-            tgs.newLine();
-            specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
-            tgs.newLine();
-
-          }
-          specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
-        }
-      }
-      {
-        final SNode agregacija = el;
-        if (SNodeOperations.isInstanceOf(agregacija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L, "MasterUML.structure.Agregacija"))) {
-          if (SPropertyOperations.getString(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) != imString) {
-            specifikacijaDijagramaKlasa.specKlasu(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
-            specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
-            specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
-
-          }
-          specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(el, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
-        }
-      }
-    }
   }
   protected static void proveriKlaseBezVeza(List<SNode> elementi, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
@@ -132,7 +80,6 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     {
       final SNode kompozicija = veza;
       if (SNodeOperations.isInstanceOf(kompozicija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L, "MasterUML.structure.Kompozicija"))) {
-        specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
         specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
       }
     }
@@ -141,6 +88,12 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
       if (SNodeOperations.isInstanceOf(agregacija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L, "MasterUML.structure.Agregacija"))) {
         specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
         specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
+      }
+    }
+    {
+      final SNode unidirekciona = veza;
+      if (SNodeOperations.isInstanceOf(unidirekciona, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b03128fL, "MasterUML.structure.UnidirekcionaAsocijacija"))) {
+        specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx);
       }
     }
   }
@@ -191,39 +144,30 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
         {
           final SNode nasledjivanje = veza_var;
           if (SNodeOperations.isInstanceOf(nasledjivanje, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b031301L, "MasterUML.structure.Nasledjivanje"))) {
-            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx));
-          }
-        }
-        {
-          final SNode kompozicija = veza_var;
-          if (SNodeOperations.isInstanceOf(kompozicija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L, "MasterUML.structure.Kompozicija"))) {
-            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx));
-            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx));
-
+            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doSpoljniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx));
           }
         }
         {
           final SNode agregacija = veza_var;
           if (SNodeOperations.isInstanceOf(agregacija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L, "MasterUML.structure.Agregacija"))) {
-            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx));
-            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx));
+            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doSpoljniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), ctx));
+            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doSpoljniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx));
 
           }
         }
+        {
+          final SNode unidirekciona = veza_var;
+          if (SNodeOperations.isInstanceOf(unidirekciona, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b03128fL, "MasterUML.structure.UnidirekcionaAsocijacija"))) {
+            spoljniKljucevi.addAll(specifikacijaDijagramaKlasa.doSpoljniKljuc(SLinkOperations.getTarget(veza_var, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx));
+          }
+        }
+
       }
     }
     for (SNode atribut : ListSequence.fromList(spoljniKljucevi)) {
       SpecifikacijaAtributaJezik.dodeliSpoljniKljuc(atribut, ctx);
-      tgs.append("roditelje je ");
-      tgs.append(SNodeOperations.getConcept(SNodeOperations.getParent(atribut)).getName());
-      SNode rod = SNodeOperations.asNode(SNodeOperations.getConcept(SNodeOperations.getParent(atribut)));
-
     }
 
-  }
-  protected static boolean jeKompozicija(final TextGenContext ctx) {
-    final TextGenSupport tgs = new TextGenSupport(ctx);
-    return true;
   }
   protected static List<SNode> vratiAsocijacije(List<SNode> ascoijacije, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
@@ -288,5 +232,16 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     }
     tgs.append(")");
     tgs.newLine();
+  }
+  protected static List<SNode> doSpoljniKljuc(SNode klasa, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    List<SNode> spoljniKljucevi = new ArrayList<SNode>();
+    for (SNode atribut : ListSequence.fromList(SLinkOperations.getChildren(klasa, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")))) {
+      if (SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toUpperCase().contains("ID")) {
+        ListSequence.fromList(spoljniKljucevi).addElement(atribut);
+      }
+
+    }
+    return spoljniKljucevi;
   }
 }

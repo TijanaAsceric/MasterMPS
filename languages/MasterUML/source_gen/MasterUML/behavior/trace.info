@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="AbstractTip_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.AbstractTip_BehaviorDescriptor" />
@@ -22,7 +11,7 @@
       <unit at="11,0,17,0" name="MasterUML.behavior.Asocijacija_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,54,0" name="MasterUML.behavior.BehaviorAspectDescriptor" />
+      <unit at="13,0,41,0" name="MasterUML.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BidirekcionaAsocijacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.BidirekcionaAsocijacija_BehaviorDescriptor" />
@@ -48,20 +37,8 @@
     <file name="Nasledjivanje_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Nasledjivanje_BehaviorDescriptor" />
     </file>
-    <file name="Parametar_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.Parametar_BehaviorDescriptor" />
-    </file>
-    <file name="PredefinisaneVrednosti_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.PredefinisaneVrednosti_BehaviorDescriptor" />
-    </file>
     <file name="Realizacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Realizacija_BehaviorDescriptor" />
-    </file>
-    <file name="Relacija_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.Relacija_BehaviorDescriptor" />
-    </file>
-    <file name="RelacioniModel_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.RelacioniModel_BehaviorDescriptor" />
     </file>
     <file name="SpecifikacijaAtributa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.SpecifikacijaAtributa_BehaviorDescriptor" />
@@ -71,148 +48,6 @@
     </file>
     <file name="UnidirekcionaAsocijacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.UnidirekcionaAsocijacija_BehaviorDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3194692360872131873">
-    <file name="Asocijacija__BehaviorDescriptor.java">
-      <node id="3194692360872131873" at="21,0,22,0" concept="6" trace="CONCEPT" />
-      <node id="3194692360872131873" at="22,0,23,0" concept="6" trace="REGISTRY" />
-      <node id="3194692360872131873" at="25,0,26,0" concept="6" trace="BH_METHODS" />
-      <node id="3194692360872292164" at="27,63,28,246" concept="1" />
-      <node id="3194692360872131873" at="32,49,33,20" concept="8" />
-      <node id="3194692360872131873" at="37,114,38,21" concept="1" />
-      <node id="3194692360872131873" at="42,114,43,49" concept="4" />
-      <node id="3194692360872131873" at="44,26,45,56" concept="10" />
-      <node id="3194692360872131873" at="48,14,49,58" concept="10" />
-      <node id="3194692360872131873" at="54,128,55,49" concept="4" />
-      <node id="3194692360872131873" at="56,26,57,56" concept="10" />
-      <node id="3194692360872131873" at="60,14,61,58" concept="10" />
-      <node id="3194692360872131873" at="67,48,68,22" concept="5" />
-      <node id="3194692360872131873" at="73,40,74,19" concept="5" />
-      <node id="3194692360872131873" at="27,0,30,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3194692360872131873" at="32,0,35,0" concept="0" trace="Asocijacija__BehaviorDescriptor#()V" />
-      <node id="3194692360872131873" at="43,49,46,5" concept="2" />
-      <node id="3194692360872131873" at="55,49,58,5" concept="2" />
-      <node id="3194692360872131873" at="36,0,40,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
-      <node id="3194692360872131873" at="46,5,50,5" concept="9" />
-      <node id="3194692360872131873" at="58,5,62,5" concept="9" />
-      <node id="3194692360872131873" at="65,0,70,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="3194692360872131873" at="71,0,76,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3194692360872131873" at="41,0,52,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="3194692360872131873" at="53,0,64,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="3194692360872131873" at="27,63,28,246" />
-      <scope id="3194692360872131873" at="32,49,33,20" />
-      <scope id="3194692360872131873" at="37,114,38,21" />
-      <scope id="3194692360872131873" at="44,26,45,56" />
-      <scope id="3194692360872131873" at="48,14,49,58" />
-      <scope id="3194692360872131873" at="56,26,57,56" />
-      <scope id="3194692360872131873" at="60,14,61,58" />
-      <scope id="3194692360872131873" at="67,48,68,22" />
-      <scope id="3194692360872131873" at="73,40,74,19" />
-      <scope id="3194692360872131873" at="27,0,30,0">
-        <var name="__thisNode__" id="3194692360872131873" />
-      </scope>
-      <scope id="3194692360872131873" at="32,0,35,0" />
-      <scope id="3194692360872131873" at="36,0,40,0">
-        <var name="constructor" id="3194692360872131873" />
-        <var name="node" id="3194692360872131873" />
-        <var name="parameters" id="3194692360872131873" />
-      </scope>
-      <scope id="3194692360872131873" at="65,0,70,0" />
-      <scope id="3194692360872131873" at="71,0,76,0" />
-      <scope id="3194692360872131873" at="42,114,50,5">
-        <var name="methodIndex" id="3194692360872131873" />
-      </scope>
-      <scope id="3194692360872131873" at="54,128,62,5">
-        <var name="methodIndex" id="3194692360872131873" />
-      </scope>
-      <scope id="3194692360872131873" at="41,0,52,0">
-        <var name="method" id="3194692360872131873" />
-        <var name="node" id="3194692360872131873" />
-        <var name="parameters" id="3194692360872131873" />
-      </scope>
-      <scope id="3194692360872131873" at="53,0,64,0">
-        <var name="concept" id="3194692360872131873" />
-        <var name="method" id="3194692360872131873" />
-        <var name="parameters" id="3194692360872131873" />
-      </scope>
-      <unit id="3194692360872131873" at="20,0,77,0" name="MasterUML.behavior.Asocijacija__BehaviorDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3374434418828821171">
-    <file name="Klasa__BehaviorDescriptor.java">
-      <node id="3374434418828821171" at="26,0,27,0" concept="6" trace="CONCEPT" />
-      <node id="3374434418828821171" at="27,0,28,0" concept="6" trace="REGISTRY" />
-      <node id="3374434418828821171" at="29,0,30,0" concept="6" trace="nekaMetoda_id2VkpzAObD9N" />
-      <node id="3374434418828821171" at="31,0,32,0" concept="6" trace="BH_METHODS" />
-      <node id="3374434418829760920" at="36,93,37,217" concept="1" />
-      <node id="3374434418828821171" at="40,43,41,20" concept="8" />
-      <node id="3374434418828821171" at="45,114,46,21" concept="1" />
-      <node id="3374434418828821171" at="50,114,51,49" concept="4" />
-      <node id="3374434418828821171" at="52,26,53,56" concept="10" />
-      <node id="3374434418828821171" at="56,13,57,62" concept="1" />
-      <node id="3374434418828821171" at="57,62,58,20" concept="5" />
-      <node id="3374434418828821171" at="59,14,60,58" concept="10" />
-      <node id="3374434418828821171" at="65,128,66,49" concept="4" />
-      <node id="3374434418828821171" at="67,26,68,56" concept="10" />
-      <node id="3374434418828821171" at="71,14,72,58" concept="10" />
-      <node id="3374434418828821171" at="78,48,79,22" concept="5" />
-      <node id="3374434418828821171" at="84,40,85,19" concept="5" />
-      <node id="3374434418828821171" at="33,0,35,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3374434418828821171" at="36,0,39,0" concept="7" trace="nekaMetoda_id2VkpzAObD9N#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3374434418828821171" at="40,0,43,0" concept="0" trace="Klasa__BehaviorDescriptor#()V" />
-      <node id="3374434418828821171" at="51,49,54,5" concept="2" />
-      <node id="3374434418828821171" at="66,49,69,5" concept="2" />
-      <node id="3374434418828821171" at="44,0,48,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
-      <node id="3374434418828821171" at="69,5,73,5" concept="9" />
-      <node id="3374434418828821171" at="76,0,81,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="3374434418828821171" at="82,0,87,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3374434418828821171" at="54,5,61,5" concept="9" />
-      <node id="3374434418828821171" at="64,0,75,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="3374434418828821171" at="49,0,63,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="3374434418828821171" at="33,63,33,63" />
-      <scope id="3374434418829464182" at="36,93,37,217" />
-      <scope id="3374434418828821171" at="40,43,41,20" />
-      <scope id="3374434418828821171" at="45,114,46,21" />
-      <scope id="3374434418828821171" at="52,26,53,56" />
-      <scope id="3374434418828821171" at="59,14,60,58" />
-      <scope id="3374434418828821171" at="67,26,68,56" />
-      <scope id="3374434418828821171" at="71,14,72,58" />
-      <scope id="3374434418828821171" at="78,48,79,22" />
-      <scope id="3374434418828821171" at="84,40,85,19" />
-      <scope id="3374434418828821171" at="33,0,35,0">
-        <var name="__thisNode__" id="3374434418828821171" />
-      </scope>
-      <scope id="3374434418828821171" at="56,13,58,20" />
-      <scope id="3374434418828821171" at="36,0,39,0">
-        <var name="__thisNode__" id="3374434418828821171" />
-        <var name="veze" id="3374434418829579814" />
-      </scope>
-      <scope id="3374434418828821171" at="40,0,43,0" />
-      <scope id="3374434418828821171" at="44,0,48,0">
-        <var name="constructor" id="3374434418828821171" />
-        <var name="node" id="3374434418828821171" />
-        <var name="parameters" id="3374434418828821171" />
-      </scope>
-      <scope id="3374434418828821171" at="76,0,81,0" />
-      <scope id="3374434418828821171" at="82,0,87,0" />
-      <scope id="3374434418828821171" at="65,128,73,5">
-        <var name="methodIndex" id="3374434418828821171" />
-      </scope>
-      <scope id="3374434418828821171" at="50,114,61,5">
-        <var name="methodIndex" id="3374434418828821171" />
-      </scope>
-      <scope id="3374434418828821171" at="64,0,75,0">
-        <var name="concept" id="3374434418828821171" />
-        <var name="method" id="3374434418828821171" />
-        <var name="parameters" id="3374434418828821171" />
-      </scope>
-      <scope id="3374434418828821171" at="49,0,63,0">
-        <var name="method" id="3374434418828821171" />
-        <var name="node" id="3374434418828821171" />
-        <var name="parameters" id="3374434418828821171" />
-      </scope>
-      <unit id="3374434418828821171" at="25,0,88,0" name="MasterUML.behavior.Klasa__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

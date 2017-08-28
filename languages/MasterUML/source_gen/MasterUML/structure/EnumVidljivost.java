@@ -7,8 +7,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum EnumVidljivost {
-  javni("+", "javni"),
   privatni("-", "privatni"),
+  javni("+", "javni"),
   zasticeni("#", "zasticeni"),
   paketni("~", "paketni");
 
@@ -29,24 +29,24 @@ public enum EnumVidljivost {
   }
   public static List<EnumVidljivost> getConstants() {
     List<EnumVidljivost> list = ListSequence.fromList(new LinkedList<EnumVidljivost>());
-    ListSequence.fromList(list).addElement(EnumVidljivost.javni);
     ListSequence.fromList(list).addElement(EnumVidljivost.privatni);
+    ListSequence.fromList(list).addElement(EnumVidljivost.javni);
     ListSequence.fromList(list).addElement(EnumVidljivost.zasticeni);
     ListSequence.fromList(list).addElement(EnumVidljivost.paketni);
     return list;
   }
   public static EnumVidljivost getDefault() {
-    return EnumVidljivost.javni;
+    return EnumVidljivost.privatni;
   }
   public static EnumVidljivost parseValue(String value) {
     if (value == null) {
       return EnumVidljivost.getDefault();
     }
-    if (value.equals(EnumVidljivost.javni.getValueAsString())) {
-      return EnumVidljivost.javni;
-    }
     if (value.equals(EnumVidljivost.privatni.getValueAsString())) {
       return EnumVidljivost.privatni;
+    }
+    if (value.equals(EnumVidljivost.javni.getValueAsString())) {
+      return EnumVidljivost.javni;
     }
     if (value.equals(EnumVidljivost.zasticeni.getValueAsString())) {
       return EnumVidljivost.zasticeni;

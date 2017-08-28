@@ -20,11 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Klasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kompozicija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Nasledjivanje = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Parametar = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PredefinisaneVrednosti = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Realizacija = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Relacija = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RelacioniModel = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaAtributa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaOperacije = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_UnidirekcionaAsocijacija = new ConceptPresentationBuilder().create();
@@ -57,20 +53,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 10:
         return props_Nasledjivanje;
       case 11:
-        return props_Parametar;
-      case 12:
-        return props_PredefinisaneVrednosti;
-      case 13:
         return props_Realizacija;
-      case 14:
-        return props_Relacija;
-      case 15:
-        return props_RelacioniModel;
-      case 16:
+      case 12:
         return props_SpecifikacijaAtributa;
-      case 17:
+      case 13:
         return props_SpecifikacijaOperacije;
-      case 18:
+      case 14:
         return props_UnidirekcionaAsocijacija;
     }
     throw new IllegalStateException("Unknown concept " + c);

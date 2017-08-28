@@ -24,10 +24,8 @@ public class Nasledjivanje_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_ou84j0_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_ou84j0_b0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_ou84j0_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_ou84j0_d0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_ou84j0_e0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_ou84j0_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ou84j0_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_ou84j0_d0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_ou84j0_a0(EditorContext editorContext, SNode node) {
@@ -82,33 +80,18 @@ public class Nasledjivanje_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createProperty_ou84j0_c0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("kardinalnost");
-    provider.setNoTargetText("<no kardinalnost>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_kardinalnost");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  private EditorCell createConstant_ou84j0_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ou84j0_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<|---");
-    editorCell.setCellId("Constant_ou84j0_d0");
+    editorCell.setCellId("Constant_ou84j0_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_ou84j0_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_ou84j0_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("kraj");
     provider.setNoTargetText("<no kraj>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Nasledjivanje_Editor._Inline_ou84j0_a4a());
+    provider.setAuxiliaryCellProvider(new Nasledjivanje_Editor._Inline_ou84j0_a3a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -122,17 +105,17 @@ public class Nasledjivanje_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_ou84j0_a4a extends InlineCellProvider {
-    public _Inline_ou84j0_a4a() {
+  public static class _Inline_ou84j0_a3a extends InlineCellProvider {
+    public _Inline_ou84j0_a3a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_ou84j0_a0e0(editorContext, node);
+      return this.createProperty_ou84j0_a0d0(editorContext, node);
     }
-    private EditorCell createProperty_ou84j0_a0e0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_ou84j0_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -148,20 +131,5 @@ public class Nasledjivanje_Editor extends DefaultNodeEditor {
       } else
       return editorCell;
     }
-  }
-  private EditorCell createProperty_ou84j0_f0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("kardinalnost");
-    provider.setNoTargetText("<no kardinalnost>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_kardinalnost_1");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
   }
 }

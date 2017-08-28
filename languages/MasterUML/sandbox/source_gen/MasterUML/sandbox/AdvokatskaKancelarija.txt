@@ -1,0 +1,53 @@
+CREATE DATABASE AdvokatskaKancelarija;
+
+CREATE TABLE Zaposleni (
+zaposleniID int PRIMARY KEY,
+imeZaposlenog VARCHAR (255),
+prezimeZaposlenog VARCHAR (255),
+email VARCHAR (255),
+datumZaposlenja VARCHAR (255))
+CREATE TABLE Mesto (
+mestoID int PRIMARY KEY,
+nazivMesta VARCHAR (255))
+CREATE TABLE Predmet (
+nazivPredmeta VARCHAR (255),
+datumPredmeta date,
+pravniOsnov VARCHAR (255))
+CREATE TABLE Usluga (
+uslugaID int PRIMARY KEY,
+nazivUsluge VARCHAR (255),
+opisUsluge VARCHAR (255),
+cenaUsluge double)
+CREATE TABLE Sud (
+sudID int PRIMARY KEY,
+nazivSuda VARCHAR (255),
+adresa VARCHAR (255))
+CREATE TABLE Advokat (
+zaposleniID int PRIMARY KEY,
+datumPravosudnogIspita date)
+CREATE TABLE Pripravnik (
+zaposleniID int PRIMARY KEY,
+brojPreostalihIspita int)
+CREATE TABLE Klijent (
+mestoID int PRIMARY KEY,
+mestoID int FOREIGN KEY,
+imeKlijenta VARCHAR (255),
+prezimeKlijenta VARCHAR (255),
+email VARCHAR (255))
+CREATE TABLE StavkaRocista (
+rbrID int PRIMARY KEY,
+rocisteID int PRIMARY KEY,
+rbrID int PRIMARY KEY,
+rocisteID int PRIMARY KEY,
+uslugaID int PRIMARY KEY,
+rbrID int FOREIGN KEY,
+rocisteID int FOREIGN KEY,
+uslugaID int FOREIGN KEY,
+iznos double)
+CREATE TABLE Rociste (
+sudID int PRIMARY KEY,
+sudID int FOREIGN KEY,
+sudID int PRIMARY KEY,
+sudID int FOREIGN KEY,
+datumRocista date,
+vremeRocista VARCHAR (255))

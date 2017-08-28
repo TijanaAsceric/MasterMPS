@@ -18,15 +18,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b52f96-938a-49e4-882d-3db77ec6ad40" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/Asocijacija__BehaviorDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/Klasa__BehaviorDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/Relacija_BehaviorDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/RelacioniModel_BehaviorDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/Asocijacija__BehaviorDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/Klasa__BehaviorDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/Parametar_BehaviorDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/PredefinisaneVrednosti_BehaviorDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/Relacija_BehaviorDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/RelacioniModel_BehaviorDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/Parametar_Editor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/SpecifikacijaOperacije_Editor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/Klasa_TextGen.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/Nasledjivanje_TextGen.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/SpecifikacijaAtributa_TextGen.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/neka.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/BehaviorAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/BehaviorAspectDescriptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Kompozicija_Editor$_Inline_b8v15o_a1a.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Kompozicija_Editor$_Inline_b8v15o_a1a.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Kompozicija_Editor.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Kompozicija_Editor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Nasledjivanje_Editor$_Inline_ou84j0_a1a.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Nasledjivanje_Editor$_Inline_ou84j0_a1a.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Nasledjivanje_Editor.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/Nasledjivanje_Editor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/UnidirekcionaAsocijacija_Editor$_Inline_hx46k7_a1a.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/UnidirekcionaAsocijacija_Editor$_Inline_hx46k7_a1a.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/UnidirekcionaAsocijacija_Editor.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/UnidirekcionaAsocijacija_Editor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/ConceptPresentationAspectImpl.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/ConceptPresentationAspectImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/EnumVidljivost.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/EnumVidljivost.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/StructureAspectDescriptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/Klasa_TextGen.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/Klasa_TextGen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/Nasledjivanje_TextGen.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/Nasledjivanje_TextGen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/SpecifikacijaAtributaJezik.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/SpecifikacijaAtributaJezik.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/specifikacijaDijagramaKlasa$1.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/specifikacijaDijagramaKlasa$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/specifikacijaDijagramaKlasa$2.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/specifikacijaDijagramaKlasa$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/specifikacijaDijagramaKlasa.class" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/specifikacijaDijagramaKlasa.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/classes_gen/MasterUML/generator/template/main/QueriesGenerated.class" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/classes_gen/MasterUML/generator/template/main/QueriesGenerated.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/structure/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/textGen/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/classes_gen/MasterUML/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/classes_gen/MasterUML/generator/template/main/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen.caches/MasterUML/generator/template/main/dependencies" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen.caches/MasterUML/generator/template/main/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen.caches/MasterUML/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen.caches/MasterUML/generator/template/main/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen/MasterUML/generator/template/main/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen/MasterUML/generator/template/main/QueriesGenerated.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen/MasterUML/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/source_gen/MasterUML/generator/template/main/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/MasterUML/generator/template/main@generator.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/models/behavior.mps" afterPath="$PROJECT_DIR$/languages/MasterUML/models/behavior.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/models/editor.mps" afterPath="$PROJECT_DIR$/languages/MasterUML/models/editor.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/models/structure.mps" afterPath="$PROJECT_DIR$/languages/MasterUML/models/structure.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/models/textGen.mps" afterPath="$PROJECT_DIR$/languages/MasterUML/models/textGen.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/sandbox/classes_gen/MasterUML/sandbox/Proba.txt" afterPath="$PROJECT_DIR$/languages/MasterUML/sandbox/classes_gen/MasterUML/sandbox/Proba.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/sandbox/models/MasterUML/sandbox.mps" afterPath="$PROJECT_DIR$/languages/MasterUML/sandbox/models/MasterUML/sandbox.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/sandbox/source_gen.caches/MasterUML/sandbox/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/sandbox/source_gen.caches/MasterUML/sandbox/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/sandbox/source_gen/MasterUML/sandbox/Proba.txt" afterPath="$PROJECT_DIR$/languages/MasterUML/sandbox/source_gen/MasterUML/sandbox/Proba.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/behavior/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/behavior/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/behavior/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/editor/dependencies" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/editor/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/editor/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/editor/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/structure/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/structure/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/textGen/dependencies" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/textGen/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/textGen/generated" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen.caches/MasterUML/textGen/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/BehaviorAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/BehaviorAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/EditorAspectDescriptorImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/Kompozicija_Editor.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/Kompozicija_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/Nasledjivanje_Editor.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/Nasledjivanje_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/UnidirekcionaAsocijacija_Editor.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/UnidirekcionaAsocijacija_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/ConceptPresentationAspectImpl.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/ConceptPresentationAspectImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/EnumVidljivost.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/EnumVidljivost.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/StructureAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/structure/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/SpecifikacijaAtributaJezik.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/SpecifikacijaAtributaJezik.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/TextGenAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/TextGenAspectDescriptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/specifikacijaDijagramaKlasa.java" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/specifikacijaDijagramaKlasa.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/trace.info" />
     </list>
@@ -133,59 +197,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Asocijacija" pinned="false" current-in-tab="false">
-        <entry file="mps://node://MasterUML/MasterUML.structure/Asocijacija">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="439" />
-                    <property name="caretXRelative" value="104" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418830694508" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9083744407584053156" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="specifikacijaDijagramaKlasa" pinned="false" current-in-tab="false">
         <entry file="mps://node://MasterUML/MasterUML.textGen/specifikacijaDijagramaKlasa">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1598">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="910">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="167" />
-                    <property name="caretXRelative" value="36" />
+                    <property name="caretX" value="375" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_operationName" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868095948" />
+                    <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418832280785" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418840269697" />
+                    </cellIdElement>
+                  </collapsedElement>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                       <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868661272" />
@@ -209,11 +244,6 @@
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                       <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868660764" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868656588" />
                     </cellIdElement>
                   </collapsedElement>
                   <collapsedElement isCollapsed="false">
@@ -253,11 +283,6 @@
                   </collapsedElement>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031566717" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                       <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031512426" />
                     </cellIdElement>
                   </collapsedElement>
@@ -270,12 +295,12 @@
                 <restoreAlways>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031637667" />
+                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418832279625" />
                     </cellIdElement>
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725776" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -287,84 +312,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecifikacijaAtributaJezik" pinned="false" current-in-tab="true">
-        <entry file="mps://node://MasterUML/MasterUML.textGen/SpecifikacijaAtributaJezik">
+      <file leaf-file-name="AdvokatskaKancelarija" pinned="false" current-in-tab="true">
+        <entry file="mps://node://MasterUML.sandbox/MasterUML.sandbox/AdvokatskaKancelarija">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="206">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="429">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="63" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085989278" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3052063765758554188" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085975902" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871103673" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903552178944" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871103673" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Proba" pinned="false" current-in-tab="false">
-        <entry file="mps://node://MasterUML.sandbox/MasterUML.sandbox/Proba">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="367" />
-                    <property name="caretXRelative" value="68" />
+                    <property name="caretX" value="391" />
+                    <property name="caretXRelative" value="36" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/8737148903551989988" />
+                      <node node_reference="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725776" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -373,7 +333,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725776" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -381,15 +341,6 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Proba.txt" pinned="false" current-in-tab="false">
-        <entry file="previewMasterUML.sandbox@0/Proba.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             </state>
           </provider>
         </entry>
@@ -535,13 +486,139 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/MasterUML/sandbox/MasterUML.sandbox.msd" />
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior) in IdeaFile{file://C:/Users/ascerict/MPSProjects/MasterMPS/languages/MasterUML/models/behavior.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MasterUML#3818255834763981393" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MasterUML" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4dad677e-e763-48c7-8963-cee7f37312fb(MasterUML.generator.template.main@generator) in IdeaFile{file://C:/Users/ascerict/MPSProjects/MasterMPS/languages/MasterUML/generator/template/main@generator.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen) in IdeaFile{file://C:/Users/ascerict/MPSProjects/MasterMPS/languages/MasterUML/models/textGen.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MasterUML#3818255834763981393" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure) in IdeaFile{file://C:/Users/ascerict/MPSProjects/MasterMPS/languages/MasterUML/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MasterUML#3818255834763981393" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MasterUML" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/MasterUML/sandbox/MasterUML.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MasterUML" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/languages/MasterUML/sandbox/MasterUML.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,17 +646,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/MasterUML/sandbox/MasterUML.sandbox.msd" />
+              <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MasterUML" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="r:34fcad31-3f66-4a2c-b897-55b2e4bb3c10(MasterUML.editor) in IdeaFile{file://C:/Users/ascerict/MPSProjects/MasterMPS/languages/MasterUML/models/editor.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -590,6 +661,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="95e80464-dc8c-4520-ad10-bc8df94efd78(MasterUML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure) in IdeaFile{file://C:/Users/ascerict/MPSProjects/MasterMPS/languages/MasterUML/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="8455684370921552886" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -903,7 +982,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.315847" sideWeight="0.43776825" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.43776825" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20765027" sideWeight="0.46781117" order="2" side_tool="false" content_ui="tabs" />
@@ -912,7 +991,7 @@
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38841203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38733906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
@@ -948,57 +1027,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Druga verzija" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://MasterUML.sandbox@transient15/MasterUML.sandbox@0/Proba" />
-    <entry file="mps://node://MasterUML.sandbox@transient16/MasterUML.sandbox@4_0/Proba" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/&lt;no name&gt;[MappingScript]" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393@transient20/MasterUML.generator.template.main@12_0/QueriesGenerated" />
-    <entry file="mps://node://MasterUML#3818255834763981393@transient20/MasterUML.generator.template.main@1_0/RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393@transient20/MasterUML.generator.template.main@1_0/map_RelacioniModel" />
-    <entry file="mps://node://MasterUML#3818255834763981393@transient20/MasterUML.generator.template.main@1_0/reduce_Relacija" />
     <entry file="mps://node://MasterUML#3818255834763981393@transient34/MasterUML.generator.template.main@0/map_RelacioniModel" />
     <entry file="mps://node://MasterUML.sandbox/MasterUML.sandbox/RelacioniModel" />
     <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
     <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/RelacioniModel" />
-    <entry file="mps://node://MasterUML/MasterUML.structure/Relacija">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/4503147115007810451" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031500715" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/4503147115007810451" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://MasterUML.sandbox@transient67/MasterUML.sandbox@8_0/map_DijagramKlasa" />
     <entry file="mps://node://MasterUML.sandbox@transient84/MasterUML.sandbox@8_0/map_DijagramKlasa" />
     <entry file="file://$PROJECT_DIR$/languages/MasterUML/sandbox/source_gen/MasterUML/sandbox/map_DijagramKlasa.java">
@@ -1011,6 +1043,776 @@
     <entry file="mps://node://MasterUML.sandbox@transient87/MasterUML.sandbox@8_0/map_DijagramKlasa" />
     <entry file="mps://node://MasterUML.sandbox@transient90/MasterUML.sandbox@8_0/map_DijagramKlasa" />
     <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/null" />
+    <entry file="mps://node://MasterUML/MasterUML.textGen/null" />
+    <entry file="mps://node://MasterUML/MasterUML.textGen/&lt;no name&gt;[LanguageTextGenDeclaration]" />
+    <entry file="mps://node://MasterUML/MasterUML.textGen/&lt;no name&gt;[LanguageTextGenDeclaration]" />
+    <entry file="mps://node://MasterUML.sandbox@transient15/MasterUML.sandbox@8_0/Proba" />
+    <entry file="mps://node://MasterUML.sandbox@transient15/MasterUML.sandbox@6_0/Proba" />
+    <entry file="mps://node://MasterUML/MasterUML.behavior/???_Behavior" />
+    <entry file="file://$PROJECT_DIR$/languages/MasterUML/models/behavior.mps">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/BehaviorAspectDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/trace.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/Asocijacija__BehaviorDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/specifikacijaDijagramaKlasa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="171" column="51" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Realizacija">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829692" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/7485522210851158255" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829692" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Asocijacija">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="92" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9083744407584053156" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725935" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9083744407584053156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/AbstractTip">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/7485522210851158255" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838635765" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/7485522210851158255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/EnumKardinalnosti">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/7903223031140906473" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838635765" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/ElementiVeze">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538555343" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838635765" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538555343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/ElementiDijagramaKlasa">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="emptyRefPlaceHolder" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538672007" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/9138236088538680511" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538672007" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/RelacioniModel">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Relacija">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/EnumPredefinisaniTip">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/7903223031140906453" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/EnumVidljivost">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="287" />
+                <property name="caretXRelative" value="12" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_externalValue" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8737148903551159878" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903552055316" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Kompozicija">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="635" />
+                <property name="caretXRelative" value="12" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:34fcad31-3f66-4a2c-b897-55b2e4bb3c10(MasterUML.editor)/9138236088538811095" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/8737148903552260501" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:34fcad31-3f66-4a2c-b897-55b2e4bb3c10(MasterUML.editor)/9138236088538811031" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.textGen/neka">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/SpecifikacijaAtributa">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921677726" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725595" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921677726" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Nasledjivanje">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829569" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829569" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829569" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML.sandbox/MasterUML.sandbox/Proba">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="271" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_operacije" cellNumber="0" isInList="false">
+                  <node node_reference="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/9138236088538680511" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/9138236088538680511" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/UnidirekcionaAsocijacija">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="739" />
+                <property name="caretXRelative" value="12" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:34fcad31-3f66-4a2c-b897-55b2e4bb3c10(MasterUML.editor)/9138236088538829528" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:34fcad31-3f66-4a2c-b897-55b2e4bb3c10(MasterUML.editor)/9138236088538829528" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:34fcad31-3f66-4a2c-b897-55b2e4bb3c10(MasterUML.editor)/9138236088538829464" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.textGen/SpecifikacijaAtributaJezik">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="24">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_hqj93g_c0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085989278" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085989278" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085975902" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871103673" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903552178944" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838726022" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/PredefinisaneVrednosti">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Parametar">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/SpecifikacijaOperacije">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/SpecifikacijaOperacije">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="455" />
+                <property name="caretXRelative" value="104" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826052" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538877947" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_6h6dhy_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538877947" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Interfejs">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538841261" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538841261" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538841261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/SpecifikacijaOperacije">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="455" />
+                <property name="caretXRelative" value="104" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826052" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826052" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418840826051" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MasterUML/MasterUML.structure/Klasa">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="391" />
+                <property name="caretXRelative" value="180" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3818255834763981400" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838635769" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3818255834763981400" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://MasterUML#3818255834763981393/MasterUML.generator.template.main@generator/main">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1037,7 +1839,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868098254" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838635769" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1045,267 +1847,6 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.textGen/null" />
-    <entry file="mps://node://MasterUML/MasterUML.textGen/&lt;no name&gt;[LanguageTextGenDeclaration]" />
-    <entry file="mps://node://MasterUML/MasterUML.textGen/&lt;no name&gt;[LanguageTextGenDeclaration]" />
-    <entry file="mps://node://MasterUML/MasterUML.structure/SpecifikacijaAtributa">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_319n5h_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903551611307" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903551326438" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903551326438" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903551611307" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903551326437" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML.sandbox@transient15/MasterUML.sandbox@8_0/Proba" />
-    <entry file="mps://node://MasterUML.sandbox@transient15/MasterUML.sandbox@6_0/Proba" />
-    <entry file="mps://node://MasterUML/MasterUML.structure/PredefinisaneVrednosti">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921708805" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031637418" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921708805" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.structure/ElementiDijagramaKlasa">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="327" />
-                <property name="caretXRelative" value="180" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538672007" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085989424" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538672007" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.behavior/???_Behavior" />
-    <entry file="mps://node://MasterUML/MasterUML.structure/Nasledjivanje">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829569" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360872619201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9138236088538829569" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/MasterUML/models/behavior.mps">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/BehaviorAspectDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/MasterUML/classes_gen/MasterUML/trace.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.structure/RelacioniModel">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="255" />
-                <property name="caretXRelative" value="48" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:4dad677e-e763-48c7-8963-cee7f37312fb(MasterUML.generator.template.main@generator)/3091635714031397021" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:4dad677e-e763-48c7-8963-cee7f37312fb(MasterUML.generator.template.main@generator)/3091635714031004635" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:4dad677e-e763-48c7-8963-cee7f37312fb(MasterUML.generator.template.main@generator)/3091635714031004635" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418828929937" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:4dad677e-e763-48c7-8963-cee7f37312fb(MasterUML.generator.template.main@generator)/3091635714030105082" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.textGen/neka">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_u338ov_a0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418829037035" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418829037032" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418829037032" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418828929937" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/behavior/Asocijacija__BehaviorDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1329,7 +1870,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418828929937" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838635769" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1341,175 +1882,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://MasterUML/MasterUML.structure/Kompozicija">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921552867" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921552867" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/8455684370921552867" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.structure/Klasa">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="191" />
-                <property name="caretXRelative" value="32" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3374434418829928916" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3374434418829464179" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_6lfqqa_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3374434418828821172" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3374434418829464179" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/9138236088538680518" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:23ea762e-c4f1-43c7-bd22-1346ec931a2d(MasterUML.behavior)/3374434418828821171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML/MasterUML.structure/Asocijacija">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="439" />
-                <property name="caretXRelative" value="104" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/3374434418830694508" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)/9083744407584053156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/MasterUML/source_gen/MasterUML/textGen/specifikacijaDijagramaKlasa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="171" column="51" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MasterUML.sandbox/MasterUML.sandbox/Proba">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="367" />
-                <property name="caretXRelative" value="68" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/8737148903551989988" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://MasterUML/MasterUML.textGen/specifikacijaDijagramaKlasa">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1598">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="910">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="167" />
-                <property name="caretXRelative" value="36" />
+                <property name="caretX" value="375" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_operationName" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868095948" />
+                <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418832280785" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers />
             <transactionalProperties />
             <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418840269697" />
+                </cellIdElement>
+              </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                   <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868661272" />
@@ -1533,11 +1928,6 @@
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                   <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868660764" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360868656588" />
                 </cellIdElement>
               </collapsedElement>
               <collapsedElement isCollapsed="false">
@@ -1577,11 +1967,6 @@
               </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031566717" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
                   <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031512426" />
                 </cellIdElement>
               </collapsedElement>
@@ -1594,12 +1979,12 @@
             <restoreAlways>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031637667" />
+                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3374434418832279625" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725776" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1610,59 +1995,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://MasterUML/MasterUML.textGen/SpecifikacijaAtributaJezik">
+    <entry file="mps://node://MasterUML.sandbox/MasterUML.sandbox/&lt;no name&gt;[DijagramKlasa]">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="206">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="429">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="391" />
+                <property name="caretXRelative" value="36" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725776" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers />
             <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085989278" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3052063765758554188" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/4273844062085975902" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871103673" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903552178944" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871103673" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
+            <foldable />
+            <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3194692360871178993" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:cc814156-c7ab-456f-8edd-03f7ed2b307f(MasterUML.sandbox)/3374434418838725776" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

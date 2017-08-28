@@ -7,8 +7,6 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import java.util.List;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public abstract class SpecifikacijaAtributaJezik {
   public static void autributiSpecPrimarini(SNode atribut, final TextGenContext ctx) {
@@ -42,22 +40,6 @@ public abstract class SpecifikacijaAtributaJezik {
     SpecifikacijaAtributaJezik.autributiSpecPrimarini(atributprimarniKljuc, ctx);
     tgs.append(" PRIMARY KEY");
     tgs.append(",");
-    tgs.newLine();
-  }
-  public static void specificirajNasledjivanje(List<SNode> atributiNasledjivanje, List<SNode> atributiKlase, final TextGenContext ctx) {
-    final TextGenSupport tgs = new TextGenSupport(ctx);
-    StringBuilder str = new StringBuilder();
-
-    str.append("string proba");
-    str.append("" + atributiNasledjivanje.toString());
-    String k = str.toString();
-    tgs.append(k);
-    for (SNode atrNasledjivanje : ListSequence.fromList(atributiNasledjivanje)) {
-      if (SPropertyOperations.getString(atrNasledjivanje, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains("id")) {
-        SpecifikacijaAtributaJezik.autributiSpecPrimarini(atrNasledjivanje, ctx);
-        tgs.append("PRIMARY KEY");
-      }
-    }
     tgs.newLine();
   }
   public static void dodeliSpoljniKljuc(SNode atributSpoljniKljuc, final TextGenContext ctx) {

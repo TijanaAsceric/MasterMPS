@@ -20,11 +20,13 @@
         <reference id="9138236088538770874" name="pocetak" index="_OUjO" />
       </concept>
       <concept id="8455684370921552867" name="MasterUML.structure.Kompozicija" flags="ng" index="3CKlJ1" />
+      <concept id="8455684370921552886" name="MasterUML.structure.Agregacija" flags="ng" index="3CKlJk" />
       <concept id="8455684370921553310" name="MasterUML.structure.DijagramKlasa" flags="ng" index="3CKlQW">
         <child id="9138236088538672009" name="elementiDijagramaKlasa" index="_Oib7" />
       </concept>
       <concept id="8455684370921677726" name="MasterUML.structure.SpecifikacijaAtributa" flags="ng" index="3CKOeW">
         <property id="8737148903551159890" name="vidljivost" index="2gBdzK" />
+        <property id="4746215806401172261" name="primarniKljuc" index="1ufM44" />
         <property id="8455684370921716059" name="tip" index="3CLd_T" />
       </concept>
     </language>
@@ -100,7 +102,11 @@
       <node concept="3CKOeW" id="2VkpzAOICjf" role="3CKOfY">
         <property role="2gBdzK" value="privatni" />
         <property role="TrG5h" value="klijentID" />
-        <property role="3CLd_T" value="int" />
+        <property role="3CLd_T" value="autoincrement" />
+        <property role="1ufM44" value="PK" />
+      </node>
+      <node concept="3CKOeW" id="47tWy4vTaED" role="3CKOfY">
+        <property role="TrG5h" value="neko" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOICjG" role="3CKOfY">
         <property role="2gBdzK" value="privatni" />
@@ -120,11 +126,13 @@
       <node concept="3CKOeW" id="2VkpzAOICkd" role="3CKOfY">
         <property role="2gBdzK" value="privatni" />
         <property role="TrG5h" value="zaposleniID" />
-        <property role="3CLd_T" value="int" />
+        <property role="3CLd_T" value="autoincrement" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOICkf" role="3CKOfY">
         <property role="2gBdzK" value="privatni" />
         <property role="TrG5h" value="imeZaposlenog" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOIYe1" role="3CKOfY">
         <property role="TrG5h" value="prezimeZaposlenog" />
@@ -154,7 +162,8 @@
       <property role="TrG5h" value="Mesto" />
       <node concept="3CKOeW" id="2VkpzAOIYh2" role="3CKOfY">
         <property role="TrG5h" value="mestoID" />
-        <property role="3CLd_T" value="int" />
+        <property role="3CLd_T" value="autoincrement" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOIYhn" role="3CKOfY">
         <property role="TrG5h" value="nazivMesta" />
@@ -162,6 +171,11 @@
     </node>
     <node concept="2gl_$F" id="2VkpzAOIYhq" role="_Oib7">
       <property role="TrG5h" value="Predmet" />
+      <node concept="3CKOeW" id="2VkpzAOVGHX" role="3CKOfY">
+        <property role="TrG5h" value="predmetID" />
+        <property role="3CLd_T" value="int" />
+        <property role="1ufM44" value="PK" />
+      </node>
       <node concept="3CKOeW" id="2VkpzAOIYhJ" role="3CKOfY">
         <property role="TrG5h" value="nazivPredmeta" />
       </node>
@@ -178,6 +192,7 @@
       <node concept="3CKOeW" id="2VkpzAOIYiD" role="3CKOfY">
         <property role="TrG5h" value="rocisteID" />
         <property role="3CLd_T" value="int" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOIYiF" role="3CKOfY">
         <property role="TrG5h" value="datumRocista" />
@@ -192,6 +207,7 @@
       <node concept="3CKOeW" id="2VkpzAOIYjF" role="3CKOfY">
         <property role="TrG5h" value="rbrID" />
         <property role="3CLd_T" value="int" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOIYjH" role="3CKOfY">
         <property role="TrG5h" value="iznos" />
@@ -203,6 +219,7 @@
       <node concept="3CKOeW" id="2VkpzAOIYkJ" role="3CKOfY">
         <property role="TrG5h" value="uslugaID" />
         <property role="3CLd_T" value="int" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOIYkL" role="3CKOfY">
         <property role="TrG5h" value="nazivUsluge" />
@@ -220,6 +237,7 @@
       <node concept="3CKOeW" id="2VkpzAOIYm6" role="3CKOfY">
         <property role="TrG5h" value="sudID" />
         <property role="3CLd_T" value="int" />
+        <property role="1ufM44" value="PK" />
       </node>
       <node concept="3CKOeW" id="2VkpzAOIYm8" role="3CKOfY">
         <property role="TrG5h" value="nazivSuda" />
@@ -242,12 +260,16 @@
       <ref role="_OUjO" node="2VkpzAOIYgK" resolve="Mesto" />
     </node>
     <node concept="3CKlJ1" id="2VkpzAOKlXc" role="_Oib7">
-      <ref role="_OUi3" node="2VkpzAOIYje" resolve="StavkaRocista" />
       <ref role="_OUjO" node="2VkpzAOIYig" resolve="Rociste" />
+      <ref role="_OUi3" node="2VkpzAOIYfI" resolve="Advokat" />
     </node>
-    <node concept="_ODJ1" id="2VkpzAOK09L" role="_Oib7">
-      <ref role="_OUjO" node="2VkpzAOIYhq" resolve="Predmet" />
-      <ref role="_OUi3" node="2VkpzAOIYig" resolve="Rociste" />
+    <node concept="3CKlJ1" id="5jMeYE7fXdR" role="_Oib7">
+      <ref role="_OUjO" node="2VkpzAOIYig" resolve="Rociste" />
+      <ref role="_OUi3" node="2VkpzAOIYje" resolve="StavkaRocista" />
+    </node>
+    <node concept="3CKlJk" id="5jMeYE7gXXl" role="_Oib7">
+      <ref role="_OUjO" node="2VkpzAOIYgK" resolve="Mesto" />
+      <ref role="_OUi3" node="2VkpzAOIYfI" resolve="Advokat" />
     </node>
     <node concept="_ODJ1" id="2VkpzAOKlYC" role="_Oib7">
       <ref role="_OUjO" node="2VkpzAOIYkf" resolve="Usluga" />

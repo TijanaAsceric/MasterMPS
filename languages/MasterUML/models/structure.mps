@@ -114,6 +114,10 @@
       <property role="1uS6qv" value="date" />
       <property role="1uS6qo" value="date" />
     </node>
+    <node concept="M4N5e" id="4pQC3QwLFVq" role="M5hS2">
+      <property role="1uS6qo" value="autoinkrement" />
+      <property role="1uS6qv" value="autoincrement" />
+    </node>
   </node>
   <node concept="AxPO7" id="6QHSR_7PJnD">
     <property role="TrG5h" value="EnumKardinalnosti" />
@@ -217,6 +221,11 @@
       <property role="TrG5h" value="vidljivost" />
       <ref role="AX2Wp" node="7_0_EbDR4SM" resolve="EnumVidljivost" />
     </node>
+    <node concept="1TJgyi" id="47tWy4vSHc_" role="1TKVEl">
+      <property role="IQ2nx" value="4746215806401172261" />
+      <property role="TrG5h" value="primarniKljuc" />
+      <ref role="AX2Wp" node="47tWy4vSHcD" resolve="EnumPrimarniKljuc" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7VhykTqZIff">
     <property role="EcuMT" value="9138236088538555343" />
@@ -312,6 +321,18 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2VkpzAOQZ34" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="47tWy4vSHcD">
+    <property role="TrG5h" value="EnumPrimarniKljuc" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="47tWy4vSHcE" role="M5hS2">
+      <property role="1uS6qv" value=" " />
+      <property role="1uS6qo" value=" " />
+    </node>
+    <node concept="M4N5e" id="47tWy4vSHcU" role="M5hS2">
+      <property role="1uS6qv" value="PK" />
+      <property role="1uS6qo" value="PK" />
     </node>
   </node>
 </model>

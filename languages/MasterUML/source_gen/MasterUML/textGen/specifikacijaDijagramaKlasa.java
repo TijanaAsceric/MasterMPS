@@ -5,23 +5,23 @@ package MasterUML.textGen;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
-import java.util.List;
-import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Iterator;
+import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJezik {
   public static void kreirajTabele(SNode nod, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    List<SNode> sve = new ArrayList<SNode>();
-    specifikacijaDijagramaKlasa.proveriKlaseBezVeza(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
-    specifikacijaDijagramaKlasa.proveriVezeKlasa(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
+    specifikacijaDijagramaKlasa.kreirajTabeleSaKolonama(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
+    tgs.newLine();
+    specifikacijaDijagramaKlasa.dodeliPrimarneKljuceve(SLinkOperations.getChildren(nod, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, 0x7ed1894e5b00ab89L, "elementiDijagramaKlasa")), ctx);
   }
   protected static void specKlasu(SNode klasa, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
@@ -31,6 +31,104 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     tgs.append(" (");
     tgs.newLine();
 
+  }
+  protected static void kreirajTabeleSaKolonama(List<SNode> listaElemenata, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    for (SNode element : ListSequence.fromList(listaElemenata)) {
+      {
+        final SNode klasa = element;
+        if (SNodeOperations.isInstanceOf(klasa, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, "MasterUML.structure.Klasa"))) {
+          specifikacijaDijagramaKlasa.specKlasu(klasa, ctx);
+          SpecifikacijaAtributaJezik.specificirajSveAtribute(SLinkOperations.getChildren(klasa, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")), ctx);
+          tgs.newLine();
+        }
+      }
+    }
+  }
+  protected static void dodeliPrimarneKljuceve(List<SNode> listaElemenata, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    List<SNode> sveveze = (List<SNode>) specifikacijaDijagramaKlasa.vratiAsocijacije(listaElemenata, ctx);
+    List<SNode> listaKlasa = specifikacijaDijagramaKlasa.vratiKlaseUVezi(sveveze, ctx);
+    for (SNode klasa : ListSequence.fromList(listaKlasa)) {
+      List<String> identifikatori = specifikacijaDijagramaKlasa.vratiListuIdentifikatora(klasa, ctx);
+      List<SNode> listaVezaKlase = specifikacijaDijagramaKlasa.vratiVezeKlase(klasa, sveveze, ctx);
+
+      for (SNode as : ListSequence.fromList(listaVezaKlase)) {
+        {
+          final SNode nasledjivanje = as;
+          if (SNodeOperations.isInstanceOf(nasledjivanje, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b031301L, "MasterUML.structure.Nasledjivanje"))) {
+            List<String> listid = specifikacijaDijagramaKlasa.vratiListuIdentifikatora(SLinkOperations.getTarget(as, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
+            ListSequence.fromList(identifikatori).addSequence(ListSequence.fromList(listid));
+          }
+        }
+        {
+          final SNode kompozicija = as;
+          if (SNodeOperations.isInstanceOf(kompozicija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L, "MasterUML.structure.Kompozicija"))) {
+            List<String> listid = specifikacijaDijagramaKlasa.vratiListuIdentifikatora(SLinkOperations.getTarget(as, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
+            ListSequence.fromList(identifikatori).addSequence(ListSequence.fromList(listid));
+          }
+        }
+        {
+          final SNode agregacija = as;
+          if (SNodeOperations.isInstanceOf(agregacija, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L, "MasterUML.structure.Agregacija"))) {
+            List<String> listid = specifikacijaDijagramaKlasa.vratiListuIdentifikatora(SLinkOperations.getTarget(as, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
+            ListSequence.fromList(identifikatori).addSequence(ListSequence.fromList(listid));
+          }
+        }
+
+      }
+      specifikacijaDijagramaKlasa.specifikujAlterPK(klasa, identifikatori, ctx);
+      tgs.newLine();
+
+    }
+    for (SNode element : ListSequence.fromList(listaElemenata)) {
+      {
+        final SNode klasa = element;
+        if (SNodeOperations.isInstanceOf(klasa, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, "MasterUML.structure.Klasa"))) {
+          SNode kl = specifikacijaDijagramaKlasa.vratiKlaseBezAsocijacije(sveveze, element, ctx);
+          if ((kl != null)) {
+            List<String> listid = specifikacijaDijagramaKlasa.vratiListuIdentifikatora(kl, ctx);
+            specifikacijaDijagramaKlasa.specifikujAlterPK(kl, listid, ctx);
+            tgs.newLine();
+          }
+        }
+      }
+    }
+
+
+  }
+  protected static void specifikujAlterPK(SNode klasaIdentifikatora, List<String> identifikatori, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.append("ALTER TABLE ");
+    tgs.append(SPropertyOperations.getString(klasaIdentifikatora, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(" ADD CONSTRAINT ");
+    tgs.append("pk_");
+    tgs.append(SPropertyOperations.getString(klasaIdentifikatora, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.append(" PRIMARY KEY ");
+    tgs.append("(");
+    {
+      Iterator<String> id_it = ListSequence.fromList(identifikatori).iterator();
+      String id_var;
+      while (id_it.hasNext()) {
+        id_var = id_it.next();
+        tgs.append(id_var);
+        if (ListSequence.fromList(identifikatori).indexOf(id_var) != ListSequence.fromList(identifikatori).count() - 1) {
+          tgs.append(",");
+        } else {
+          tgs.append(")");
+        }
+      }
+    }
+  }
+  protected static List<String> vratiListuIdentifikatora(SNode klasa, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    List<String> atributiPK = ListSequence.fromList(new ArrayList<String>());
+    for (SNode atributPK : ListSequence.fromList(SLinkOperations.getChildren(klasa, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x7558a0229d9be3dcL, "atributi")))) {
+      if (SPropertyOperations.hasValue(atributPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x41ddf2211fe2d325L, "primarniKljuc"), "PK", " ")) {
+        ListSequence.fromList(atributiPK).addElement(SPropertyOperations.getString(atributPK, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toString());
+      }
+    }
+    return atributiPK;
   }
   protected static void proveriKlaseBezVeza(List<SNode> elementi, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
@@ -136,6 +234,8 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
     final TextGenSupport tgs = new TextGenSupport(ctx);
     List<SNode> vezeKlase = specifikacijaDijagramaKlasa.vratiVezeKlase(spoljniKljuc, veze, ctx);
     List<SNode> spoljniKljucevi = new ArrayList<SNode>();
+    tgs.append("velicina veze klase ");
+    tgs.append(vezeKlase.size() + "");
     {
       Iterator<SNode> veza_it = ListSequence.fromList(vezeKlase).iterator();
       SNode veza_var;
@@ -165,6 +265,8 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
       }
     }
     for (SNode atribut : ListSequence.fromList(spoljniKljucevi)) {
+      tgs.append("velicina liste");
+      tgs.append(spoljniKljucevi.size() + "");
       SpecifikacijaAtributaJezik.dodeliSpoljniKljuc(atribut, ctx);
     }
 

@@ -7,6 +7,8 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.List;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public abstract class SpecifikacijaAtributaJezik {
   public static void autributiSpecPrimarini(SNode atribut, final TextGenContext ctx) {
@@ -23,16 +25,13 @@ public abstract class SpecifikacijaAtributaJezik {
   }
   public static void atributiSpecOstali(SNode atribut, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    if (!(SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toUpperCase().contains("ID"))) {
-      tgs.append(SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-      tgs.indent();
-      if (SPropertyOperations.hasValue(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
-        tgs.append(" VARCHAR (255)");
-      } else {
-        tgs.append(" ");
-        tgs.append(SPropertyOperations.getString_def(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
-      }
-
+    tgs.append(SPropertyOperations.getString(atribut, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    tgs.indent();
+    if (SPropertyOperations.hasValue(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
+      tgs.append(" VARCHAR (255)");
+    } else {
+      tgs.append(" ");
+      tgs.append(SPropertyOperations.getString_def(atribut, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
     }
   }
   public static void dodeliPrimarniKljuc(SNode atributprimarniKljuc, final TextGenContext ctx) {
@@ -49,5 +48,18 @@ public abstract class SpecifikacijaAtributaJezik {
     tgs.append(",");
     tgs.newLine();
 
+  }
+  public static void specificirajSveAtribute(List<SNode> listaAtributa, final TextGenContext ctx) {
+    final TextGenSupport tgs = new TextGenSupport(ctx);
+    for (SNode atribut : ListSequence.fromList(listaAtributa)) {
+      SpecifikacijaAtributaJezik.atributiSpecOstali(atribut, ctx);
+      if (ListSequence.fromList(listaAtributa).indexOf(atribut) != listaAtributa.size() - 1) {
+        tgs.append(",");
+        tgs.newLine();
+      } else {
+        tgs.append(")");
+      }
+
+    }
   }
 }

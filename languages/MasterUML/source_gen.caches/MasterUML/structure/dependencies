@@ -37,6 +37,19 @@
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
   </dependency>
+  <dependency className="MasterUML.structure.EnumPrimarniKljuc" file="EnumPrimarniKljuc.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.LinkedList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+  </dependency>
+  <dependency className="MasterUML.structure.EnumPrimarniKljuc_PropertySupport" file="EnumPrimarniKljuc_PropertySupport.java">
+    <classNode dependClassName="MasterUML.structure.EnumPrimarniKljuc" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
   <dependency className="MasterUML.structure.EnumVidljivost" file="EnumVidljivost.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.LinkedList" />

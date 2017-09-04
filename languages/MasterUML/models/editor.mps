@@ -127,6 +127,9 @@
       <node concept="3F0A7n" id="7loC2atB7_E" role="3EZMnx">
         <ref role="1NtTu8" to="3aw6:7loC2atB7_r" resolve="tip" />
       </node>
+      <node concept="3F0A7n" id="47tWy4vSVWt" role="3EZMnx">
+        <ref role="1NtTu8" to="3aw6:47tWy4vSHc_" resolve="primarniKljuc" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7VhykTqZIeQ">

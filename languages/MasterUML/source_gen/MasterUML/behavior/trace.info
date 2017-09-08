@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root>
-    <file name="AbstractTip_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.AbstractTip_BehaviorDescriptor" />
-    </file>
     <file name="Agregacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Agregacija_BehaviorDescriptor" />
+    </file>
+    <file name="AsocijacijaReference_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.AsocijacijaReference_BehaviorDescriptor" />
     </file>
     <file name="Asocijacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Asocijacija_BehaviorDescriptor" />
@@ -22,6 +22,9 @@
     <file name="ElementiDijagramaKlasa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.ElementiDijagramaKlasa_BehaviorDescriptor" />
     </file>
+    <file name="ElementiUMLProfila_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.ElementiUMLProfila_BehaviorDescriptor" />
+    </file>
     <file name="ElementiVeze_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.ElementiVeze_BehaviorDescriptor" />
     </file>
@@ -31,11 +34,20 @@
     <file name="Klasa_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Klasa_BehaviorDescriptor" />
     </file>
+    <file name="Kolona_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Kolona_BehaviorDescriptor" />
+    </file>
     <file name="Kompozicija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Kompozicija_BehaviorDescriptor" />
     </file>
     <file name="Nasledjivanje_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Nasledjivanje_BehaviorDescriptor" />
+    </file>
+    <file name="Ogranicenja_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Ogranicenja_BehaviorDescriptor" />
+    </file>
+    <file name="PovratnAsocijacija_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.PovratnAsocijacija_BehaviorDescriptor" />
     </file>
     <file name="Realizacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Realizacija_BehaviorDescriptor" />
@@ -45,6 +57,15 @@
     </file>
     <file name="SpecifikacijaOperacije_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.SpecifikacijaOperacije_BehaviorDescriptor" />
+    </file>
+    <file name="Tabela_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.Tabela_BehaviorDescriptor" />
+    </file>
+    <file name="TipKolone_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.TipKolone_BehaviorDescriptor" />
+    </file>
+    <file name="UMLProfilDijagramKlasa_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.UMLProfilDijagramKlasa_BehaviorDescriptor" />
     </file>
     <file name="UnidirekcionaAsocijacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.UnidirekcionaAsocijacija_BehaviorDescriptor" />

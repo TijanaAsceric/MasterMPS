@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="MasterUML.behavior.AbstractTip_BehaviorDescriptor" file="AbstractTip_BehaviorDescriptor.java">
+  <dependency className="MasterUML.behavior.Agregacija_BehaviorDescriptor" file="Agregacija_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="MasterUML.behavior.Agregacija_BehaviorDescriptor" file="Agregacija_BehaviorDescriptor.java">
+  <dependency className="MasterUML.behavior.AsocijacijaReference_BehaviorDescriptor" file="AsocijacijaReference_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -34,6 +34,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="MasterUML.behavior.ElementiUMLProfila_BehaviorDescriptor" file="ElementiUMLProfila_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="MasterUML.behavior.ElementiVeze_BehaviorDescriptor" file="ElementiVeze_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -46,11 +50,23 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="MasterUML.behavior.Kolona_BehaviorDescriptor" file="Kolona_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="MasterUML.behavior.Kompozicija_BehaviorDescriptor" file="Kompozicija_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="MasterUML.behavior.Nasledjivanje_BehaviorDescriptor" file="Nasledjivanje_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.Ogranicenja_BehaviorDescriptor" file="Ogranicenja_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.PovratnAsocijacija_BehaviorDescriptor" file="PovratnAsocijacija_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -63,6 +79,18 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="MasterUML.behavior.SpecifikacijaOperacije_BehaviorDescriptor" file="SpecifikacijaOperacije_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.Tabela_BehaviorDescriptor" file="Tabela_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.TipKolone_BehaviorDescriptor" file="TipKolone_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="MasterUML.behavior.UMLProfilDijagramKlasa_BehaviorDescriptor" file="UMLProfilDijagramKlasa_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

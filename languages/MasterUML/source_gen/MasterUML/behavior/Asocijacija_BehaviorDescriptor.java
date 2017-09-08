@@ -9,7 +9,7 @@ package MasterUML.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public abstract class Asocijacija_BehaviorDescriptor {
+public class Asocijacija_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

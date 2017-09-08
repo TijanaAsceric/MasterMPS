@@ -24,10 +24,9 @@ public class Agregacija_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_vdifcu_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_vdifcu_b0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_vdifcu_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vdifcu_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vdifcu_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_vdifcu_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_vdifcu_e0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_vdifcu_f0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_vdifcu_a0(EditorContext editorContext, SNode node) {
@@ -82,7 +81,13 @@ public class Agregacija_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createProperty_vdifcu_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vdifcu_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "o->");
+    editorCell.setCellId("Constant_vdifcu_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_vdifcu_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("kardinalnost");
     provider.setNoTargetText("<no kardinalnost>");
@@ -95,12 +100,6 @@ public class Agregacija_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
-    return editorCell;
-  }
-  private EditorCell createConstant_vdifcu_d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "o->");
-    editorCell.setCellId("Constant_vdifcu_d0");
-    editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefCell_vdifcu_e0(EditorContext editorContext, SNode node) {
@@ -148,20 +147,5 @@ public class Agregacija_Editor extends DefaultNodeEditor {
       } else
       return editorCell;
     }
-  }
-  private EditorCell createProperty_vdifcu_f0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("kardinalnost");
-    provider.setNoTargetText("<no kardinalnost>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_kardinalnost_1");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
   }
 }

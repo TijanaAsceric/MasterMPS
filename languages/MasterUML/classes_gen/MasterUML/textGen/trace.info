@@ -12,7 +12,122 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="17,0,68,0" name="MasterUML.textGen.TextGenAspectDescriptor" />
+      <unit at="17,0,90,0" name="MasterUML.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/1972637307099718850">
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1972637307099719394" at="77,77,78,18" concept="6" />
+    </file>
+    <file name="UMLProfilDijagramKlasa_TextGen.java">
+      <node id="1972637307099718850" at="15,54,16,55" concept="5" />
+      <node id="1972637307102618776" at="17,236,18,42" concept="1" />
+      <node id="1972637307099719394" at="21,42,22,18" concept="6" />
+      <node id="1972637307099757245" at="16,55,19,5" concept="2" />
+      <node id="1972637307099718850" at="21,0,24,0" concept="4" trace="getExtension#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1972637307099718850" at="14,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1972637307099757248" at="17,236,18,42" />
+      <scope id="1972637307099718850" at="21,42,22,18" />
+      <scope id="1972637307099757245" at="16,55,19,5">
+        <var name="element" id="1972637307099757246" />
+      </scope>
+      <scope id="1972637307099718850" at="21,0,24,0">
+        <var name="node" id="1972637307099718850" />
+      </scope>
+      <scope id="1972637307099718850" at="15,54,19,5">
+        <var name="tgs" id="1972637307099718850" />
+      </scope>
+      <scope id="1972637307099718850" at="14,0,21,0">
+        <var name="ctx" id="1972637307099718850" />
+      </scope>
+      <unit id="1972637307099718850" at="13,0,25,0" name="MasterUML.textGen.UMLProfilDijagramKlasa_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/1972637307099759702">
+    <file name="UMLProfili.java">
+      <node id="1972637307099759702" at="16,74,17,55" concept="5" />
+      <node id="1972637307099777507" at="18,172,19,45" concept="1" />
+      <node id="1972637307099759702" at="22,79,23,55" concept="5" />
+      <node id="1972637307099759702" at="23,55,24,32" concept="1" />
+      <node id="1972637307099759702" at="24,32,25,168" concept="1" />
+      <node id="1972637307099759702" at="25,168,26,20" concept="1" />
+      <node id="1972637307103281609" at="26,20,27,18" concept="1" />
+      <node id="1972637307100701227" at="27,18,28,47" concept="1" />
+      <node id="1972637307100701454" at="28,47,29,21" concept="1" />
+      <node id="1972637307103061963" at="29,21,30,18" concept="1" />
+      <node id="1972637307099759702" at="32,84,33,55" concept="5" />
+      <node id="1972637307102602682" at="34,218,35,29" concept="1" />
+      <node id="1972637307103061908" at="35,29,36,20" concept="1" />
+      <node id="1972637307102613503" at="37,5,38,223" concept="1" />
+      <node id="1972637307102615299" at="38,223,39,220" concept="1" />
+      <node id="1972637307099759702" at="41,104,42,55" concept="5" />
+      <node id="1972637307099759702" at="44,101,45,55" concept="5" />
+      <node id="1972637307099775014" at="17,55,20,5" concept="3" />
+      <node id="1972637307099759702" at="41,0,44,0" concept="8" trace="specificirajPrimarniKljuc#(Ljava/util/List;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="1972637307099759702" at="44,0,47,0" concept="8" trace="specicirajSpoljniKljuc#(Ljava/util/List;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="1972637307102600233" at="33,55,37,5" concept="2" />
+      <node id="1972637307099759702" at="16,0,22,0" concept="8" trace="kreirajDDL#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="1972637307099759702" at="32,0,41,0" concept="8" trace="specificirajKolone#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="1972637307099759702" at="22,0,32,0" concept="8" trace="kreirajTabelu#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1972637307099775016" at="18,172,19,45" />
+      <scope id="1972637307099759702" at="41,104,42,55">
+        <var name="tgs" id="1972637307099759702" />
+      </scope>
+      <scope id="1972637307099759702" at="44,101,45,55">
+        <var name="tgs" id="1972637307099759702" />
+      </scope>
+      <scope id="1972637307102600236" at="34,218,36,20" />
+      <scope id="1972637307099759702" at="41,0,44,0">
+        <var name="ctx" id="1972637307099759702" />
+        <var name="ogranicenjaPK" id="1972637307102613353" />
+      </scope>
+      <scope id="1972637307099759702" at="44,0,47,0">
+        <var name="ctx" id="1972637307099759702" />
+        <var name="ogranicenjaSK" id="1972637307102613428" />
+      </scope>
+      <scope id="1972637307099759702" at="16,74,20,5">
+        <var name="tgs" id="1972637307099759702" />
+      </scope>
+      <scope id="1972637307102600233" at="33,55,37,5">
+        <var name="kolona" id="1972637307102600234" />
+      </scope>
+      <scope id="1972637307099759702" at="16,0,22,0">
+        <var name="ctx" id="1972637307099759702" />
+        <var name="element" id="1972637307099773611" />
+      </scope>
+      <scope id="1972637307099759702" at="32,84,39,220">
+        <var name="tgs" id="1972637307099759702" />
+      </scope>
+      <scope id="1972637307099759702" at="22,79,30,18">
+        <var name="tgs" id="1972637307099759702" />
+      </scope>
+      <scope id="1972637307099759702" at="32,0,41,0">
+        <var name="ctx" id="1972637307099759702" />
+        <var name="tabela" id="1972637307100701132" />
+      </scope>
+      <scope id="1972637307099759702" at="22,0,32,0">
+        <var name="ctx" id="1972637307099759702" />
+        <var name="tabela" id="1972637307099777472" />
+      </scope>
+      <unit id="1972637307099759702" at="15,0,48,0" name="MasterUML.textGen.UMLProfili" />
+    </file>
+  </root>
+  <root nodeRef="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/1972637307102837641">
+    <file name="Kolona_TextGen.java">
+      <node id="1972637307102837641" at="13,54,14,55" concept="5" />
+      <node id="1972637307102837641" at="14,55,15,183" concept="1" />
+      <node id="1972637307102837641" at="15,183,16,20" concept="1" />
+      <node id="1972637307102837641" at="16,20,17,207" concept="1" />
+      <node id="1972637307102837641" at="17,207,18,20" concept="1" />
+      <node id="1972637307102837641" at="18,20,19,206" concept="1" />
+      <node id="1972637307102837641" at="12,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1972637307102837641" at="13,54,19,206">
+        <var name="tgs" id="1972637307102837641" />
+      </scope>
+      <scope id="1972637307102837641" at="12,0,21,0">
+        <var name="ctx" id="1972637307102837641" />
+      </scope>
+      <unit id="1972637307102837641" at="11,0,22,0" name="MasterUML.textGen.Kolona_TextGen" />
     </file>
   </root>
   <root nodeRef="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/3091635714031501746">
@@ -624,8 +739,8 @@
       <unit id="8737148903551264511" at="12,0,30,0" name="MasterUML.textGen.DijagramKlasa_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8737148903551466442" at="52,63,53,161" concept="6" />
-      <node id="8737148903551273017" at="55,68,56,17" concept="6" />
+      <node id="8737148903551466442" at="68,63,69,161" concept="6" />
+      <node id="8737148903551273017" at="74,68,75,17" concept="6" />
     </file>
   </root>
   <root nodeRef="r:a4cd52bc-c340-42c5-b364-390e10081d2b(MasterUML.textGen)/8737148903552174281">

@@ -7,12 +7,23 @@
   <imports />
   <registry>
     <language id="95e80464-dc8c-4520-ad10-bc8df94efd78" name="MasterUML">
+      <concept id="5675761210165552023" name="MasterUML.structure.UMLProfilDijagramKlasa" flags="ng" index="277V$C">
+        <reference id="5675761210167693558" name="dijKlasa" index="27ecD9" />
+        <child id="4525104879238123997" name="elementi" index="2sF7sO" />
+      </concept>
+      <concept id="5675761210166500172" name="MasterUML.structure.Kolona" flags="ng" index="27bw7N">
+        <property id="4525104879242012866" name="tip" index="2slKSF" />
+        <property id="4525104879240175470" name="primarniKljuc" index="2sGNA7" />
+      </concept>
+      <concept id="5675761210166500169" name="MasterUML.structure.Tabela" flags="ng" index="27bw7Q">
+        <child id="5675761210166500175" name="kolone" index="27bw7K" />
+      </concept>
       <concept id="3818255834763981400" name="MasterUML.structure.Klasa" flags="ng" index="2gl_$F">
         <child id="8455684370921677788" name="atributi" index="3CKOfY" />
       </concept>
       <concept id="9138236088538829569" name="MasterUML.structure.Nasledjivanje" flags="ng" index="_ODDf" />
       <concept id="9083744407584053156" name="MasterUML.structure.Asocijacija" flags="ng" index="1asIrd">
-        <property id="9138236088538803116" name="kardinalnost" index="_OMby" />
+        <property id="9138236088538803116" name="kardinalnostPocetak" index="_OMby" />
         <reference id="9138236088538770893" name="kraj" index="_OUi3" />
         <reference id="9138236088538770874" name="pocetak" index="_OUjO" />
       </concept>
@@ -185,6 +196,158 @@
       <property role="_OMby" value="1..*" />
       <ref role="_OUjO" node="2mSRkCdBd95" resolve="Rociste" />
       <ref role="_OUi3" node="2mSRkCdBda9" resolve="StavkaRocista" />
+    </node>
+  </node>
+  <node concept="277V$C" id="1HwdMRCz3FS">
+    <ref role="27ecD9" node="2mSRkCdHu8i" resolve="PrimerProba" />
+    <node concept="27bw7Q" id="1HwdMRCAvh7" role="2sF7sO">
+      <property role="TrG5h" value="Klijent" />
+      <node concept="27bw7N" id="1HwdMRCAvh8" role="27bw7K">
+        <property role="TrG5h" value="klijentID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvh9" role="27bw7K">
+        <property role="TrG5h" value="imeKlijenta" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvha" role="27bw7K">
+        <property role="TrG5h" value="prezimeKlijenta" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvhb" role="2sF7sO">
+      <property role="TrG5h" value="Zaposleni" />
+      <node concept="27bw7N" id="1HwdMRCAvhc" role="27bw7K">
+        <property role="TrG5h" value="zaposleniID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhd" role="27bw7K">
+        <property role="TrG5h" value="imeZaposlenog" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhe" role="27bw7K">
+        <property role="TrG5h" value="prezimeZaposlenog" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhf" role="27bw7K">
+        <property role="TrG5h" value="email" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhg" role="27bw7K">
+        <property role="TrG5h" value="datumZaposlenja" />
+        <property role="2slKSF" value="date" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvhh" role="2sF7sO">
+      <property role="TrG5h" value="Advokat" />
+      <node concept="27bw7N" id="1HwdMRCAvhi" role="27bw7K">
+        <property role="TrG5h" value="datumPravosudnogIspita" />
+        <property role="2slKSF" value="date" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvhj" role="2sF7sO">
+      <property role="TrG5h" value="Pripravnik" />
+      <node concept="27bw7N" id="1HwdMRCAvhk" role="27bw7K">
+        <property role="TrG5h" value="brojPreostalihIspita" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvhl" role="2sF7sO">
+      <property role="TrG5h" value="Mesto" />
+      <node concept="27bw7N" id="1HwdMRCAvhm" role="27bw7K">
+        <property role="TrG5h" value="mestoID" />
+        <property role="2slKSF" value="int" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhn" role="27bw7K">
+        <property role="TrG5h" value="nazivMesta" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvho" role="2sF7sO">
+      <property role="TrG5h" value="Predmet" />
+      <node concept="27bw7N" id="1HwdMRCAvhp" role="27bw7K">
+        <property role="TrG5h" value="predmetID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhq" role="27bw7K">
+        <property role="TrG5h" value="nazivPredmeta" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhr" role="27bw7K">
+        <property role="TrG5h" value="datumPredmeta" />
+        <property role="2slKSF" value="date" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhs" role="27bw7K">
+        <property role="TrG5h" value="pravniOsnov" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvht" role="2sF7sO">
+      <property role="TrG5h" value="Rociste" />
+      <node concept="27bw7N" id="1HwdMRCAvhu" role="27bw7K">
+        <property role="TrG5h" value="rocisteID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhv" role="27bw7K">
+        <property role="TrG5h" value="datumRocista" />
+        <property role="2slKSF" value="date" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhw" role="27bw7K">
+        <property role="TrG5h" value="vremeRocista" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvhx" role="2sF7sO">
+      <property role="TrG5h" value="StavkaRocista" />
+      <node concept="27bw7N" id="1HwdMRCAvhy" role="27bw7K">
+        <property role="TrG5h" value="rbrID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhz" role="27bw7K">
+        <property role="TrG5h" value="iznos" />
+        <property role="2slKSF" value="double" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvh$" role="2sF7sO">
+      <property role="TrG5h" value="Usluga" />
+      <node concept="27bw7N" id="1HwdMRCAvh_" role="27bw7K">
+        <property role="TrG5h" value="uslugaID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhA" role="27bw7K">
+        <property role="TrG5h" value="nazivUsluge" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhB" role="27bw7K">
+        <property role="TrG5h" value="opisUsluge" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhC" role="27bw7K">
+        <property role="TrG5h" value="cenaUsluge" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+    </node>
+    <node concept="27bw7Q" id="1HwdMRCAvhD" role="2sF7sO">
+      <property role="TrG5h" value="Sud" />
+      <node concept="27bw7N" id="1HwdMRCAvhE" role="27bw7K">
+        <property role="TrG5h" value="sudID" />
+        <property role="2slKSF" value="int" />
+        <property role="2sGNA7" value="PK" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhF" role="27bw7K">
+        <property role="TrG5h" value="nazivSuda" />
+        <property role="2slKSF" value="varchar" />
+      </node>
+      <node concept="27bw7N" id="1HwdMRCAvhG" role="27bw7K">
+        <property role="TrG5h" value="adresa" />
+        <property role="2slKSF" value="varchar" />
+      </node>
     </node>
   </node>
 </model>

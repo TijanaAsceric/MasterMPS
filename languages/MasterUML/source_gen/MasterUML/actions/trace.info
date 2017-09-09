@@ -19,9 +19,9 @@
   <root nodeRef="r:fe291662-7888-4c99-bee4-348ab903fc51(MasterUML.actions)/5675761210165257230">
     <file name="nf_SetPovratnaAsocijacija.java">
       <node id="5675761210165257245" at="14,91,15,42" concept="5" />
-      <node id="5675761210165368140" at="15,42,16,494" concept="1" />
+      <node id="5675761210165368140" at="15,42,16,501" concept="1" />
       <node id="5675761210165257231" at="14,0,18,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
-      <scope id="5675761210165257231" at="14,91,16,494">
+      <scope id="5675761210165257231" at="14,91,16,501">
         <var name="povratna" id="5675761210165257248" />
       </scope>
       <scope id="5675761210165257231" at="14,0,18,0">

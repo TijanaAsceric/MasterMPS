@@ -89,11 +89,11 @@ public class Kompozicija_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_b8v15o_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("kardinalnost");
-    provider.setNoTargetText("<no kardinalnost>");
+    provider.setRole("kardinalnostPocetak");
+    provider.setNoTargetText("<no kardinalnostPocetak>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_kardinalnost");
+    editorCell.setCellId("property_kardinalnostPocetak");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

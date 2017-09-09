@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 public enum EnumPrimarniKljuc {
   _(" ", " "),
-  PK("PK", "PK");
+  __PK__("<<PK>>", "PK");
 
   private final String myName;
   public String getName() {
@@ -28,7 +28,7 @@ public enum EnumPrimarniKljuc {
   public static List<EnumPrimarniKljuc> getConstants() {
     List<EnumPrimarniKljuc> list = ListSequence.fromList(new LinkedList<EnumPrimarniKljuc>());
     ListSequence.fromList(list).addElement(EnumPrimarniKljuc._);
-    ListSequence.fromList(list).addElement(EnumPrimarniKljuc.PK);
+    ListSequence.fromList(list).addElement(EnumPrimarniKljuc.__PK__);
     return list;
   }
   public static EnumPrimarniKljuc getDefault() {
@@ -41,8 +41,8 @@ public enum EnumPrimarniKljuc {
     if (value.equals(EnumPrimarniKljuc._.getValueAsString())) {
       return EnumPrimarniKljuc._;
     }
-    if (value.equals(EnumPrimarniKljuc.PK.getValueAsString())) {
-      return EnumPrimarniKljuc.PK;
+    if (value.equals(EnumPrimarniKljuc.__PK__.getValueAsString())) {
+      return EnumPrimarniKljuc.__PK__;
     }
     return EnumPrimarniKljuc.getDefault();
   }

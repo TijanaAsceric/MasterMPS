@@ -18,9 +18,9 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
     if (LANGUAGE_FQ_NAME.equals(concept.getLanguage().getQualifiedName())) {
       switch (Arrays.binarySearch(stringSwitchCases_tpto26_a0a0a0c, concept.getName())) {
         case 0:
-          return Collections.<NodeFactory>singletonList(new nf_ElementiUMLProfilDijagramKlasa.NodeFactory_5675761210169363833());
-        case 1:
           return Collections.<NodeFactory>singletonList(new nf_SetPovratnaAsocijacija.NodeFactory_5675761210165257231());
+        case 1:
+          return Collections.<NodeFactory>singletonList(new nf_ElementiUMLProfilDijagramKlasa.NodeFactory_5675761210169363833());
         default:
       }
     }
@@ -31,5 +31,5 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
   public boolean hasBuilders() {
     return false;
   }
-  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"ElementiUMLProfila", "PovratnAsocijacija"};
+  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"AsocijativnaKlasa", "ElementiUMLProfila"};
 }

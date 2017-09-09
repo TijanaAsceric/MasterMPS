@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Agregacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Asocijacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AsocijacijaReference = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AsocijativnaKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BidirekcionaAsocijacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DijagramKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ElementiDijagramaKlasa = new ConceptPresentationBuilder().create();
@@ -23,7 +24,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Kompozicija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Nasledjivanje = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Ogranicenja = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PovratnAsocijacija = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OgranicenjaPrimarniKljuc = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OgranicenjaSpoljniKljuc = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Realizacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaAtributa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaOperacije = new ConceptPresentationBuilder().create();
@@ -44,42 +46,46 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 2:
         return props_AsocijacijaReference;
       case 3:
-        return props_BidirekcionaAsocijacija;
+        return props_AsocijativnaKlasa;
       case 4:
-        return props_DijagramKlasa;
+        return props_BidirekcionaAsocijacija;
       case 5:
-        return props_ElementiDijagramaKlasa;
+        return props_DijagramKlasa;
       case 6:
-        return props_ElementiUMLProfila;
+        return props_ElementiDijagramaKlasa;
       case 7:
-        return props_ElementiVeze;
+        return props_ElementiUMLProfila;
       case 8:
-        return props_Interfejs;
+        return props_ElementiVeze;
       case 9:
-        return props_Klasa;
+        return props_Interfejs;
       case 10:
-        return props_Kolona;
+        return props_Klasa;
       case 11:
-        return props_Kompozicija;
+        return props_Kolona;
       case 12:
-        return props_Nasledjivanje;
+        return props_Kompozicija;
       case 13:
-        return props_Ogranicenja;
+        return props_Nasledjivanje;
       case 14:
-        return props_PovratnAsocijacija;
+        return props_Ogranicenja;
       case 15:
-        return props_Realizacija;
+        return props_OgranicenjaPrimarniKljuc;
       case 16:
-        return props_SpecifikacijaAtributa;
+        return props_OgranicenjaSpoljniKljuc;
       case 17:
-        return props_SpecifikacijaOperacije;
+        return props_Realizacija;
       case 18:
-        return props_Tabela;
+        return props_SpecifikacijaAtributa;
       case 19:
-        return props_TipKolone;
+        return props_SpecifikacijaOperacije;
       case 20:
-        return props_UMLProfilDijagramKlasa;
+        return props_Tabela;
       case 21:
+        return props_TipKolone;
+      case 22:
+        return props_UMLProfilDijagramKlasa;
+      case 23:
         return props_UnidirekcionaAsocijacija;
     }
     throw new IllegalStateException("Unknown concept " + c);

@@ -84,11 +84,11 @@ public class Asocijacija_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_nbfy6y_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("kardinalnost");
-    provider.setNoTargetText("<no kardinalnost>");
+    provider.setRole("kardinalnostPocetak");
+    provider.setNoTargetText("<no kardinalnostPocetak>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_kardinalnost");
+    editorCell.setCellId("property_kardinalnostPocetak");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -151,11 +151,11 @@ public class Asocijacija_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_nbfy6y_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("kardinalnost");
-    provider.setNoTargetText("<no kardinalnost>");
+    provider.setRole("kardinalnostKraj");
+    provider.setNoTargetText("<no kardinalnostKraj>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_kardinalnost_1");
+    editorCell.setCellId("property_kardinalnostKraj");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

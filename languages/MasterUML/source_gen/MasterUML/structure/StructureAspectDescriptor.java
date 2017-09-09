@@ -18,10 +18,11 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(22);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(24);
   /*package*/ final ConceptDescriptor myConceptAgregacija = createDescriptorForAgregacija();
   /*package*/ final ConceptDescriptor myConceptAsocijacija = createDescriptorForAsocijacija();
   /*package*/ final ConceptDescriptor myConceptAsocijacijaReference = createDescriptorForAsocijacijaReference();
+  /*package*/ final ConceptDescriptor myConceptAsocijativnaKlasa = createDescriptorForAsocijativnaKlasa();
   /*package*/ final ConceptDescriptor myConceptBidirekcionaAsocijacija = createDescriptorForBidirekcionaAsocijacija();
   /*package*/ final ConceptDescriptor myConceptDijagramKlasa = createDescriptorForDijagramKlasa();
   /*package*/ final ConceptDescriptor myConceptElementiDijagramaKlasa = createDescriptorForElementiDijagramaKlasa();
@@ -33,7 +34,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptKompozicija = createDescriptorForKompozicija();
   /*package*/ final ConceptDescriptor myConceptNasledjivanje = createDescriptorForNasledjivanje();
   /*package*/ final ConceptDescriptor myConceptOgranicenja = createDescriptorForOgranicenja();
-  /*package*/ final ConceptDescriptor myConceptPovratnAsocijacija = createDescriptorForPovratnAsocijacija();
+  /*package*/ final ConceptDescriptor myConceptOgranicenjaPrimarniKljuc = createDescriptorForOgranicenjaPrimarniKljuc();
+  /*package*/ final ConceptDescriptor myConceptOgranicenjaSpoljniKljuc = createDescriptorForOgranicenjaSpoljniKljuc();
   /*package*/ final ConceptDescriptor myConceptRealizacija = createDescriptorForRealizacija();
   /*package*/ final ConceptDescriptor myConceptSpecifikacijaAtributa = createDescriptorForSpecifikacijaAtributa();
   /*package*/ final ConceptDescriptor myConceptSpecifikacijaOperacije = createDescriptorForSpecifikacijaOperacije();
@@ -46,30 +48,32 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexMap.put(myConceptAgregacija.getId(), 0);
     myIndexMap.put(myConceptAsocijacija.getId(), 1);
     myIndexMap.put(myConceptAsocijacijaReference.getId(), 2);
-    myIndexMap.put(myConceptBidirekcionaAsocijacija.getId(), 3);
-    myIndexMap.put(myConceptDijagramKlasa.getId(), 4);
-    myIndexMap.put(myConceptElementiDijagramaKlasa.getId(), 5);
-    myIndexMap.put(myConceptElementiUMLProfila.getId(), 6);
-    myIndexMap.put(myConceptElementiVeze.getId(), 7);
-    myIndexMap.put(myConceptInterfejs.getId(), 8);
-    myIndexMap.put(myConceptKlasa.getId(), 9);
-    myIndexMap.put(myConceptKolona.getId(), 10);
-    myIndexMap.put(myConceptKompozicija.getId(), 11);
-    myIndexMap.put(myConceptNasledjivanje.getId(), 12);
-    myIndexMap.put(myConceptOgranicenja.getId(), 13);
-    myIndexMap.put(myConceptPovratnAsocijacija.getId(), 14);
-    myIndexMap.put(myConceptRealizacija.getId(), 15);
-    myIndexMap.put(myConceptSpecifikacijaAtributa.getId(), 16);
-    myIndexMap.put(myConceptSpecifikacijaOperacije.getId(), 17);
-    myIndexMap.put(myConceptTabela.getId(), 18);
-    myIndexMap.put(myConceptTipKolone.getId(), 19);
-    myIndexMap.put(myConceptUMLProfilDijagramKlasa.getId(), 20);
-    myIndexMap.put(myConceptUnidirekcionaAsocijacija.getId(), 21);
+    myIndexMap.put(myConceptAsocijativnaKlasa.getId(), 3);
+    myIndexMap.put(myConceptBidirekcionaAsocijacija.getId(), 4);
+    myIndexMap.put(myConceptDijagramKlasa.getId(), 5);
+    myIndexMap.put(myConceptElementiDijagramaKlasa.getId(), 6);
+    myIndexMap.put(myConceptElementiUMLProfila.getId(), 7);
+    myIndexMap.put(myConceptElementiVeze.getId(), 8);
+    myIndexMap.put(myConceptInterfejs.getId(), 9);
+    myIndexMap.put(myConceptKlasa.getId(), 10);
+    myIndexMap.put(myConceptKolona.getId(), 11);
+    myIndexMap.put(myConceptKompozicija.getId(), 12);
+    myIndexMap.put(myConceptNasledjivanje.getId(), 13);
+    myIndexMap.put(myConceptOgranicenja.getId(), 14);
+    myIndexMap.put(myConceptOgranicenjaPrimarniKljuc.getId(), 15);
+    myIndexMap.put(myConceptOgranicenjaSpoljniKljuc.getId(), 16);
+    myIndexMap.put(myConceptRealizacija.getId(), 17);
+    myIndexMap.put(myConceptSpecifikacijaAtributa.getId(), 18);
+    myIndexMap.put(myConceptSpecifikacijaOperacije.getId(), 19);
+    myIndexMap.put(myConceptTabela.getId(), 20);
+    myIndexMap.put(myConceptTipKolone.getId(), 21);
+    myIndexMap.put(myConceptUMLProfilDijagramKlasa.getId(), 22);
+    myIndexMap.put(myConceptUnidirekcionaAsocijacija.getId(), 23);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAgregacija, myConceptAsocijacija, myConceptAsocijacijaReference, myConceptBidirekcionaAsocijacija, myConceptDijagramKlasa, myConceptElementiDijagramaKlasa, myConceptElementiUMLProfila, myConceptElementiVeze, myConceptInterfejs, myConceptKlasa, myConceptKolona, myConceptKompozicija, myConceptNasledjivanje, myConceptOgranicenja, myConceptPovratnAsocijacija, myConceptRealizacija, myConceptSpecifikacijaAtributa, myConceptSpecifikacijaOperacije, myConceptTabela, myConceptTipKolone, myConceptUMLProfilDijagramKlasa, myConceptUnidirekcionaAsocijacija);
+    return Arrays.asList(myConceptAgregacija, myConceptAsocijacija, myConceptAsocijacijaReference, myConceptAsocijativnaKlasa, myConceptBidirekcionaAsocijacija, myConceptDijagramKlasa, myConceptElementiDijagramaKlasa, myConceptElementiUMLProfila, myConceptElementiVeze, myConceptInterfejs, myConceptKlasa, myConceptKolona, myConceptKompozicija, myConceptNasledjivanje, myConceptOgranicenja, myConceptOgranicenjaPrimarniKljuc, myConceptOgranicenjaSpoljniKljuc, myConceptRealizacija, myConceptSpecifikacijaAtributa, myConceptSpecifikacijaOperacije, myConceptTabela, myConceptTipKolone, myConceptUMLProfilDijagramKlasa, myConceptUnidirekcionaAsocijacija);
   }
 
   @Override
@@ -87,42 +91,46 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 2:
         return myConceptAsocijacijaReference;
       case 3:
-        return myConceptBidirekcionaAsocijacija;
+        return myConceptAsocijativnaKlasa;
       case 4:
-        return myConceptDijagramKlasa;
+        return myConceptBidirekcionaAsocijacija;
       case 5:
-        return myConceptElementiDijagramaKlasa;
+        return myConceptDijagramKlasa;
       case 6:
-        return myConceptElementiUMLProfila;
+        return myConceptElementiDijagramaKlasa;
       case 7:
-        return myConceptElementiVeze;
+        return myConceptElementiUMLProfila;
       case 8:
-        return myConceptInterfejs;
+        return myConceptElementiVeze;
       case 9:
-        return myConceptKlasa;
+        return myConceptInterfejs;
       case 10:
-        return myConceptKolona;
+        return myConceptKlasa;
       case 11:
-        return myConceptKompozicija;
+        return myConceptKolona;
       case 12:
-        return myConceptNasledjivanje;
+        return myConceptKompozicija;
       case 13:
-        return myConceptOgranicenja;
+        return myConceptNasledjivanje;
       case 14:
-        return myConceptPovratnAsocijacija;
+        return myConceptOgranicenja;
       case 15:
-        return myConceptRealizacija;
+        return myConceptOgranicenjaPrimarniKljuc;
       case 16:
-        return myConceptSpecifikacijaAtributa;
+        return myConceptOgranicenjaSpoljniKljuc;
       case 17:
-        return myConceptSpecifikacijaOperacije;
+        return myConceptRealizacija;
       case 18:
-        return myConceptTabela;
+        return myConceptSpecifikacijaAtributa;
       case 19:
-        return myConceptTipKolone;
+        return myConceptSpecifikacijaOperacije;
       case 20:
-        return myConceptUMLProfilDijagramKlasa;
+        return myConceptTabela;
       case 21:
+        return myConceptTipKolone;
+      case 22:
+        return myConceptUMLProfilDijagramKlasa;
+      case 23:
         return myConceptUnidirekcionaAsocijacija;
       default:
         throw new IllegalStateException();
@@ -143,10 +151,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("MasterUML.structure.Agregacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L)).super_("MasterUML.structure.Asocijacija").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).parents("MasterUML.structure.Asocijacija").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "8455684370921552886")).create();
   }
   private static ConceptDescriptor createDescriptorForAsocijacija() {
-    return new ConceptDescriptorBuilder("MasterUML.structure.Asocijacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).super_("MasterUML.structure.ElementiDijagramaKlasa").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L)).parents("MasterUML.structure.ElementiDijagramaKlasa", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x7ed1894e5b02abacL, "kardinalnost", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538803116"))).properties("kardinalnost").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x7ed1894e5b022dbaL, "pocetak", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538770874")), new ConceptDescriptorBuilder.Ref(0x7ed1894e5b022dcdL, "kraj", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538770893"))).references("pocetak", "kraj").alias("Asocijacija", "").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9083744407584053156")).create();
+    return new ConceptDescriptorBuilder("MasterUML.structure.Asocijacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).super_("MasterUML.structure.ElementiDijagramaKlasa").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L)).parents("MasterUML.structure.ElementiDijagramaKlasa", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x7ed1894e5b02abacL, "kardinalnostPocetak", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538803116")), new ConceptDescriptorBuilder.Prop(0x1b60372de80868b9L, "kardinalnostKraj", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307094198457"))).properties("kardinalnostPocetak", "kardinalnostKraj").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x7ed1894e5b022dbaL, "pocetak", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538770874")), new ConceptDescriptorBuilder.Ref(0x7ed1894e5b022dcdL, "kraj", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538770893"))).references("pocetak", "kraj").alias("Asocijacija", "").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9083744407584053156")).create();
   }
   private static ConceptDescriptor createDescriptorForAsocijacijaReference() {
     return new ConceptDescriptorBuilder("MasterUML.structure.AsocijacijaReference", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x32a15a2c26b4bfd1L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x32a15a2c26b4bfd2L, "asocijacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3648296318821253074"))).references("asocijacija").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3648296318821253073")).create();
+  }
+  private static ConceptDescriptor createDescriptorForAsocijativnaKlasa() {
+    return new ConceptDescriptorBuilder("MasterUML.structure.AsocijativnaKlasa", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x32a15a2c26b0fb09L)).super_("MasterUML.structure.Asocijacija").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).parents("MasterUML.structure.Asocijacija").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x1b60372de7f796e5L, "asocijativnaKlasa", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307093096165"))).references("asocijativnaKlasa").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3648296318821006089")).create();
   }
   private static ConceptDescriptor createDescriptorForBidirekcionaAsocijacija() {
     return new ConceptDescriptorBuilder("MasterUML.structure.BidirekcionaAsocijacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b02ecddL)).super_("MasterUML.structure.Asocijacija").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).parents("MasterUML.structure.Asocijacija").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538819805")).create();
@@ -170,7 +181,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("MasterUML.structure.Klasa", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L)).super_("MasterUML.structure.ElementiDijagramaKlasa").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L)).parents("MasterUML.structure.ElementiDijagramaKlasa", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x7558a0229d99fc4cL, "enumTip", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "8455684370921552972")), new ConceptDescriptorBuilder.Prop(0x7558a0229d99fc4eL, "enumKardinalnost", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "8455684370921552974"))).properties("enumTip", "enumKardinalnost").childDescriptors(new ConceptDescriptorBuilder.Link(0x7558a0229d9be3dcL, "atributi", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL), true, true, false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "8455684370921677788")), new ConceptDescriptorBuilder.Link(0x2a5b1bd30de6be4fL, "veze", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L), true, true, false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3052063765758918223"))).children(new String[]{"atributi", "veze"}, new boolean[]{true, true}).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3818255834763981400")).create();
   }
   private static ConceptDescriptor createDescriptorForKolona() {
-    return new ConceptDescriptorBuilder("MasterUML.structure.Kolona", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL)).super_("MasterUML.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L)).parents("MasterUML.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x3ecc66e9a27f5f6eL, "primarniKljuc", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "4525104879240175470")), new ConceptDescriptorBuilder.Prop(0x3ecc66e9a29b68c2L, "tip", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "4525104879242012866"))).properties("primarniKljuc", "tip").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "5675761210166500172")).create();
+    return new ConceptDescriptorBuilder("MasterUML.structure.Kolona", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL)).super_("MasterUML.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L)).parents("MasterUML.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x3ecc66e9a27f5f6eL, "primarniKljuc", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "4525104879240175470")), new ConceptDescriptorBuilder.Prop(0x3ecc66e9a29b68c2L, "tip", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "4525104879242012866")), new ConceptDescriptorBuilder.Prop(0x1b60372de842719fL, "notnull", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307098001823"))).properties("primarniKljuc", "tip", "notnull").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "5675761210166500172")).create();
   }
   private static ConceptDescriptor createDescriptorForKompozicija() {
     return new ConceptDescriptorBuilder("MasterUML.structure.Kompozicija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L)).super_("MasterUML.structure.Asocijacija").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).parents("MasterUML.structure.Asocijacija").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "8455684370921552867")).create();
@@ -181,8 +192,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForOgranicenja() {
     return new ConceptDescriptorBuilder("MasterUML.structure.Ogranicenja", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL)).super_("MasterUML.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L)).parents("MasterUML.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "2718165685245542682")).create();
   }
-  private static ConceptDescriptor createDescriptorForPovratnAsocijacija() {
-    return new ConceptDescriptorBuilder("MasterUML.structure.PovratnAsocijacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x32a15a2c26b0fb09L)).super_("MasterUML.structure.Asocijacija").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).parents("MasterUML.structure.Asocijacija").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L)).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3648296318821006089")).create();
+  private static ConceptDescriptor createDescriptorForOgranicenjaPrimarniKljuc() {
+    return new ConceptDescriptorBuilder("MasterUML.structure.OgranicenjaPrimarniKljuc", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L)).super_("MasterUML.structure.Ogranicenja").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL)).parents("MasterUML.structure.Ogranicenja", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x1b60372de7d75b1bL, "naziv", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307090983707"))).properties("naziv").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307090072389")).create();
+  }
+  private static ConceptDescriptor createDescriptorForOgranicenjaSpoljniKljuc() {
+    return new ConceptDescriptorBuilder("MasterUML.structure.OgranicenjaSpoljniKljuc", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL)).super_("MasterUML.structure.Ogranicenja").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL)).parents("MasterUML.structure.Ogranicenja").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x1b60372de80e12cbL, "naziv", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307094569675"))).properties("naziv").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x1b60372de85d9252L, "referenca", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L), true, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307099779666"))).references("referenca").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307094569674")).create();
   }
   private static ConceptDescriptor createDescriptorForRealizacija() {
     return new ConceptDescriptorBuilder("MasterUML.structure.Realizacija", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b03137cL)).super_("MasterUML.structure.ElementiDijagramaKlasa").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L)).parents("MasterUML.structure.ElementiDijagramaKlasa").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b00ab87L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x7ed1894e5b0340b0L, "interfejs", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b0340adL), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538841264")), new ConceptDescriptorBuilder.Ref(0x7ed1894e5b0496a9L, "klasa", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L), false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538928809"))).references("interfejs", "klasa").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "9138236088538829692")).create();
@@ -194,7 +208,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return new ConceptDescriptorBuilder("MasterUML.structure.SpecifikacijaOperacije", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x2ed46639b4dbf0c3L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "3374434418840826051")).create();
   }
   private static ConceptDescriptor createDescriptorForTabela() {
-    return new ConceptDescriptorBuilder("MasterUML.structure.Tabela", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L)).super_("MasterUML.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L)).parents("MasterUML.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x4ec45abfc9ea5b4fL, "kolone", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL), true, true, false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "5675761210166500175"))).children(new String[]{"kolone"}, new boolean[]{true}).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "5675761210166500169")).create();
+    return new ConceptDescriptorBuilder("MasterUML.structure.Tabela", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L)).super_("MasterUML.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L)).parents("MasterUML.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x4ec45abfc9ea5b4fL, "kolone", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL), true, true, false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "5675761210166500175")), new ConceptDescriptorBuilder.Link(0x1b60372de7d06bf9L, "ogranicenjaPK", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L), true, true, false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307090529273")), new ConceptDescriptorBuilder.Link(0x1b60372de81147f5L, "ogranicenjaFK", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL), true, true, false, new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "1972637307094779893"))).children(new String[]{"kolone", "ogranicenjaPK", "ogranicenjaFK"}, new boolean[]{true, true, true}).sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "5675761210166500169")).create();
   }
   private static ConceptDescriptor createDescriptorForTipKolone() {
     return new ConceptDescriptorBuilder("MasterUML.structure.TipKolone", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x67e1eaca701478efL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x3ecc66e9a2972191L, "tip", new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "4525104879241732497"))).properties("tip").sourceNode(new SNodePointer("r:f02ca3d9-4278-41c9-81b3-6944b32389b2(MasterUML.structure)", "7485522210851158255")).create();

@@ -139,7 +139,7 @@
         <property role="3F0ifm" value="o-&gt;" />
       </node>
       <node concept="3F0A7n" id="3axmyKAEoMR" role="3EZMnx">
-        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnost" />
+        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnostPocetak" />
       </node>
       <node concept="1iCGBv" id="7VhykTr0yS5" role="3EZMnx">
         <ref role="1NtTu8" to="3aw6:7VhykTr0yRd" resolve="kraj" />
@@ -203,7 +203,7 @@
         <property role="3F0ifm" value="*--&gt;" />
       </node>
       <node concept="3F0A7n" id="3axmyKAEoNc" role="3EZMnx">
-        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnost" />
+        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnostPocetak" />
       </node>
       <node concept="1iCGBv" id="7VhykTr0GFn" role="3EZMnx">
         <ref role="1NtTu8" to="3aw6:7VhykTr0yRd" resolve="kraj" />
@@ -310,7 +310,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="3axmyKACO0_" role="3EZMnx">
-        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnost" />
+        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnostPocetak" />
       </node>
       <node concept="3F0ifn" id="3axmyKACO0A" role="3EZMnx">
         <property role="3F0ifm" value="---" />
@@ -325,16 +325,28 @@
         </node>
       </node>
       <node concept="3F0A7n" id="3axmyKACO0E" role="3EZMnx">
-        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnost" />
+        <ref role="1NtTu8" to="3aw6:1HwdMRC26yT" resolve="kardinalnostKraj" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="4V4mFZ9OLoP">
-    <ref role="1XX52x" to="3aw6:3axmyKAGfG9" resolve="PovratnAsocijacija" />
+    <ref role="1XX52x" to="3aw6:3axmyKAGfG9" resolve="AsocijativnaKlasa" />
     <node concept="3EZMnI" id="4V4mFZ9OLoZ" role="2wV5jI">
       <node concept="2iRfu4" id="4V4mFZ9OLp0" role="2iSdaV" />
       <node concept="3F0ifn" id="4V4mFZ9OLp1" role="3EZMnx">
-        <property role="3F0ifm" value="Povratna asocijacija:" />
+        <property role="3F0ifm" value="Asocijativna klasa:" />
+      </node>
+      <node concept="1iCGBv" id="1HwdMRBXTs0" role="3EZMnx">
+        <ref role="1NtTu8" to="3aw6:1HwdMRBXTr_" resolve="asocijativnaKlasa" />
+        <node concept="1sVBvm" id="1HwdMRBXTs2" role="1sWHZn">
+          <node concept="3F0A7n" id="1HwdMRBXTsm" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1HwdMRBXTsC" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="1iCGBv" id="4V4mFZ9OLp2" role="3EZMnx">
         <ref role="1NtTu8" to="3aw6:7VhykTr0yQU" resolve="pocetak" />
@@ -346,7 +358,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="4V4mFZ9OLp5" role="3EZMnx">
-        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnost" />
+        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnostPocetak" />
       </node>
       <node concept="3F0ifn" id="4V4mFZ9OLp6" role="3EZMnx">
         <property role="3F0ifm" value="---" />
@@ -361,7 +373,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="4V4mFZ9OLpa" role="3EZMnx">
-        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnost" />
+        <ref role="1NtTu8" to="3aw6:7VhykTr0EIG" resolve="kardinalnostPocetak" />
       </node>
     </node>
   </node>
@@ -390,6 +402,32 @@
           <node concept="2iRkQZ" id="5X0yFzqHY0m" role="2czzBx" />
         </node>
         <node concept="2iRkQZ" id="5X0yFzqHY0d" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1HwdMRBVYWt" role="3EZMnx">
+        <node concept="l2Vlx" id="1HwdMRBVYWu" role="2iSdaV" />
+        <node concept="3F0ifn" id="1HwdMRBPQFd" role="3EZMnx">
+          <property role="3F0ifm" value="Ogranicenja PK:" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1HwdMRBVoM6" role="3EZMnx">
+        <node concept="2iRkQZ" id="1HwdMRBVoM7" role="2iSdaV" />
+        <node concept="3F2HdR" id="1HwdMRBQvXD" role="3EZMnx">
+          <ref role="1NtTu8" to="3aw6:1HwdMRBO6JT" resolve="ogranicenjaPK" />
+          <node concept="2iRkQZ" id="1HwdMRBQvXF" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1HwdMRC4kwd" role="3EZMnx">
+        <node concept="l2Vlx" id="1HwdMRC4kwe" role="2iSdaV" />
+        <node concept="3F0ifn" id="1HwdMRC4kwf" role="3EZMnx">
+          <property role="3F0ifm" value="Ogranicenja FK:" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1HwdMRC4kwg" role="3EZMnx">
+        <node concept="2iRkQZ" id="1HwdMRC4kwh" role="2iSdaV" />
+        <node concept="3F2HdR" id="1HwdMRC4kwi" role="3EZMnx">
+          <ref role="1NtTu8" to="3aw6:1HwdMRC4kvP" resolve="ogranicenjaFK" />
+          <node concept="2iRkQZ" id="1HwdMRC4kwj" role="2czzBx" />
+        </node>
       </node>
       <node concept="3XFhqQ" id="3VcpIAyv3Mh" role="3EZMnx" />
     </node>
@@ -425,7 +463,9 @@
     <node concept="3EZMnI" id="3VcpIAytw59" role="2wV5jI">
       <node concept="2iRkQZ" id="3VcpIAytw5a" role="2iSdaV" />
       <node concept="3EZMnI" id="3VcpIAytw4J" role="3EZMnx">
-        <node concept="3XFhqQ" id="3VcpIAyvsXz" role="3EZMnx" />
+        <node concept="3F0A7n" id="1HwdMRChp_6" role="3EZMnx">
+          <ref role="1NtTu8" to="3aw6:3VcpIAyvPXI" resolve="primarniKljuc" />
+        </node>
         <node concept="3F0A7n" id="3VcpIAytw4Q" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
@@ -433,8 +473,52 @@
         <node concept="3F0A7n" id="3VcpIAyAQzj" role="3EZMnx">
           <ref role="1NtTu8" to="3aw6:3VcpIAyAQz2" resolve="tip" />
         </node>
-        <node concept="3F0A7n" id="3VcpIAywh3A" role="3EZMnx">
-          <ref role="1NtTu8" to="3aw6:3VcpIAyvPXI" resolve="primarniKljuc" />
+        <node concept="3F0A7n" id="1HwdMRCgB6J" role="3EZMnx">
+          <ref role="1NtTu8" to="3aw6:1HwdMRCgB6v" resolve="notnull" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1HwdMRBMACO">
+    <ref role="1XX52x" to="3aw6:1HwdMRBMnd5" resolve="OgranicenjaPrimarniKljuc" />
+    <node concept="3EZMnI" id="1HwdMRBMADg" role="2wV5jI">
+      <node concept="2iRfu4" id="1HwdMRBMADh" role="2iSdaV" />
+      <node concept="3EZMnI" id="1HwdMRBMACX" role="3EZMnx">
+        <node concept="2iRkQZ" id="1HwdMRBMAD0" role="2iSdaV" />
+        <node concept="3EZMnI" id="1HwdMRBWzOK" role="3EZMnx">
+          <node concept="3XFhqQ" id="1HwdMRCjTqo" role="3EZMnx" />
+          <node concept="l2Vlx" id="1HwdMRBWzOL" role="2iSdaV" />
+          <node concept="3F0A7n" id="1HwdMRBPPGD" role="3EZMnx">
+            <ref role="1NtTu8" to="3aw6:1HwdMRBPPGr" resolve="naziv" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1HwdMRC9D73">
+    <ref role="1XX52x" to="3aw6:1HwdMRC3xba" resolve="OgranicenjaSpoljniKljuc" />
+    <node concept="3EZMnI" id="1HwdMRC9D7h" role="2wV5jI">
+      <node concept="2iRfu4" id="1HwdMRC9D7i" role="2iSdaV" />
+      <node concept="3EZMnI" id="1HwdMRC9D75" role="3EZMnx">
+        <node concept="2iRkQZ" id="1HwdMRC9D76" role="2iSdaV" />
+        <node concept="3EZMnI" id="1HwdMRC9D77" role="3EZMnx">
+          <node concept="3XFhqQ" id="1HwdMRCj3Ps" role="3EZMnx" />
+          <node concept="l2Vlx" id="1HwdMRC9D79" role="2iSdaV" />
+          <node concept="3F0A7n" id="1HwdMRC9D7a" role="3EZMnx">
+            <ref role="1NtTu8" to="3aw6:1HwdMRC3xbb" resolve="naziv" />
+          </node>
+          <node concept="3F0ifn" id="1HwdMRCnp9o" role="3EZMnx">
+            <property role="3F0ifm" value="ref " />
+          </node>
+          <node concept="1iCGBv" id="1HwdMRCnp9y" role="3EZMnx">
+            <ref role="1NtTu8" to="3aw6:1HwdMRCnp9i" resolve="referenca" />
+            <node concept="1sVBvm" id="1HwdMRCnp9$" role="1sWHZn">
+              <node concept="3F0A7n" id="1HwdMRCnp9L" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

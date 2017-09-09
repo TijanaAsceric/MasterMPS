@@ -32,55 +32,65 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
           break;
         case 2:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new DijagramKlasa_Editor());
+            return Collections.<ConceptEditor>singletonList(new AsocijativnaKlasa_Editor());
           }
           break;
         case 3:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Interfejs_Editor());
+            return Collections.<ConceptEditor>singletonList(new DijagramKlasa_Editor());
           }
           break;
         case 4:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Klasa_Editor());
+            return Collections.<ConceptEditor>singletonList(new Interfejs_Editor());
           }
           break;
         case 5:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Kolona_Editor());
+            return Collections.<ConceptEditor>singletonList(new Klasa_Editor());
           }
           break;
         case 6:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Kompozicija_Editor());
+            return Collections.<ConceptEditor>singletonList(new Kolona_Editor());
           }
           break;
         case 7:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Nasledjivanje_Editor());
+            return Collections.<ConceptEditor>singletonList(new Kompozicija_Editor());
           }
           break;
         case 8:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PovratnAsocijacija_Editor());
+            return Collections.<ConceptEditor>singletonList(new Nasledjivanje_Editor());
           }
           break;
         case 9:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Realizacija_Editor());
+            return Collections.<ConceptEditor>singletonList(new OgranicenjaPrimarniKljuc_Editor());
           }
           break;
         case 10:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new SpecifikacijaAtributa_Editor());
+            return Collections.<ConceptEditor>singletonList(new OgranicenjaSpoljniKljuc_Editor());
           }
           break;
         case 11:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Tabela_Editor());
+            return Collections.<ConceptEditor>singletonList(new Realizacija_Editor());
           }
           break;
         case 12:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new SpecifikacijaAtributa_Editor());
+          }
+          break;
+        case 13:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Tabela_Editor());
+          }
+          break;
+        case 14:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new UMLProfilDijagramKlasa_Editor());
           }
@@ -101,5 +111,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L, "MasterUML.structure.Agregacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, "MasterUML.structure.Asocijacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, "MasterUML.structure.DijagramKlasa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b0340adL, "MasterUML.structure.Interfejs"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, "MasterUML.structure.Klasa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, "MasterUML.structure.Kolona"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L, "MasterUML.structure.Kompozicija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b031301L, "MasterUML.structure.Nasledjivanje"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x32a15a2c26b0fb09L, "MasterUML.structure.PovratnAsocijacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b03137cL, "MasterUML.structure.Realizacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, "MasterUML.structure.SpecifikacijaAtributa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, "MasterUML.structure.Tabela"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9dbe397L, "MasterUML.structure.UMLProfilDijagramKlasa"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbf6L, "MasterUML.structure.Agregacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, "MasterUML.structure.Asocijacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x32a15a2c26b0fb09L, "MasterUML.structure.AsocijativnaKlasa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, "MasterUML.structure.DijagramKlasa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b0340adL, "MasterUML.structure.Interfejs"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, "MasterUML.structure.Klasa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, "MasterUML.structure.Kolona"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fbe3L, "MasterUML.structure.Kompozicija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b031301L, "MasterUML.structure.Nasledjivanje"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, "MasterUML.structure.OgranicenjaSpoljniKljuc"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b03137cL, "MasterUML.structure.Realizacija"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, "MasterUML.structure.SpecifikacijaAtributa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, "MasterUML.structure.Tabela"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9dbe397L, "MasterUML.structure.UMLProfilDijagramKlasa"));
 }

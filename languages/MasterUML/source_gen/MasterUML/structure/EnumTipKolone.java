@@ -7,7 +7,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum EnumTipKolone {
-  VARCHAR("VARCHAR", "varchar"),
+  VARCHAR_255_("VARCHAR(255)", "varchar"),
   BOOLEAN("BOOLEAN", "boolean"),
   INTEGER("INTEGER", "int"),
   DOUBLE("DOUBLE", "double"),
@@ -31,7 +31,7 @@ public enum EnumTipKolone {
   }
   public static List<EnumTipKolone> getConstants() {
     List<EnumTipKolone> list = ListSequence.fromList(new LinkedList<EnumTipKolone>());
-    ListSequence.fromList(list).addElement(EnumTipKolone.VARCHAR);
+    ListSequence.fromList(list).addElement(EnumTipKolone.VARCHAR_255_);
     ListSequence.fromList(list).addElement(EnumTipKolone.BOOLEAN);
     ListSequence.fromList(list).addElement(EnumTipKolone.INTEGER);
     ListSequence.fromList(list).addElement(EnumTipKolone.DOUBLE);
@@ -46,8 +46,8 @@ public enum EnumTipKolone {
     if (value == null) {
       return EnumTipKolone.getDefault();
     }
-    if (value.equals(EnumTipKolone.VARCHAR.getValueAsString())) {
-      return EnumTipKolone.VARCHAR;
+    if (value.equals(EnumTipKolone.VARCHAR_255_.getValueAsString())) {
+      return EnumTipKolone.VARCHAR_255_;
     }
     if (value.equals(EnumTipKolone.BOOLEAN.getValueAsString())) {
       return EnumTipKolone.BOOLEAN;

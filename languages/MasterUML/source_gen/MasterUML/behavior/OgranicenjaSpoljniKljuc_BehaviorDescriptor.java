@@ -9,7 +9,7 @@ package MasterUML.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class PovratnAsocijacija_BehaviorDescriptor {
+public class OgranicenjaSpoljniKljuc_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

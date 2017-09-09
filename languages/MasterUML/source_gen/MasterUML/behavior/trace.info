@@ -10,6 +10,9 @@
     <file name="Asocijacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Asocijacija_BehaviorDescriptor" />
     </file>
+    <file name="AsocijativnaKlasa_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.AsocijativnaKlasa_BehaviorDescriptor" />
+    </file>
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="MasterUML.behavior.BehaviorAspectDescriptor" />
     </file>
@@ -43,11 +46,14 @@
     <file name="Nasledjivanje_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Nasledjivanje_BehaviorDescriptor" />
     </file>
+    <file name="OgranicenjaPrimarniKljuc_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.OgranicenjaPrimarniKljuc_BehaviorDescriptor" />
+    </file>
+    <file name="OgranicenjaSpoljniKljuc_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="MasterUML.behavior.OgranicenjaSpoljniKljuc_BehaviorDescriptor" />
+    </file>
     <file name="Ogranicenja_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Ogranicenja_BehaviorDescriptor" />
-    </file>
-    <file name="PovratnAsocijacija_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.PovratnAsocijacija_BehaviorDescriptor" />
     </file>
     <file name="Realizacija_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Realizacija_BehaviorDescriptor" />

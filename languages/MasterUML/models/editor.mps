@@ -435,8 +435,8 @@
   <node concept="24kQdi" id="3VcpIAyoB_y">
     <ref role="1XX52x" to="3aw6:4V4mFZ9QYen" resolve="UMLProfilDijagramKlasa" />
     <node concept="3EZMnI" id="3VcpIAysGJK" role="2wV5jI">
-      <node concept="3F0ifn" id="3VcpIAysGK8" role="3EZMnx">
-        <property role="3F0ifm" value="UML Profil Dijagrama Klasa:" />
+      <node concept="3F0A7n" id="1HwdMRDuINU" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="1iCGBv" id="3VcpIAysGKq" role="3EZMnx">
         <ref role="1NtTu8" to="3aw6:4V4mFZ9Z93Q" resolve="dijKlasa" />
@@ -490,6 +490,18 @@
           <node concept="l2Vlx" id="1HwdMRBWzOL" role="2iSdaV" />
           <node concept="3F0A7n" id="1HwdMRBPPGD" role="3EZMnx">
             <ref role="1NtTu8" to="3aw6:1HwdMRBPPGr" resolve="naziv" />
+          </node>
+          <node concept="3F0ifn" id="52OZbtUcv3" role="3EZMnx">
+            <property role="3F0ifm" value="ref" />
+          </node>
+          <node concept="1iCGBv" id="52OZbtQbiG" role="3EZMnx">
+            <ref role="1NtTu8" to="3aw6:52OZbtQbis" resolve="referenca" />
+            <node concept="1sVBvm" id="52OZbtQbiI" role="1sWHZn">
+              <node concept="3F0A7n" id="52OZbtQbiV" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

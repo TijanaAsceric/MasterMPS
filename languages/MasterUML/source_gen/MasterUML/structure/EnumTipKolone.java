@@ -7,7 +7,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum EnumTipKolone {
-  VARCHAR_255_("VARCHAR(255)", "varchar"),
+  VARCHAR_255_("VARCHAR(255)", "VARCHAR(255)"),
   BOOLEAN("BOOLEAN", "boolean"),
   INTEGER("INTEGER", "int"),
   DOUBLE("DOUBLE", "double"),

@@ -456,7 +456,7 @@
     <ref role="Qgau1" node="3VcpIAyxDBG" />
     <node concept="M4N5e" id="3VcpIAyxDBF" role="M5hS2">
       <property role="1uS6qo" value="VARCHAR(255)" />
-      <property role="1uS6qv" value="varchar" />
+      <property role="1uS6qv" value="VARCHAR(255)" />
     </node>
     <node concept="M4N5e" id="3VcpIAyxDBG" role="M5hS2">
       <property role="1uS6qv" value="boolean" />
@@ -498,6 +498,12 @@
       <property role="IQ2nx" value="1972637307090983707" />
       <property role="TrG5h" value="naziv" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="52OZbtQbis" role="1TKVEi">
+      <property role="IQ2ns" value="90867982558344348" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referenca" />
+      <ref role="20lvS9" node="4V4mFZ9U_H9" resolve="Tabela" />
     </node>
   </node>
   <node concept="1TIwiD" id="1HwdMRC3xba">

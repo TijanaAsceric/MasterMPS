@@ -31,7 +31,7 @@ public class nf_ElementiUMLProfilDijagramKlasa {
           SNode kolona = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, "MasterUML.structure.Kolona"));
           SPropertyOperations.set(kolona, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(atr, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
           if (SPropertyOperations.hasValue(atr, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string", "string")) {
-            SPropertyOperations.set(kolona, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, 0x3ecc66e9a29b68c2L, "tip"), "varchar");
+            SPropertyOperations.set(kolona, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, 0x3ecc66e9a29b68c2L, "tip"), "VARCHAR(255)");
           } else {
             SPropertyOperations.set(kolona, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, 0x3ecc66e9a29b68c2L, "tip"), SPropertyOperations.getString_def(atr, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d9be39eL, 0x7558a0229d9c795bL, "tip"), "string"));
           }

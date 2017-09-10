@@ -11,6 +11,9 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.InlineCellProvider;
 
 public class OgranicenjaPrimarniKljuc_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -34,6 +37,8 @@ public class OgranicenjaPrimarniKljuc_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_7vmpac_a0a");
     editorCell.addEditorCell(this.createIndentCell_7vmpac_a0a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_7vmpac_b0a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_7vmpac_c0a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_7vmpac_d0a0(editorContext, node));
     return editorCell;
   }
   private EditorCell createIndentCell_7vmpac_a0a0(EditorContext editorContext, SNode node) {
@@ -54,5 +59,57 @@ public class OgranicenjaPrimarniKljuc_Editor extends DefaultNodeEditor {
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
     return editorCell;
+  }
+  private EditorCell createConstant_7vmpac_c0a0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "ref");
+    editorCell.setCellId("Constant_7vmpac_c0a0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefCell_7vmpac_d0a0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("referenca");
+    provider.setNoTargetText("<no referenca>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new OgranicenjaPrimarniKljuc_Editor._Inline_7vmpac_a3a0a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("referenca");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
+    return editorCell;
+  }
+  public static class _Inline_7vmpac_a3a0a extends InlineCellProvider {
+    public _Inline_7vmpac_a3a0a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_7vmpac_a0d0a0(editorContext, node);
+    }
+    private EditorCell createProperty_7vmpac_a0d0a0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name");
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+      } else
+      return editorCell;
+    }
   }
 }

@@ -15,7 +15,7 @@ public class Kolona_TextGen extends TextGenDescriptorBase {
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(" ");
     tgs.append(SPropertyOperations.getString_def(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, 0x3ecc66e9a29b68c2L, "tip"), "boolean"));
-    tgs.append(" ");
     tgs.append(SPropertyOperations.getString_def(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, 0x1b60372de842719fL, "notnull"), null));
+    tgs.append(",");
   }
 }

@@ -51,7 +51,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Sva ogranicenja";
+      return "Generisi sva ogranicenja";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
@@ -71,7 +71,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
         })) {
           ListSequence.fromList(kolPrimarniKljuc).addElement(kol);
           SNode ogranPK = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"));
-          SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv"), SPropertyOperations.getString(kol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(kol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
           ListSequence.fromList(ogPKlist).addElement(ogranPK);
 
         }
@@ -96,7 +96,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
                     }
                   })) {
                     SNode ogranPK = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"));
-                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
                     ListSequence.fromList(ogPKlist).addElement(ogranPK);
                     if (!(ListSequence.fromList(SLinkOperations.getChildren(tab, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x4ec45abfc9ea5b4fL, "kolone"))).contains(nodeKol))) {
                       SNode nodePKkolona = SNodeOperations.copyNode(nodeKol);
@@ -125,7 +125,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
                     }
                   })) {
                     SNode ogranPK = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"));
-                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
                     ListSequence.fromList(ogPKlist).addElement(ogranPK);
                     if (!(ListSequence.fromList(SLinkOperations.getChildren(tab, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x4ec45abfc9ea5b4fL, "kolone"))).contains(nodeKol))) {
                       SNode nodePKkolona = SNodeOperations.copyNode(nodeKol);
@@ -155,7 +155,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
                     }
                   })) {
                     SNode ogranPK = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"));
-                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
                     ListSequence.fromList(ogPKlist).addElement(ogranPK);
                     if (!(ListSequence.fromList(SLinkOperations.getChildren(tab, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x4ec45abfc9ea5b4fL, "kolone"))).contains(nodeKol))) {
                       SNode nodePKkolona = SNodeOperations.copyNode(nodeKol);
@@ -185,7 +185,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
                     }
                   })) {
                     SNode ogranPK = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"));
-                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
                     ListSequence.fromList(ogPKlist).addElement(ogranPK);
                     if (!(ListSequence.fromList(SLinkOperations.getChildren(tab, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x4ec45abfc9ea5b4fL, "kolone"))).contains(nodeKol))) {
                       SNode nodePKkolona = SNodeOperations.copyNode(nodeKol);
@@ -202,7 +202,7 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
                     }
                   })) {
                     SNode ogranPK = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, "MasterUML.structure.OgranicenjaPrimarniKljuc"));
-                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+                    SPropertyOperations.set(ogranPK, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(nodeKol, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
                     ListSequence.fromList(ogPKlist).addElement(ogranPK);
                     if (!(ListSequence.fromList(SLinkOperations.getChildren(tab, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x4ec45abfc9ea5b4fL, "kolone"))).contains(nodeKol))) {
                       SNode nodePKkolona = SNodeOperations.copyNode(nodeKol);
@@ -240,9 +240,9 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
               if (SPropertyOperations.hasValue(SLinkOperations.getTarget(asoc, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(tabelaSpoljni, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")))) {
                 for (SNode pktabele : ListSequence.fromList(SLinkOperations.getChildren(tabelaSpoljni, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK")))) {
                   SNode spoljniKljuc = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, "MasterUML.structure.OgranicenjaSpoljniKljuc"));
-                  SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de80e12cbL, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")));
+                  SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
                   if (SPropertyOperations.hasValue(SLinkOperations.getTarget(asoc, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(tabelaSpoljni, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")))) {
-                    SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de80e12cbL, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")) + "FK");
+                    SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")) + "FK");
                   }
                   SLinkOperations.setTarget(spoljniKljuc, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de85d9252L, "referenca"), tabelaSpoljni);
                   ListSequence.fromList(spoljniKljucevi).addElement(spoljniKljuc);
@@ -260,9 +260,9 @@ public final class SvaOgranicenja_Intention extends IntentionDescriptorBase impl
               if (SPropertyOperations.hasValue(SLinkOperations.getTarget(asoc, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(tabelaSpoljni, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")))) {
                 for (SNode pktabele : ListSequence.fromList(SLinkOperations.getChildren(tabelaSpoljni, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK")))) {
                   SNode spoljniKljuc = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, "MasterUML.structure.OgranicenjaSpoljniKljuc"));
-                  SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de80e12cbL, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")));
+                  SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
                   if (SPropertyOperations.hasValue(SLinkOperations.getTarget(asoc, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dcdL, "kraj")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(tabelaSpoljni, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")))) {
-                    SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de80e12cbL, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")) + "FK");
+                    SPropertyOperations.set(spoljniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv"), SPropertyOperations.getString(pktabele, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")) + "FK");
                   }
                   SLinkOperations.setTarget(spoljniKljuc, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de85d9252L, "referenca"), tabelaSpoljni);
                   ListSequence.fromList(spoljniKljucevi).addElement(spoljniKljuc);

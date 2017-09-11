@@ -17,7 +17,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_DijagramKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ElementiDijagramaKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ElementiUMLProfila = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ElementiVeze = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Interfejs = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Klasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kolona = new ConceptPresentationBuilder().create();
@@ -56,36 +55,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 7:
         return props_ElementiUMLProfila;
       case 8:
-        return props_ElementiVeze;
-      case 9:
         return props_Interfejs;
-      case 10:
+      case 9:
         return props_Klasa;
-      case 11:
+      case 10:
         return props_Kolona;
-      case 12:
+      case 11:
         return props_Kompozicija;
-      case 13:
+      case 12:
         return props_Nasledjivanje;
-      case 14:
+      case 13:
         return props_Ogranicenja;
-      case 15:
+      case 14:
         return props_OgranicenjaPrimarniKljuc;
-      case 16:
+      case 15:
         return props_OgranicenjaSpoljniKljuc;
-      case 17:
+      case 16:
         return props_Realizacija;
-      case 18:
+      case 17:
         return props_SpecifikacijaAtributa;
-      case 19:
+      case 18:
         return props_SpecifikacijaOperacije;
-      case 20:
+      case 19:
         return props_Tabela;
-      case 21:
+      case 20:
         return props_TipKolone;
-      case 22:
+      case 21:
         return props_UMLProfilDijagramKlasa;
-      case 23:
+      case 22:
         return props_UnidirekcionaAsocijacija;
     }
     throw new IllegalStateException("Unknown concept " + c);

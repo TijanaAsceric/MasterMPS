@@ -28,9 +28,6 @@
     <file name="ElementiUMLProfila_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.ElementiUMLProfila_BehaviorDescriptor" />
     </file>
-    <file name="ElementiVeze_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="MasterUML.behavior.ElementiVeze_BehaviorDescriptor" />
-    </file>
     <file name="Interfejs_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="MasterUML.behavior.Interfejs_BehaviorDescriptor" />
     </file>

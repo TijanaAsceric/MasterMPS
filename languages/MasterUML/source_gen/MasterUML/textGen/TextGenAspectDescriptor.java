@@ -75,7 +75,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     return "txt";
   }
   private static String getFileExtension_UMLProfilDijagramKlasa(SNode node) {
-    return ".txt";
+    return "sql";
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
     HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();

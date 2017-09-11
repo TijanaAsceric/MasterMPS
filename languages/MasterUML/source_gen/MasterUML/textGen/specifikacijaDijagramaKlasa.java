@@ -324,14 +324,6 @@ public abstract class specifikacijaDijagramaKlasa extends SpecifikacijaAtributaJ
   protected static void proveriVezeKlase(SNode klasa, final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     specifikacijaDijagramaKlasa.specKlasu(klasa, ctx);
-    for (SNode veza : ListSequence.fromList(SLinkOperations.getChildren(klasa, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x34fd2b73a4ab7258L, 0x2a5b1bd30de6be4fL, "veze")))) {
-      {
-        final SNode nasledjivanje = veza;
-        if (SNodeOperations.isInstanceOf(nasledjivanje, MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7ed1894e5b031301L, "MasterUML.structure.Nasledjivanje"))) {
-          specifikacijaDijagramaKlasa.doPrimarniKljuc(SLinkOperations.getTarget(veza, MetaAdapterFactory.getReferenceLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7e0ff169347d17a4L, 0x7ed1894e5b022dbaL, "pocetak")), ctx);
-        }
-      }
-    }
     tgs.append(")");
     tgs.newLine();
   }

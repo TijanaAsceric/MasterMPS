@@ -66,25 +66,8 @@
       <property role="IQ2ns" value="8455684370921677788" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="atributi" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7loC2atAYeu" resolve="SpecifikacijaAtributa" />
-    </node>
-    <node concept="1TJgyj" id="2Dr6XcdTFTf" role="1TKVEi">
-      <property role="IQ2ns" value="3052063765758918223" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="veze" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7SfWm$Ovhu$" resolve="Asocijacija" />
-    </node>
-    <node concept="1TJgyi" id="7loC2atAvLc" role="1TKVEl">
-      <property role="IQ2nx" value="8455684370921552972" />
-      <property role="TrG5h" value="enumTip" />
-      <ref role="AX2Wp" node="6QHSR_7PJnl" resolve="EnumPredefinisaniTip" />
-    </node>
-    <node concept="1TJgyi" id="7loC2atAvLe" role="1TKVEl">
-      <property role="IQ2nx" value="8455684370921552974" />
-      <property role="TrG5h" value="enumKardinalnost" />
-      <ref role="AX2Wp" node="6QHSR_7PJnD" resolve="EnumKardinalnosti" />
     </node>
   </node>
   <node concept="AxPO7" id="6QHSR_7PJnl">
@@ -109,10 +92,6 @@
     <node concept="M4N5e" id="6QHSR_7PJnz" role="M5hS2">
       <property role="1uS6qv" value="date" />
       <property role="1uS6qo" value="date" />
-    </node>
-    <node concept="M4N5e" id="4pQC3QwLFVq" role="M5hS2">
-      <property role="1uS6qo" value="autoinkrement" />
-      <property role="1uS6qv" value="autoincrement" />
     </node>
   </node>
   <node concept="AxPO7" id="6QHSR_7PJnD">
@@ -201,7 +180,7 @@
       <property role="IQ2ns" value="9138236088538672009" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elementiDijagramaKlasa" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7VhykTr0aI7" resolve="ElementiDijagramaKlasa" />
     </node>
     <node concept="PrWs8" id="2Dr6XcdUzlf" role="PzmwI">
@@ -232,14 +211,6 @@
       <property role="IQ2nx" value="4746215806401172261" />
       <property role="TrG5h" value="primarniKljuc" />
       <ref role="AX2Wp" node="47tWy4vSHcD" resolve="EnumPrimarniKljuc" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7VhykTqZIff">
-    <property role="EcuMT" value="9138236088538555343" />
-    <property role="TrG5h" value="ElementiVeze" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7VhykTqZIfg" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7VhykTr0aI7">
@@ -474,10 +445,6 @@
       <property role="1uS6qv" value="date" />
       <property role="1uS6qo" value="DATE" />
     </node>
-    <node concept="M4N5e" id="3VcpIAyxDBK" role="M5hS2">
-      <property role="1uS6qo" value="AUTOINCREMENT" />
-      <property role="1uS6qv" value="autoincrement" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2mSRkCdHS4q">
     <property role="EcuMT" value="2718165685245542682" />
@@ -486,6 +453,11 @@
     <node concept="PrWs8" id="2mSRkCdHS4r" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="52OZbusyg$" role="1TKVEl">
+      <property role="IQ2nx" value="90867982568399908" />
+      <property role="TrG5h" value="naziv" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1HwdMRBMnd5">
     <property role="EcuMT" value="1972637307090072389" />
@@ -493,11 +465,6 @@
     <ref role="1TJDcQ" node="2mSRkCdHS4q" resolve="Ogranicenja" />
     <node concept="PrWs8" id="1HwdMRBMnd6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="1HwdMRBPPGr" role="1TKVEl">
-      <property role="IQ2nx" value="1972637307090983707" />
-      <property role="TrG5h" value="naziv" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="52OZbtQbis" role="1TKVEi">
       <property role="IQ2ns" value="90867982558344348" />
@@ -510,11 +477,6 @@
     <property role="EcuMT" value="1972637307094569674" />
     <property role="TrG5h" value="OgranicenjaSpoljniKljuc" />
     <ref role="1TJDcQ" node="2mSRkCdHS4q" resolve="Ogranicenja" />
-    <node concept="1TJgyi" id="1HwdMRC3xbb" role="1TKVEl">
-      <property role="IQ2nx" value="1972637307094569675" />
-      <property role="TrG5h" value="naziv" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="1HwdMRCnp9i" role="1TKVEi">
       <property role="IQ2ns" value="1972637307099779666" />
       <property role="20lmBu" value="reference" />

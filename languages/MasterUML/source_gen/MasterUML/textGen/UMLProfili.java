@@ -61,7 +61,7 @@ public abstract class UMLProfili {
     tgs.append(SPropertyOperations.getString(tabela, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     tgs.append(" PRIMARY KEY (");
     for (SNode primarniKljuc : ListSequence.fromList(SLinkOperations.getChildren(tabela, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK")))) {
-      tgs.append(SPropertyOperations.getString(primarniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")));
+      tgs.append(SPropertyOperations.getString(primarniKljuc, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
       if (ListSequence.fromList(SLinkOperations.getChildren(tabela, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK"))).indexOf(primarniKljuc) != ListSequence.fromList(SLinkOperations.getChildren(tabela, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK"))).count() - 1) {
         tgs.append(",");
       } else {
@@ -105,27 +105,24 @@ public abstract class UMLProfili {
         ListSequence.fromList(spoljniKljucKol).addElement(nodeSpoljnKljuc);
       }
       for (SNode spoljni : ListSequence.fromList(spoljniKljucKol)) {
-        tgs.append(SPropertyOperations.getString(spoljni, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de80e12caL, 0x1b60372de80e12cbL, "naziv")));
+        tgs.append(SPropertyOperations.getString(spoljni, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
         if (ListSequence.fromList(spoljniKljucKol).indexOf(spoljni) != ListSequence.fromList(spoljniKljucKol).count() - 1) {
           tgs.append(",");
         } else {
           tgs.append(")");
         }
-
       }
 
       tgs.append(" REFERENCES ");
       tgs.append(SPropertyOperations.getString(spoljniKljucRef, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       tgs.append("(");
       for (SNode sp : ListSequence.fromList(SLinkOperations.getChildren(spoljniKljucRef, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK")))) {
-        tgs.append(SPropertyOperations.getString(sp, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")));
+        tgs.append(SPropertyOperations.getString(sp, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
         if (ListSequence.fromList(SLinkOperations.getChildren(spoljniKljucRef, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK"))).indexOf(sp) != ListSequence.fromList(SLinkOperations.getChildren(spoljniKljucRef, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK"))).count() - 1) {
           tgs.append(",");
         } else {
           tgs.append(")");
         }
-
-
       }
 
     }
@@ -195,29 +192,25 @@ public abstract class UMLProfili {
         ListSequence.fromList(spoljniKljucKol).addElement(nodPK);
       }
       for (SNode spoljni : ListSequence.fromList(spoljniKljucKol)) {
-        tgs.append(SPropertyOperations.getString(spoljni, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")));
+        tgs.append(SPropertyOperations.getString(spoljni, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
         if (ListSequence.fromList(spoljniKljucKol).indexOf(spoljni) != ListSequence.fromList(spoljniKljucKol).count() - 1) {
           tgs.append(",");
         } else {
           tgs.append(")");
         }
-
       }
 
       tgs.append(" REFERENCES ");
       tgs.append(SPropertyOperations.getString(spoljniKljucRef, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       tgs.append("(");
       for (SNode sp : ListSequence.fromList(SLinkOperations.getChildren(spoljniKljucRef, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK")))) {
-        tgs.append(SPropertyOperations.getString(sp, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x1b60372de7c97345L, 0x1b60372de7d75b1bL, "naziv")));
+        tgs.append(SPropertyOperations.getString(sp, MetaAdapterFactory.getProperty(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x25b8dd4a0db7811aL, 0x142d3f2de722424L, "naziv")));
         if (ListSequence.fromList(SLinkOperations.getChildren(spoljniKljucRef, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK"))).indexOf(sp) != ListSequence.fromList(SLinkOperations.getChildren(spoljniKljucRef, MetaAdapterFactory.getContainmentLink(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b49L, 0x1b60372de7d06bf9L, "ogranicenjaPK"))).count() - 1) {
           tgs.append(",");
         } else {
           tgs.append(");");
         }
-
-
       }
-
     }
   }
 }

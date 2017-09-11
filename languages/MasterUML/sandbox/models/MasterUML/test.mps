@@ -14,6 +14,7 @@
       <concept id="5675761210166500172" name="MasterUML.structure.Kolona" flags="ng" index="27bw7N">
         <property id="4525104879242012866" name="tip" index="2slKSF" />
         <property id="4525104879240175470" name="primarniKljuc" index="2sGNA7" />
+        <property id="1972637307098001823" name="notnull" index="3N8$qM" />
       </concept>
       <concept id="5675761210166500169" name="MasterUML.structure.Tabela" flags="ng" index="27bw7Q">
         <child id="5675761210166500175" name="kolone" index="27bw7K" />
@@ -27,6 +28,9 @@
         <reference id="1972637307093096165" name="asocijativnaKlasa" index="3W_U78" />
       </concept>
       <concept id="9138236088538829569" name="MasterUML.structure.Nasledjivanje" flags="ng" index="_ODDf" />
+      <concept id="2718165685245542682" name="MasterUML.structure.Ogranicenja" flags="ng" index="C3PLg">
+        <property id="90867982568399908" name="naziv" index="3vcfvm" />
+      </concept>
       <concept id="9083744407584053156" name="MasterUML.structure.Asocijacija" flags="ng" index="1asIrd">
         <property id="9138236088538803116" name="kardinalnostPocetak" index="_OMby" />
         <property id="1972637307094198457" name="kardinalnostKraj" index="3Nq5Yk" />
@@ -43,11 +47,9 @@
         <property id="8455684370921716059" name="tip" index="3CLd_T" />
       </concept>
       <concept id="1972637307094569674" name="MasterUML.structure.OgranicenjaSpoljniKljuc" flags="ng" index="3NrynB">
-        <property id="1972637307094569675" name="naziv" index="3NrynA" />
         <reference id="1972637307099779666" name="referenca" index="3NfqlZ" />
       </concept>
       <concept id="1972637307090072389" name="MasterUML.structure.OgranicenjaPrimarniKljuc" flags="ng" index="3WEkhC">
-        <property id="1972637307090983707" name="naziv" index="3WHQKQ" />
         <reference id="90867982558344348" name="referenca" index="3sAAtI" />
       </concept>
     </language>
@@ -58,7 +60,7 @@
     </language>
   </registry>
   <node concept="3CKlQW" id="2mSRkCdHu8i">
-    <property role="TrG5h" value="PrimerProba" />
+    <property role="TrG5h" value="AdvokatskaKancelarija" />
     <node concept="2gl_$F" id="2mSRkCdAyet" role="_Oib7">
       <property role="TrG5h" value="Klijent" />
       <node concept="3CKOeW" id="2mSRkCdAyev" role="3CKOfY">
@@ -77,10 +79,11 @@
       <node concept="3CKOeW" id="2mSRkCdBd3N" role="3CKOfY">
         <property role="TrG5h" value="zaposleniID" />
         <property role="3CLd_T" value="int" />
-        <property role="1ufM44" value="PK" />
+        <property role="1ufM44" value=" " />
       </node>
       <node concept="3CKOeW" id="2mSRkCdBd3P" role="3CKOfY">
         <property role="TrG5h" value="imeZaposlenog" />
+        <property role="2gBdzK" value="privatni" />
       </node>
       <node concept="3CKOeW" id="2mSRkCdBd3S" role="3CKOfY">
         <property role="TrG5h" value="prezimeZaposlenog" />
@@ -138,7 +141,7 @@
       <node concept="3CKOeW" id="2mSRkCdBd9t" role="3CKOfY">
         <property role="TrG5h" value="rocisteID" />
         <property role="3CLd_T" value="int" />
-        <property role="1ufM44" value="PK" />
+        <property role="1ufM44" value=" " />
       </node>
       <node concept="3CKOeW" id="2mSRkCdBd9v" role="3CKOfY">
         <property role="TrG5h" value="datumRocista" />
@@ -154,7 +157,7 @@
       <node concept="3CKOeW" id="2mSRkCdBda_" role="3CKOfY">
         <property role="TrG5h" value="rbrID" />
         <property role="3CLd_T" value="int" />
-        <property role="1ufM44" value="PK" />
+        <property role="1ufM44" value=" " />
       </node>
       <node concept="3CKOeW" id="2mSRkCdBdaB" role="3CKOfY">
         <property role="TrG5h" value="iznos" />
@@ -230,272 +233,252 @@
       <ref role="_OUjO" node="2mSRkCdAyet" resolve="Klijent" />
       <ref role="_OUi3" node="2mSRkCdBd6R" resolve="Mesto" />
     </node>
-    <node concept="1asIrd" id="1HwdMRCeMLJ" role="_Oib7">
-      <property role="3Nq5Yk" value="0..1" />
-      <ref role="_OUi3" node="2mSRkCdBd3G" resolve="Zaposleni" />
-      <ref role="_OUjO" node="2mSRkCdBd3G" resolve="Zaposleni" />
-    </node>
   </node>
   <node concept="277V$C" id="1HwdMRCz3FS">
     <property role="TrG5h" value="SpecifikacijaTabela" />
-    <ref role="27ecD9" node="2mSRkCdHu8i" resolve="PrimerProba" />
-    <node concept="27bw7Q" id="1HwdMRDzLm8" role="2sF7sO">
+    <ref role="27ecD9" node="2mSRkCdHu8i" resolve="AdvokatskaKancelarija" />
+    <node concept="27bw7Q" id="52OZbuD5HA" role="2sF7sO">
       <property role="TrG5h" value="Klijent" />
-      <node concept="27bw7N" id="1HwdMRDzLm9" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HB" role="27bw7K">
         <property role="TrG5h" value="klijentID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLma" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HC" role="27bw7K">
         <property role="TrG5h" value="imeKlijenta" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmb" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HD" role="27bw7K">
         <property role="TrG5h" value="prezimeKlijenta" />
         <property role="2slKSF" value="VARCHAR(255)" />
+        <property role="3N8$qM" value="NOT NULL" />
       </node>
-      <node concept="27bw7N" id="52OZbtMDFP" role="27bw7K">
-        <property role="TrG5h" value="mestoID" />
-        <property role="2slKSF" value="int" />
-      </node>
-      <node concept="3NrynB" id="52OZbtMDFO" role="3Nsn3o">
-        <property role="3NrynA" value="mestoID" />
-        <ref role="3NfqlZ" node="1HwdMRDzLmm" resolve="Mesto" />
-      </node>
-      <node concept="3WEkhC" id="52OZbtVVO8" role="3WG5Nk">
-        <property role="3WHQKQ" value="klijentID" />
-        <ref role="3sAAtI" node="1HwdMRDzLm8" resolve="Klijent" />
+      <node concept="3WEkhC" id="52OZbuF8Yx" role="3WG5Nk">
+        <property role="3vcfvm" value="klijentID" />
+        <ref role="3sAAtI" node="52OZbuD5HA" resolve="Klijent" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmc" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HE" role="2sF7sO">
       <property role="TrG5h" value="Zaposleni" />
-      <node concept="27bw7N" id="1HwdMRDzLmd" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HF" role="27bw7K">
         <property role="TrG5h" value="zaposleniID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLme" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HG" role="27bw7K">
         <property role="TrG5h" value="imeZaposlenog" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmf" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HH" role="27bw7K">
         <property role="TrG5h" value="prezimeZaposlenog" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmg" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HI" role="27bw7K">
         <property role="TrG5h" value="email" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmh" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HJ" role="27bw7K">
         <property role="TrG5h" value="datumZaposlenja" />
         <property role="2slKSF" value="date" />
       </node>
-      <node concept="3WEkhC" id="52OZbtVVQ6" role="3WG5Nk">
-        <property role="3WHQKQ" value="zaposleniID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmc" resolve="Zaposleni" />
+      <node concept="3WEkhC" id="52OZbuF8Yz" role="3WG5Nk">
+        <property role="3vcfvm" value="zaposleniID" />
+        <ref role="3sAAtI" node="52OZbuD5HE" resolve="Zaposleni" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmi" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HK" role="2sF7sO">
       <property role="TrG5h" value="Advokat" />
-      <node concept="27bw7N" id="1HwdMRDzLmj" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HL" role="27bw7K">
         <property role="TrG5h" value="datumPravosudnogIspita" />
         <property role="2slKSF" value="date" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLoq" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8YA" role="27bw7K">
         <property role="TrG5h" value="zaposleniID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="3WEkhC" id="52OZbtVVNZ" role="3WG5Nk">
-        <property role="3WHQKQ" value="zaposleniID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmc" resolve="Zaposleni" />
+      <node concept="3WEkhC" id="52OZbuF8Y_" role="3WG5Nk">
+        <property role="3vcfvm" value="zaposleniID" />
+        <ref role="3sAAtI" node="52OZbuD5HE" resolve="Zaposleni" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmk" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HM" role="2sF7sO">
       <property role="TrG5h" value="Pripravnik" />
-      <node concept="27bw7N" id="1HwdMRDzLml" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HN" role="27bw7K">
         <property role="TrG5h" value="brojPreostalihIspita" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLov" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8YF" role="27bw7K">
         <property role="TrG5h" value="zaposleniID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="3WEkhC" id="52OZbtVVQ8" role="3WG5Nk">
-        <property role="3WHQKQ" value="zaposleniID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmc" resolve="Zaposleni" />
+      <node concept="3WEkhC" id="52OZbuF8YE" role="3WG5Nk">
+        <property role="3vcfvm" value="zaposleniID" />
+        <ref role="3sAAtI" node="52OZbuD5HE" resolve="Zaposleni" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmm" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HO" role="2sF7sO">
       <property role="TrG5h" value="Mesto" />
-      <node concept="27bw7N" id="1HwdMRDzLmo" role="27bw7K">
-        <property role="TrG5h" value="nazivMesta" />
-        <property role="2slKSF" value="VARCHAR(255)" />
-      </node>
-      <node concept="27bw7N" id="1HwdMRDzLmn" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HP" role="27bw7K">
         <property role="TrG5h" value="mestoID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="3WEkhC" id="52OZbtVVQg" role="3WG5Nk">
-        <property role="3WHQKQ" value="mestoID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmm" resolve="Mesto" />
+      <node concept="27bw7N" id="52OZbuD5HQ" role="27bw7K">
+        <property role="TrG5h" value="nazivMesta" />
+        <property role="2slKSF" value="VARCHAR(255)" />
+      </node>
+      <node concept="3WEkhC" id="52OZbuF8YJ" role="3WG5Nk">
+        <property role="3vcfvm" value="mestoID" />
+        <ref role="3sAAtI" node="52OZbuD5HO" resolve="Mesto" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmp" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HR" role="2sF7sO">
       <property role="TrG5h" value="Predmet" />
-      <node concept="27bw7N" id="1HwdMRDzLmq" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HS" role="27bw7K">
         <property role="TrG5h" value="nazivPredmeta" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmr" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HT" role="27bw7K">
         <property role="TrG5h" value="datumPredmeta" />
         <property role="2slKSF" value="date" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLms" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HU" role="27bw7K">
         <property role="TrG5h" value="pravniOsnov" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLoA" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8YM" role="27bw7K">
         <property role="TrG5h" value="klijentID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="27bw7N" id="52OZbtVVQo" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8YO" role="27bw7K">
         <property role="TrG5h" value="zaposleniID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="3WEkhC" id="52OZbtXKmX" role="3WG5Nk">
-        <property role="3WHQKQ" value="klijentID" />
-        <ref role="3sAAtI" node="1HwdMRDzLm8" resolve="Klijent" />
+      <node concept="3WEkhC" id="52OZbuF8YL" role="3WG5Nk">
+        <property role="3vcfvm" value="klijentID" />
+        <ref role="3sAAtI" node="52OZbuD5HA" resolve="Klijent" />
       </node>
-      <node concept="3WEkhC" id="52OZbtXKmZ" role="3WG5Nk">
-        <property role="3WHQKQ" value="zaposleniID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmc" resolve="Zaposleni" />
+      <node concept="3WEkhC" id="52OZbuF8YN" role="3WG5Nk">
+        <property role="3vcfvm" value="zaposleniID" />
+        <ref role="3sAAtI" node="52OZbuD5HE" resolve="Zaposleni" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmt" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HV" role="2sF7sO">
       <property role="TrG5h" value="Rociste" />
-      <node concept="27bw7N" id="1HwdMRDzLmu" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HW" role="27bw7K">
         <property role="TrG5h" value="rocisteID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmv" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HX" role="27bw7K">
         <property role="TrG5h" value="datumRocista" />
         <property role="2slKSF" value="date" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmw" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5HY" role="27bw7K">
         <property role="TrG5h" value="vremeRocista" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="52OZbtMDFZ" role="27bw7K">
-        <property role="TrG5h" value="sudID" />
-        <property role="2slKSF" value="int" />
+      <node concept="3WEkhC" id="52OZbuF8YW" role="3WG5Nk">
+        <property role="3vcfvm" value="rocisteID" />
+        <ref role="3sAAtI" node="52OZbuD5HV" resolve="Rociste" />
       </node>
-      <node concept="27bw7N" id="52OZbtMDG1" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8YZ" role="27bw7K">
         <property role="TrG5h" value="klijentID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="27bw7N" id="52OZbtMDG3" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8Z1" role="27bw7K">
         <property role="TrG5h" value="zaposleniID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="3NrynB" id="52OZbtMDFY" role="3Nsn3o">
-        <property role="3NrynA" value="sudID" />
-        <ref role="3NfqlZ" node="1HwdMRDzLmD" resolve="Sud" />
+      <node concept="3NrynB" id="52OZbuF8YY" role="3Nsn3o">
+        <property role="3vcfvm" value="klijentID" />
+        <ref role="3NfqlZ" node="52OZbuD5HR" resolve="Predmet" />
       </node>
-      <node concept="3NrynB" id="52OZbtMDG0" role="3Nsn3o">
-        <property role="3NrynA" value="klijentID" />
-        <ref role="3NfqlZ" node="1HwdMRDzLmp" resolve="Predmet" />
-      </node>
-      <node concept="3NrynB" id="52OZbtMDG2" role="3Nsn3o">
-        <property role="3NrynA" value="zaposleniID" />
-        <ref role="3NfqlZ" node="1HwdMRDzLmp" resolve="Predmet" />
-      </node>
-      <node concept="3WEkhC" id="52OZbtXKnl" role="3WG5Nk">
-        <property role="3WHQKQ" value="rocisteID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmt" resolve="Rociste" />
+      <node concept="3NrynB" id="52OZbuF8Z0" role="3Nsn3o">
+        <property role="3vcfvm" value="zaposleniID" />
+        <ref role="3NfqlZ" node="52OZbuD5HR" resolve="Predmet" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmx" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5HZ" role="2sF7sO">
       <property role="TrG5h" value="StavkaRocista" />
-      <node concept="27bw7N" id="1HwdMRDzLmy" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I0" role="27bw7K">
         <property role="TrG5h" value="rbrID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmz" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I1" role="27bw7K">
         <property role="TrG5h" value="iznos" />
         <property role="2slKSF" value="double" />
       </node>
-      <node concept="27bw7N" id="52OZbtQbim" role="27bw7K">
-        <property role="TrG5h" value="uslugaID" />
-        <property role="2slKSF" value="int" />
-      </node>
-      <node concept="3NrynB" id="52OZbtQbil" role="3Nsn3o">
-        <property role="3NrynA" value="uslugaID" />
-        <ref role="3NfqlZ" node="1HwdMRDzLm$" resolve="Usluga" />
-      </node>
-      <node concept="27bw7N" id="52OZbtXKnC" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuF8Zb" role="27bw7K">
         <property role="TrG5h" value="rocisteID" />
         <property role="2slKSF" value="int" />
       </node>
-      <node concept="3WEkhC" id="52OZbtXKnA" role="3WG5Nk">
-        <property role="3WHQKQ" value="rbrID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmx" resolve="StavkaRocista" />
+      <node concept="3WEkhC" id="52OZbuF8Z9" role="3WG5Nk">
+        <property role="3vcfvm" value="rbrID" />
+        <ref role="3sAAtI" node="52OZbuD5HZ" resolve="StavkaRocista" />
       </node>
-      <node concept="3WEkhC" id="52OZbtXKnB" role="3WG5Nk">
-        <property role="3WHQKQ" value="rocisteID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmt" resolve="Rociste" />
+      <node concept="3WEkhC" id="52OZbuF8Za" role="3WG5Nk">
+        <property role="3vcfvm" value="rocisteID" />
+        <ref role="3sAAtI" node="52OZbuD5HV" resolve="Rociste" />
+      </node>
+      <node concept="27bw7N" id="52OZbuF8Zk" role="27bw7K">
+        <property role="TrG5h" value="uslugaID" />
+        <property role="2slKSF" value="int" />
+      </node>
+      <node concept="3NrynB" id="52OZbuF8Zj" role="3Nsn3o">
+        <property role="3vcfvm" value="uslugaID" />
+        <ref role="3NfqlZ" node="52OZbuD5I2" resolve="Usluga" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLm$" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5I2" role="2sF7sO">
       <property role="TrG5h" value="Usluga" />
-      <node concept="27bw7N" id="1HwdMRDzLm_" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I3" role="27bw7K">
         <property role="TrG5h" value="uslugaID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmA" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I4" role="27bw7K">
         <property role="TrG5h" value="nazivUsluge" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmB" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I5" role="27bw7K">
         <property role="TrG5h" value="opisUsluge" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmC" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I6" role="27bw7K">
         <property role="TrG5h" value="cenaUsluge" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="3WEkhC" id="52OZbtXKnO" role="3WG5Nk">
-        <property role="3WHQKQ" value="uslugaID" />
-        <ref role="3sAAtI" node="1HwdMRDzLm$" resolve="Usluga" />
+      <node concept="3WEkhC" id="52OZbuF8Zh" role="3WG5Nk">
+        <property role="3vcfvm" value="uslugaID" />
+        <ref role="3sAAtI" node="52OZbuD5I2" resolve="Usluga" />
       </node>
     </node>
-    <node concept="27bw7Q" id="1HwdMRDzLmD" role="2sF7sO">
+    <node concept="27bw7Q" id="52OZbuD5I7" role="2sF7sO">
       <property role="TrG5h" value="Sud" />
-      <node concept="27bw7N" id="1HwdMRDzLmE" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I8" role="27bw7K">
         <property role="TrG5h" value="sudID" />
         <property role="2slKSF" value="int" />
         <property role="2sGNA7" value="PK" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmF" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5I9" role="27bw7K">
         <property role="TrG5h" value="nazivSuda" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="27bw7N" id="1HwdMRDzLmG" role="27bw7K">
+      <node concept="27bw7N" id="52OZbuD5Ia" role="27bw7K">
         <property role="TrG5h" value="adresa" />
         <property role="2slKSF" value="VARCHAR(255)" />
       </node>
-      <node concept="3WEkhC" id="52OZbtXKpO" role="3WG5Nk">
-        <property role="3WHQKQ" value="sudID" />
-        <ref role="3sAAtI" node="1HwdMRDzLmD" resolve="Sud" />
+      <node concept="3WEkhC" id="52OZbuF8Zq" role="3WG5Nk">
+        <property role="3vcfvm" value="sudID" />
+        <ref role="3sAAtI" node="52OZbuD5I7" resolve="Sud" />
       </node>
     </node>
   </node>
   <node concept="277V$C" id="1HwdMRDuINi">
     <property role="TrG5h" value="Proba2" />
-    <ref role="27ecD9" node="2mSRkCdHu8i" resolve="PrimerProba" />
+    <ref role="27ecD9" node="2mSRkCdHu8i" resolve="AdvokatskaKancelarija" />
     <node concept="27bw7Q" id="1HwdMRDzKUU" role="2sF7sO">
       <property role="TrG5h" value="Klijent" />
       <node concept="27bw7N" id="1HwdMRDzKUV" role="27bw7K">
@@ -544,9 +527,6 @@
       <node concept="27bw7N" id="52OZbt_mbe" role="27bw7K">
         <property role="TrG5h" value="zaposleniID" />
         <property role="2slKSF" value="int" />
-      </node>
-      <node concept="3WEkhC" id="52OZbt_mbd" role="3WG5Nk">
-        <property role="3WHQKQ" value="zaposleniID" />
       </node>
     </node>
     <node concept="27bw7Q" id="1HwdMRDzKV6" role="2sF7sO">

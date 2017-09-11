@@ -4,6 +4,9 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/MasterUML/MasterUML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/MasterUML/sandbox/MasterUML.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ProsirenjeDijagramaKlasa/ProsirenjeDijagramaKlasa.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ProsirenjeDijagramaKlasa/runtime/ProsirenjeDijagramaKlasa.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ProsirenjeDijagramaKlasa/sandbox/ProsirenjeDijagramaKlasa.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

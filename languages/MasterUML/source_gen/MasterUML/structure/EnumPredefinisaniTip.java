@@ -11,8 +11,7 @@ public enum EnumPredefinisaniTip {
   boolean_2scwt4_b("boolean", "boolean"),
   int_2scwt4_c("int", "int"),
   double_2scwt4_d("double", "double"),
-  date("date", "date"),
-  autoinkrement("autoinkrement", "autoincrement");
+  date("date", "date");
 
   private final String myName;
   public String getName() {
@@ -36,7 +35,6 @@ public enum EnumPredefinisaniTip {
     ListSequence.fromList(list).addElement(EnumPredefinisaniTip.int_2scwt4_c);
     ListSequence.fromList(list).addElement(EnumPredefinisaniTip.double_2scwt4_d);
     ListSequence.fromList(list).addElement(EnumPredefinisaniTip.date);
-    ListSequence.fromList(list).addElement(EnumPredefinisaniTip.autoinkrement);
     return list;
   }
   public static EnumPredefinisaniTip getDefault() {
@@ -60,9 +58,6 @@ public enum EnumPredefinisaniTip {
     }
     if (value.equals(EnumPredefinisaniTip.date.getValueAsString())) {
       return EnumPredefinisaniTip.date;
-    }
-    if (value.equals(EnumPredefinisaniTip.autoinkrement.getValueAsString())) {
-      return EnumPredefinisaniTip.autoinkrement;
     }
     return EnumPredefinisaniTip.getDefault();
   }

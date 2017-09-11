@@ -11,8 +11,7 @@ public enum EnumTipKolone {
   BOOLEAN("BOOLEAN", "boolean"),
   INTEGER("INTEGER", "int"),
   DOUBLE("DOUBLE", "double"),
-  DATE("DATE", "date"),
-  AUTOINCREMENT("AUTOINCREMENT", "autoincrement");
+  DATE("DATE", "date");
 
   private final String myName;
   public String getName() {
@@ -36,7 +35,6 @@ public enum EnumTipKolone {
     ListSequence.fromList(list).addElement(EnumTipKolone.INTEGER);
     ListSequence.fromList(list).addElement(EnumTipKolone.DOUBLE);
     ListSequence.fromList(list).addElement(EnumTipKolone.DATE);
-    ListSequence.fromList(list).addElement(EnumTipKolone.AUTOINCREMENT);
     return list;
   }
   public static EnumTipKolone getDefault() {
@@ -60,9 +58,6 @@ public enum EnumTipKolone {
     }
     if (value.equals(EnumTipKolone.DATE.getValueAsString())) {
       return EnumTipKolone.DATE;
-    }
-    if (value.equals(EnumTipKolone.AUTOINCREMENT.getValueAsString())) {
-      return EnumTipKolone.AUTOINCREMENT;
     }
     return EnumTipKolone.getDefault();
   }

@@ -11,26 +11,17 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Agregacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Asocijacija = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AsocijacijaReference = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AsocijativnaKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BidirekcionaAsocijacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DijagramKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ElementiDijagramaKlasa = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ElementiUMLProfila = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Interfejs = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Klasa = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Kolona = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Kompozicija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Nasledjivanje = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Ogranicenja = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OgranicenjaPrimarniKljuc = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OgranicenjaSpoljniKljuc = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Realizacija = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaAtributa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_SpecifikacijaOperacije = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Tabela = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TipKolone = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_UMLProfilDijagramKlasa = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_UnidirekcionaAsocijacija = new ConceptPresentationBuilder().create();
 
   @Override
@@ -43,46 +34,28 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 1:
         return props_Asocijacija;
       case 2:
-        return props_AsocijacijaReference;
-      case 3:
         return props_AsocijativnaKlasa;
-      case 4:
+      case 3:
         return props_BidirekcionaAsocijacija;
-      case 5:
+      case 4:
         return props_DijagramKlasa;
-      case 6:
+      case 5:
         return props_ElementiDijagramaKlasa;
-      case 7:
-        return props_ElementiUMLProfila;
-      case 8:
+      case 6:
         return props_Interfejs;
-      case 9:
+      case 7:
         return props_Klasa;
-      case 10:
-        return props_Kolona;
-      case 11:
+      case 8:
         return props_Kompozicija;
-      case 12:
+      case 9:
         return props_Nasledjivanje;
-      case 13:
-        return props_Ogranicenja;
-      case 14:
-        return props_OgranicenjaPrimarniKljuc;
-      case 15:
-        return props_OgranicenjaSpoljniKljuc;
-      case 16:
+      case 10:
         return props_Realizacija;
-      case 17:
+      case 11:
         return props_SpecifikacijaAtributa;
-      case 18:
+      case 12:
         return props_SpecifikacijaOperacije;
-      case 19:
-        return props_Tabela;
-      case 20:
-        return props_TipKolone;
-      case 21:
-        return props_UMLProfilDijagramKlasa;
-      case 22:
+      case 13:
         return props_UnidirekcionaAsocijacija;
     }
     throw new IllegalStateException("Unknown concept " + c);

@@ -4,6 +4,27 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="ProsirenjeDijagramaKlasa.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="ElementiUMLProfila_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.ElementiUMLProfila_BehaviorDescriptor" />
+    </file>
+    <file name="Kolona_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.Kolona_BehaviorDescriptor" />
+    </file>
+    <file name="OgranicenjaPrimarniKljuc_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.OgranicenjaPrimarniKljuc_BehaviorDescriptor" />
+    </file>
+    <file name="OgranicenjaSpoljniKljuc_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.OgranicenjaSpoljniKljuc_BehaviorDescriptor" />
+    </file>
+    <file name="Ogranicenja_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.Ogranicenja_BehaviorDescriptor" />
+    </file>
+    <file name="Tabela_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.Tabela_BehaviorDescriptor" />
+    </file>
+    <file name="UMLProfilDijagramKlasa_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="ProsirenjeDijagramaKlasa.behavior.UMLProfilDijagramKlasa_BehaviorDescriptor" />
+    </file>
   </root>
 </debug-info>
 

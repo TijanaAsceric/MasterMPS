@@ -1,11 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="10,0,21,0" name="ProsirenjeDijagramaKlasa.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,43,0" name="ProsirenjeDijagramaKlasa.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="17,0,52,0" name="ProsirenjeDijagramaKlasa.structure.StructureAspectDescriptor" />
+      <unit at="20,0,104,0" name="ProsirenjeDijagramaKlasa.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)/564698229132200793">
+    <file name="EnumOstalaOgranicenja.java">
+      <node id="564698229132200793" at="13,0,14,0" concept="2" trace="myName" />
+      <node id="564698229132200793" at="14,27,15,18" concept="6" />
+      <node id="564698229132200793" at="17,0,18,0" concept="2" trace="myValue" />
+      <node id="564698229132200793" at="18,60,19,18" concept="1" />
+      <node id="564698229132200793" at="19,18,20,20" concept="1" />
+      <node id="564698229132200793" at="22,28,23,19" concept="6" />
+      <node id="564698229132200793" at="25,36,26,19" concept="6" />
+      <node id="564698229132200793" at="28,60,29,102" concept="5" />
+      <node id="564698229132200793" at="29,102,30,75" concept="1" />
+      <node id="564698229132200793" at="30,75,31,68" concept="1" />
+      <node id="564698229132200793" at="31,68,32,16" concept="6" />
+      <node id="564698229132200793" at="34,52,35,35" concept="6" />
+      <node id="564698229132200793" at="38,24,39,48" concept="6" />
+      <node id="564698229132200793" at="41,74,42,44" concept="6" />
+      <node id="564698229132200793" at="44,67,45,37" concept="6" />
+      <node id="564698229132200793" at="46,5,47,46" concept="6" />
+      <node id="564698229132200793" at="14,0,17,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="564698229132200793" at="22,0,25,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="564698229132200793" at="25,0,28,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="564698229132200793" at="34,0,37,0" concept="7" trace="getDefault#()LProsirenjeDijagramaKlasa/structure/EnumOstalaOgranicenja;" />
+      <node id="564698229132200793" at="37,64,40,5" concept="3" />
+      <node id="564698229132200793" at="40,5,43,5" concept="3" />
+      <node id="564698229132200793" at="43,5,46,5" concept="3" />
+      <node id="564698229132200793" at="18,0,22,0" concept="0" trace="EnumOstalaOgranicenja#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="564698229132200793" at="28,0,34,0" concept="7" trace="getConstants#()Ljava/util/List;" />
+      <node id="564698229132200793" at="37,0,49,0" concept="7" trace="parseValue#(Ljava/lang/String;)LProsirenjeDijagramaKlasa/structure/EnumOstalaOgranicenja;" />
+      <scope id="564698229132200793" at="14,27,15,18" />
+      <scope id="564698229132200793" at="22,28,23,19" />
+      <scope id="564698229132200793" at="25,36,26,19" />
+      <scope id="564698229132200793" at="34,52,35,35" />
+      <scope id="564698229132200793" at="38,24,39,48" />
+      <scope id="564698229132200793" at="41,74,42,44" />
+      <scope id="564698229132200793" at="44,67,45,37" />
+      <scope id="564698229132200793" at="18,60,20,20" />
+      <scope id="564698229132200793" at="14,0,17,0" />
+      <scope id="564698229132200793" at="22,0,25,0" />
+      <scope id="564698229132200793" at="25,0,28,0" />
+      <scope id="564698229132200793" at="34,0,37,0" />
+      <scope id="564698229132200793" at="18,0,22,0">
+        <var name="name" id="564698229132200793" />
+        <var name="value" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="28,60,32,16">
+        <var name="list" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="28,0,34,0" />
+      <scope id="564698229132200793" at="37,64,47,46" />
+      <scope id="564698229132200793" at="37,0,49,0">
+        <var name="value" id="564698229132200793" />
+      </scope>
+      <unit id="564698229132200793" at="9,0,50,0" name="ProsirenjeDijagramaKlasa.structure.EnumOstalaOgranicenja" />
+    </file>
+    <file name="EnumOstalaOgranicenja_PropertySupport.java">
+      <node id="564698229132200793" at="11,24,12,18" concept="6" />
+      <node id="564698229132200793" at="13,5,14,119" concept="5" />
+      <node id="564698229132200793" at="15,33,16,56" concept="5" />
+      <node id="564698229132200793" at="17,45,18,20" concept="6" />
+      <node id="564698229132200793" at="20,5,21,17" concept="6" />
+      <node id="564698229132200793" at="24,24,25,18" concept="6" />
+      <node id="564698229132200793" at="26,5,27,119" concept="5" />
+      <node id="564698229132200793" at="28,33,29,56" concept="5" />
+      <node id="564698229132200793" at="30,45,31,43" concept="6" />
+      <node id="564698229132200793" at="33,5,34,16" concept="6" />
+      <node id="564698229132200793" at="36,49,37,77" concept="5" />
+      <node id="564698229132200793" at="38,27,39,32" concept="6" />
+      <node id="564698229132200793" at="40,5,41,14" concept="6" />
+      <node id="564698229132200793" at="10,44,13,5" concept="3" />
+      <node id="564698229132200793" at="16,56,19,7" concept="3" />
+      <node id="564698229132200793" at="23,47,26,5" concept="3" />
+      <node id="564698229132200793" at="29,56,32,7" concept="3" />
+      <node id="564698229132200793" at="37,77,40,5" concept="3" />
+      <node id="564698229132200793" at="14,119,20,5" concept="8" />
+      <node id="564698229132200793" at="27,119,33,5" concept="8" />
+      <node id="564698229132200793" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="564698229132200793" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="564698229132200793" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="564698229132200793" at="11,24,12,18" />
+      <scope id="564698229132200793" at="17,45,18,20" />
+      <scope id="564698229132200793" at="24,24,25,18" />
+      <scope id="564698229132200793" at="30,45,31,43" />
+      <scope id="564698229132200793" at="38,27,39,32" />
+      <scope id="564698229132200793" at="15,33,19,7">
+        <var name="constant" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="28,33,32,7">
+        <var name="constant" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="36,49,41,14">
+        <var name="constant" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="36,0,43,0">
+        <var name="value" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="10,44,21,17">
+        <var name="constants" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="23,47,34,16">
+        <var name="constants" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="10,0,23,0">
+        <var name="value" id="564698229132200793" />
+      </scope>
+      <scope id="564698229132200793" at="23,0,36,0">
+        <var name="value" id="564698229132200793" />
+      </scope>
+      <unit id="564698229132200793" at="9,0,44,0" name="ProsirenjeDijagramaKlasa.structure.EnumOstalaOgranicenja_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)/564698229132200822">
+    <file name="EnumPrimarniKljuc.java">
+      <node id="564698229132200822" at="13,0,14,0" concept="2" trace="myName" />
+      <node id="564698229132200822" at="14,27,15,18" concept="6" />
+      <node id="564698229132200822" at="17,0,18,0" concept="2" trace="myValue" />
+      <node id="564698229132200822" at="18,56,19,18" concept="1" />
+      <node id="564698229132200822" at="19,18,20,20" concept="1" />
+      <node id="564698229132200822" at="22,28,23,19" concept="6" />
+      <node id="564698229132200822" at="25,36,26,19" concept="6" />
+      <node id="564698229132200822" at="28,56,29,94" concept="5" />
+      <node id="564698229132200822" at="29,94,30,64" concept="1" />
+      <node id="564698229132200822" at="30,64,31,69" concept="1" />
+      <node id="564698229132200822" at="31,69,32,16" concept="6" />
+      <node id="564698229132200822" at="34,48,35,31" concept="6" />
+      <node id="564698229132200822" at="38,24,39,44" concept="6" />
+      <node id="564698229132200822" at="41,63,42,33" concept="6" />
+      <node id="564698229132200822" at="44,68,45,38" concept="6" />
+      <node id="564698229132200822" at="46,5,47,42" concept="6" />
+      <node id="564698229132200822" at="14,0,17,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="564698229132200822" at="22,0,25,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="564698229132200822" at="25,0,28,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="564698229132200822" at="34,0,37,0" concept="7" trace="getDefault#()LProsirenjeDijagramaKlasa/structure/EnumPrimarniKljuc;" />
+      <node id="564698229132200822" at="37,60,40,5" concept="3" />
+      <node id="564698229132200822" at="40,5,43,5" concept="3" />
+      <node id="564698229132200822" at="43,5,46,5" concept="3" />
+      <node id="564698229132200822" at="18,0,22,0" concept="0" trace="EnumPrimarniKljuc#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="564698229132200822" at="28,0,34,0" concept="7" trace="getConstants#()Ljava/util/List;" />
+      <node id="564698229132200822" at="37,0,49,0" concept="7" trace="parseValue#(Ljava/lang/String;)LProsirenjeDijagramaKlasa/structure/EnumPrimarniKljuc;" />
+      <scope id="564698229132200822" at="14,27,15,18" />
+      <scope id="564698229132200822" at="22,28,23,19" />
+      <scope id="564698229132200822" at="25,36,26,19" />
+      <scope id="564698229132200822" at="34,48,35,31" />
+      <scope id="564698229132200822" at="38,24,39,44" />
+      <scope id="564698229132200822" at="41,63,42,33" />
+      <scope id="564698229132200822" at="44,68,45,38" />
+      <scope id="564698229132200822" at="18,56,20,20" />
+      <scope id="564698229132200822" at="14,0,17,0" />
+      <scope id="564698229132200822" at="22,0,25,0" />
+      <scope id="564698229132200822" at="25,0,28,0" />
+      <scope id="564698229132200822" at="34,0,37,0" />
+      <scope id="564698229132200822" at="18,0,22,0">
+        <var name="name" id="564698229132200822" />
+        <var name="value" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="28,56,32,16">
+        <var name="list" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="28,0,34,0" />
+      <scope id="564698229132200822" at="37,60,47,42" />
+      <scope id="564698229132200822" at="37,0,49,0">
+        <var name="value" id="564698229132200822" />
+      </scope>
+      <unit id="564698229132200822" at="9,0,50,0" name="ProsirenjeDijagramaKlasa.structure.EnumPrimarniKljuc" />
+    </file>
+    <file name="EnumPrimarniKljuc_PropertySupport.java">
+      <node id="564698229132200822" at="11,24,12,18" concept="6" />
+      <node id="564698229132200822" at="13,5,14,111" concept="5" />
+      <node id="564698229132200822" at="15,33,16,52" concept="5" />
+      <node id="564698229132200822" at="17,45,18,20" concept="6" />
+      <node id="564698229132200822" at="20,5,21,17" concept="6" />
+      <node id="564698229132200822" at="24,24,25,18" concept="6" />
+      <node id="564698229132200822" at="26,5,27,111" concept="5" />
+      <node id="564698229132200822" at="28,33,29,52" concept="5" />
+      <node id="564698229132200822" at="30,45,31,43" concept="6" />
+      <node id="564698229132200822" at="33,5,34,16" concept="6" />
+      <node id="564698229132200822" at="36,49,37,69" concept="5" />
+      <node id="564698229132200822" at="38,27,39,32" concept="6" />
+      <node id="564698229132200822" at="40,5,41,14" concept="6" />
+      <node id="564698229132200822" at="10,44,13,5" concept="3" />
+      <node id="564698229132200822" at="16,52,19,7" concept="3" />
+      <node id="564698229132200822" at="23,47,26,5" concept="3" />
+      <node id="564698229132200822" at="29,52,32,7" concept="3" />
+      <node id="564698229132200822" at="37,69,40,5" concept="3" />
+      <node id="564698229132200822" at="14,111,20,5" concept="8" />
+      <node id="564698229132200822" at="27,111,33,5" concept="8" />
+      <node id="564698229132200822" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="564698229132200822" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="564698229132200822" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="564698229132200822" at="11,24,12,18" />
+      <scope id="564698229132200822" at="17,45,18,20" />
+      <scope id="564698229132200822" at="24,24,25,18" />
+      <scope id="564698229132200822" at="30,45,31,43" />
+      <scope id="564698229132200822" at="38,27,39,32" />
+      <scope id="564698229132200822" at="15,33,19,7">
+        <var name="constant" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="28,33,32,7">
+        <var name="constant" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="36,49,41,14">
+        <var name="constant" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="36,0,43,0">
+        <var name="value" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="10,44,21,17">
+        <var name="constants" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="23,47,34,16">
+        <var name="constants" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="10,0,23,0">
+        <var name="value" id="564698229132200822" />
+      </scope>
+      <scope id="564698229132200822" at="23,0,36,0">
+        <var name="value" id="564698229132200822" />
+      </scope>
+      <unit id="564698229132200822" at="9,0,44,0" name="ProsirenjeDijagramaKlasa.structure.EnumPrimarniKljuc_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)/564698229132200827">
+    <file name="EnumTipKolone.java">
+      <node id="564698229132200827" at="16,0,17,0" concept="2" trace="myName" />
+      <node id="564698229132200827" at="17,27,18,18" concept="6" />
+      <node id="564698229132200827" at="20,0,21,0" concept="2" trace="myValue" />
+      <node id="564698229132200827" at="21,52,22,18" concept="1" />
+      <node id="564698229132200827" at="22,18,23,20" concept="1" />
+      <node id="564698229132200827" at="25,28,26,19" concept="6" />
+      <node id="564698229132200827" at="28,36,29,19" concept="6" />
+      <node id="564698229132200827" at="31,52,32,86" concept="5" />
+      <node id="564698229132200827" at="32,86,33,71" concept="1" />
+      <node id="564698229132200827" at="33,71,34,66" concept="1" />
+      <node id="564698229132200827" at="34,66,35,66" concept="1" />
+      <node id="564698229132200827" at="35,66,36,65" concept="1" />
+      <node id="564698229132200827" at="36,65,37,63" concept="1" />
+      <node id="564698229132200827" at="37,63,38,16" concept="6" />
+      <node id="564698229132200827" at="40,44,41,38" concept="6" />
+      <node id="564698229132200827" at="44,24,45,40" concept="6" />
+      <node id="564698229132200827" at="47,70,48,40" concept="6" />
+      <node id="564698229132200827" at="50,65,51,35" concept="6" />
+      <node id="564698229132200827" at="53,65,54,35" concept="6" />
+      <node id="564698229132200827" at="56,64,57,34" concept="6" />
+      <node id="564698229132200827" at="59,62,60,32" concept="6" />
+      <node id="564698229132200827" at="61,5,62,38" concept="6" />
+      <node id="564698229132200827" at="17,0,20,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="564698229132200827" at="25,0,28,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="564698229132200827" at="28,0,31,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="564698229132200827" at="40,0,43,0" concept="7" trace="getDefault#()LProsirenjeDijagramaKlasa/structure/EnumTipKolone;" />
+      <node id="564698229132200827" at="43,56,46,5" concept="3" />
+      <node id="564698229132200827" at="46,5,49,5" concept="3" />
+      <node id="564698229132200827" at="49,5,52,5" concept="3" />
+      <node id="564698229132200827" at="52,5,55,5" concept="3" />
+      <node id="564698229132200827" at="55,5,58,5" concept="3" />
+      <node id="564698229132200827" at="58,5,61,5" concept="3" />
+      <node id="564698229132200827" at="21,0,25,0" concept="0" trace="EnumTipKolone#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="564698229132200827" at="31,0,40,0" concept="7" trace="getConstants#()Ljava/util/List;" />
+      <node id="564698229132200827" at="43,0,64,0" concept="7" trace="parseValue#(Ljava/lang/String;)LProsirenjeDijagramaKlasa/structure/EnumTipKolone;" />
+      <scope id="564698229132200827" at="17,27,18,18" />
+      <scope id="564698229132200827" at="25,28,26,19" />
+      <scope id="564698229132200827" at="28,36,29,19" />
+      <scope id="564698229132200827" at="40,44,41,38" />
+      <scope id="564698229132200827" at="44,24,45,40" />
+      <scope id="564698229132200827" at="47,70,48,40" />
+      <scope id="564698229132200827" at="50,65,51,35" />
+      <scope id="564698229132200827" at="53,65,54,35" />
+      <scope id="564698229132200827" at="56,64,57,34" />
+      <scope id="564698229132200827" at="59,62,60,32" />
+      <scope id="564698229132200827" at="21,52,23,20" />
+      <scope id="564698229132200827" at="17,0,20,0" />
+      <scope id="564698229132200827" at="25,0,28,0" />
+      <scope id="564698229132200827" at="28,0,31,0" />
+      <scope id="564698229132200827" at="40,0,43,0" />
+      <scope id="564698229132200827" at="21,0,25,0">
+        <var name="name" id="564698229132200827" />
+        <var name="value" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="31,52,38,16">
+        <var name="list" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="31,0,40,0" />
+      <scope id="564698229132200827" at="43,56,62,38" />
+      <scope id="564698229132200827" at="43,0,64,0">
+        <var name="value" id="564698229132200827" />
+      </scope>
+      <unit id="564698229132200827" at="9,0,65,0" name="ProsirenjeDijagramaKlasa.structure.EnumTipKolone" />
+    </file>
+    <file name="EnumTipKolone_PropertySupport.java">
+      <node id="564698229132200827" at="11,24,12,18" concept="6" />
+      <node id="564698229132200827" at="13,5,14,103" concept="5" />
+      <node id="564698229132200827" at="15,33,16,48" concept="5" />
+      <node id="564698229132200827" at="17,45,18,20" concept="6" />
+      <node id="564698229132200827" at="20,5,21,17" concept="6" />
+      <node id="564698229132200827" at="24,24,25,18" concept="6" />
+      <node id="564698229132200827" at="26,5,27,103" concept="5" />
+      <node id="564698229132200827" at="28,33,29,48" concept="5" />
+      <node id="564698229132200827" at="30,45,31,43" concept="6" />
+      <node id="564698229132200827" at="33,5,34,16" concept="6" />
+      <node id="564698229132200827" at="36,49,37,61" concept="5" />
+      <node id="564698229132200827" at="38,27,39,32" concept="6" />
+      <node id="564698229132200827" at="40,5,41,14" concept="6" />
+      <node id="564698229132200827" at="10,44,13,5" concept="3" />
+      <node id="564698229132200827" at="16,48,19,7" concept="3" />
+      <node id="564698229132200827" at="23,47,26,5" concept="3" />
+      <node id="564698229132200827" at="29,48,32,7" concept="3" />
+      <node id="564698229132200827" at="37,61,40,5" concept="3" />
+      <node id="564698229132200827" at="14,103,20,5" concept="8" />
+      <node id="564698229132200827" at="27,103,33,5" concept="8" />
+      <node id="564698229132200827" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="564698229132200827" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="564698229132200827" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="564698229132200827" at="11,24,12,18" />
+      <scope id="564698229132200827" at="17,45,18,20" />
+      <scope id="564698229132200827" at="24,24,25,18" />
+      <scope id="564698229132200827" at="30,45,31,43" />
+      <scope id="564698229132200827" at="38,27,39,32" />
+      <scope id="564698229132200827" at="15,33,19,7">
+        <var name="constant" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="28,33,32,7">
+        <var name="constant" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="36,49,41,14">
+        <var name="constant" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="36,0,43,0">
+        <var name="value" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="10,44,21,17">
+        <var name="constants" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="23,47,34,16">
+        <var name="constants" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="10,0,23,0">
+        <var name="value" id="564698229132200827" />
+      </scope>
+      <scope id="564698229132200827" at="23,0,36,0">
+        <var name="value" id="564698229132200827" />
+      </scope>
+      <unit id="564698229132200827" at="9,0,44,0" name="ProsirenjeDijagramaKlasa.structure.EnumTipKolone_PropertySupport" />
     </file>
   </root>
 </debug-info>

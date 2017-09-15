@@ -6,7 +6,8 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rwne" ref="r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
@@ -14,7 +15,6 @@
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
@@ -114,19 +114,6 @@
       <property role="1uS6qv" value="1..1" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6vxUGDK57zJ">
-    <property role="EcuMT" value="7485522210851158255" />
-    <property role="TrG5h" value="TipKolone" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="7loC2atB5Ot" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="3VcpIAy_M6h" role="1TKVEl">
-      <property role="IQ2nx" value="4525104879241732497" />
-      <property role="TrG5h" value="tip" />
-      <ref role="AX2Wp" node="3VcpIAyxDBE" resolve="EnumTipKolone" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7SfWm$Ovhu$">
     <property role="EcuMT" value="9083744407584053156" />
     <property role="TrG5h" value="Asocijacija" />
@@ -206,11 +193,6 @@
       <property role="IQ2nx" value="8737148903551159890" />
       <property role="TrG5h" value="vidljivost" />
       <ref role="AX2Wp" node="7_0_EbDR4SM" resolve="EnumVidljivost" />
-    </node>
-    <node concept="1TJgyi" id="47tWy4vSHc_" role="1TKVEl">
-      <property role="IQ2nx" value="4746215806401172261" />
-      <property role="TrG5h" value="primarniKljuc" />
-      <ref role="AX2Wp" node="47tWy4vSHcD" resolve="EnumPrimarniKljuc" />
     </node>
   </node>
   <node concept="1TIwiD" id="7VhykTr0aI7">
@@ -302,18 +284,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="AxPO7" id="47tWy4vSHcD">
-    <property role="TrG5h" value="EnumPrimarniKljuc" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="47tWy4vSHcE" role="M5hS2">
-      <property role="1uS6qv" value=" " />
-      <property role="1uS6qo" value=" " />
-    </node>
-    <node concept="M4N5e" id="47tWy4vSHcU" role="M5hS2">
-      <property role="1uS6qv" value="PK" />
-      <property role="1uS6qo" value="&lt;&lt;PK&gt;&gt;" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3axmyKAGfG9">
     <property role="EcuMT" value="3648296318821006089" />
     <property role="TrG5h" value="AsocijativnaKlasa" />
@@ -324,176 +294,6 @@
       <property role="20kJfa" value="asocijativnaKlasa" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3jXaRe$ER9o" resolve="Klasa" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3axmyKAHbZh">
-    <property role="EcuMT" value="3648296318821253073" />
-    <property role="TrG5h" value="AsocijacijaReference" />
-    <node concept="1TJgyj" id="3axmyKAHbZi" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="3648296318821253074" />
-      <property role="20kJfa" value="asocijacija" />
-      <ref role="20lvS9" node="7SfWm$Ovhu$" resolve="Asocijacija" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4V4mFZ9QYen">
-    <property role="EcuMT" value="5675761210165552023" />
-    <property role="TrG5h" value="UMLProfilDijagramKlasa" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4V4mFZ9QYex" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="4V4mFZ9Z93Q" role="1TKVEi">
-      <property role="IQ2ns" value="5675761210167693558" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dijKlasa" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7loC2atAvQu" resolve="DijagramKlasa" />
-    </node>
-    <node concept="1TJgyj" id="3VcpIAyo17t" role="1TKVEi">
-      <property role="IQ2ns" value="4525104879238123997" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elementi" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VcpIAyo17n" resolve="ElementiUMLProfila" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4V4mFZ9U_H9">
-    <property role="EcuMT" value="5675761210166500169" />
-    <property role="TrG5h" value="Tabela" />
-    <ref role="1TJDcQ" node="3VcpIAyo17n" resolve="ElementiUMLProfila" />
-    <node concept="PrWs8" id="4V4mFZ9U_Ha" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="4V4mFZ9U_Hf" role="1TKVEi">
-      <property role="IQ2ns" value="5675761210166500175" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="kolone" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4V4mFZ9U_Hc" resolve="Kolona" />
-    </node>
-    <node concept="1TJgyj" id="1HwdMRBO6JT" role="1TKVEi">
-      <property role="IQ2ns" value="1972637307090529273" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="ogranicenjaPK" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1HwdMRBMnd5" resolve="OgranicenjaPrimarniKljuc" />
-    </node>
-    <node concept="1TJgyj" id="1HwdMRC4kvP" role="1TKVEi">
-      <property role="IQ2ns" value="1972637307094779893" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="ogranicenjaFK" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1HwdMRC3xba" resolve="OgranicenjaSpoljniKljuc" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4V4mFZ9U_Hc">
-    <property role="EcuMT" value="5675761210166500172" />
-    <property role="TrG5h" value="Kolona" />
-    <ref role="1TJDcQ" node="3VcpIAyo17n" resolve="ElementiUMLProfila" />
-    <node concept="PrWs8" id="4V4mFZ9U_Hd" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="3VcpIAyvPXI" role="1TKVEl">
-      <property role="IQ2nx" value="4525104879240175470" />
-      <property role="TrG5h" value="primarniKljuc" />
-      <ref role="AX2Wp" node="47tWy4vSHcD" resolve="EnumPrimarniKljuc" />
-    </node>
-    <node concept="1TJgyi" id="3VcpIAyAQz2" role="1TKVEl">
-      <property role="IQ2nx" value="4525104879242012866" />
-      <property role="TrG5h" value="tip" />
-      <ref role="AX2Wp" node="3VcpIAyxDBE" resolve="EnumTipKolone" />
-    </node>
-    <node concept="1TJgyi" id="1HwdMRCgB6v" role="1TKVEl">
-      <property role="IQ2nx" value="1972637307098001823" />
-      <property role="TrG5h" value="notnull" />
-      <ref role="AX2Wp" node="1HwdMRCgB6$" resolve="EnumOstalaOgranicenja" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3VcpIAyo17n">
-    <property role="EcuMT" value="4525104879238123991" />
-    <property role="TrG5h" value="ElementiUMLProfila" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3VcpIAyo17o" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="3VcpIAyxDBE">
-    <property role="TrG5h" value="EnumTipKolone" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <ref role="Qgau1" node="3VcpIAyxDBG" />
-    <node concept="M4N5e" id="3VcpIAyxDBF" role="M5hS2">
-      <property role="1uS6qo" value="VARCHAR(255)" />
-      <property role="1uS6qv" value="VARCHAR(255)" />
-    </node>
-    <node concept="M4N5e" id="3VcpIAyxDBG" role="M5hS2">
-      <property role="1uS6qv" value="boolean" />
-      <property role="1uS6qo" value="BOOLEAN" />
-    </node>
-    <node concept="M4N5e" id="3VcpIAyxDBH" role="M5hS2">
-      <property role="1uS6qo" value="INTEGER" />
-      <property role="1uS6qv" value="int" />
-    </node>
-    <node concept="M4N5e" id="3VcpIAyxDBI" role="M5hS2">
-      <property role="1uS6qo" value="DOUBLE" />
-      <property role="1uS6qv" value="double" />
-    </node>
-    <node concept="M4N5e" id="3VcpIAyxDBJ" role="M5hS2">
-      <property role="1uS6qv" value="date" />
-      <property role="1uS6qo" value="DATE" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2mSRkCdHS4q">
-    <property role="EcuMT" value="2718165685245542682" />
-    <property role="TrG5h" value="Ogranicenja" />
-    <ref role="1TJDcQ" node="3VcpIAyo17n" resolve="ElementiUMLProfila" />
-    <node concept="PrWs8" id="2mSRkCdHS4r" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="52OZbusyg$" role="1TKVEl">
-      <property role="IQ2nx" value="90867982568399908" />
-      <property role="TrG5h" value="naziv" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1HwdMRBMnd5">
-    <property role="EcuMT" value="1972637307090072389" />
-    <property role="TrG5h" value="OgranicenjaPrimarniKljuc" />
-    <ref role="1TJDcQ" node="2mSRkCdHS4q" resolve="Ogranicenja" />
-    <node concept="PrWs8" id="1HwdMRBMnd6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="52OZbtQbis" role="1TKVEi">
-      <property role="IQ2ns" value="90867982558344348" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referenca" />
-      <ref role="20lvS9" node="4V4mFZ9U_H9" resolve="Tabela" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1HwdMRC3xba">
-    <property role="EcuMT" value="1972637307094569674" />
-    <property role="TrG5h" value="OgranicenjaSpoljniKljuc" />
-    <ref role="1TJDcQ" node="2mSRkCdHS4q" resolve="Ogranicenja" />
-    <node concept="1TJgyj" id="1HwdMRCnp9i" role="1TKVEi">
-      <property role="IQ2ns" value="1972637307099779666" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referenca" />
-      <ref role="20lvS9" node="4V4mFZ9U_H9" resolve="Tabela" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="1HwdMRCgB6$">
-    <property role="TrG5h" value="EnumOstalaOgranicenja" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <ref role="Qgau1" node="1HwdMRCgB6A" />
-    <node concept="M4N5e" id="1HwdMRCgB6_" role="M5hS2">
-      <property role="1uS6qv" value="NOT NULL" />
-      <property role="1uS6qo" value="NOT NULL" />
-    </node>
-    <node concept="M4N5e" id="1HwdMRCgB6A" role="M5hS2">
-      <property role="1uS6qo" value=" " />
     </node>
   </node>
 </model>

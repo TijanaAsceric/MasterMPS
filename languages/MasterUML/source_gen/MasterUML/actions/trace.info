@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="13,0,36,0" name="MasterUML.actions.ActionAspectDescriptorImpl" />
+      <unit at="13,0,34,0" name="MasterUML.actions.ActionAspectDescriptorImpl" />
     </file>
     <file name="QueriesGenerated.java">
       <unit at="6,0,8,0" name="MasterUML.actions.QueriesGenerated" />
@@ -18,9 +13,9 @@
   </root>
   <root nodeRef="r:fe291662-7888-4c99-bee4-348ab903fc51(MasterUML.actions)/5675761210165257230">
     <file name="nf_SetPovratnaAsocijacija.java">
-      <node id="5675761210165257245" at="14,91,15,42" concept="5" />
-      <node id="5675761210165368140" at="15,42,16,501" concept="1" />
-      <node id="5675761210165257231" at="14,0,18,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="5675761210165257245" at="14,91,15,42" concept="2" />
+      <node id="5675761210165368140" at="15,42,16,501" concept="0" />
+      <node id="5675761210165257231" at="14,0,18,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
       <scope id="5675761210165257231" at="14,91,16,501">
         <var name="povratna" id="5675761210165257248" />
       </scope>
@@ -32,61 +27,6 @@
       </scope>
       <unit id="5675761210165257231" at="13,0,19,0" name="MasterUML.actions.nf_SetPovratnaAsocijacija$NodeFactory_5675761210165257231" />
       <unit id="5675761210165257230" at="12,0,20,0" name="MasterUML.actions.nf_SetPovratnaAsocijacija" />
-    </file>
-  </root>
-  <root nodeRef="r:fe291662-7888-4c99-bee4-348ab903fc51(MasterUML.actions)/5675761210169363832">
-    <file name="nf_ElementiUMLProfilDijagramKlasa.java">
-      <node id="5675761210169373900" at="18,91,19,48" concept="5" />
-      <node id="5675761210169372763" at="19,48,20,0" concept="7" />
-      <node id="5675761210169363865" at="22,41,23,173" concept="6" />
-      <node id="5675761210169363873" at="25,11,26,180" concept="5" />
-      <node id="5675761210169795697" at="26,180,27,33" concept="5" />
-      <node id="5675761210169363879" at="27,33,28,306" concept="1" />
-      <node id="6863638358661585641" at="28,306,29,226" concept="1" />
-      <node id="5675761210169363910" at="30,217,31,182" concept="5" />
-      <node id="5675761210169363916" at="31,182,32,306" concept="1" />
-      <node id="4525104879241883731" at="33,193,34,183" concept="1" />
-      <node id="5366652400820231921" at="35,18,36,340" concept="1" />
-      <node id="5675761210169363924" at="37,11,38,221" concept="1" />
-      <node id="5675761210169385633" at="39,9,40,226" concept="1" />
-      <node id="5675761210169363931" at="40,226,41,0" concept="7" />
-      <node id="5366652400820231903" at="35,16,37,11" concept="0" />
-      <node id="5675761210169363863" at="22,0,25,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="4525104879240536400" at="32,306,37,11" concept="3" />
-      <node id="5675761210169363902" at="29,226,39,9" concept="2" />
-      <node id="5675761210169363854" at="20,0,42,7" concept="2" />
-      <node id="5675761210169363833" at="18,0,44,0" concept="4" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
-      <scope id="5675761210169363864" at="22,41,23,173" />
-      <scope id="4525104879240536401" at="33,193,34,183" />
-      <scope id="5366652400820231904" at="35,18,36,340" />
-      <scope id="5675761210169363863" at="22,0,25,0">
-        <var name="it" id="5675761210169363863" />
-      </scope>
-      <scope id="5675761210169363909" at="30,217,38,221">
-        <var name="kolona" id="5675761210169363911" />
-      </scope>
-      <scope id="5675761210169363902" at="29,226,39,9">
-        <var name="atr" id="5675761210169363903" />
-      </scope>
-      <scope id="5675761210169363872" at="25,11,41,0">
-        <var name="kl" id="5675761210169795700" />
-        <var name="tabela" id="5675761210169363874" />
-      </scope>
-      <scope id="5675761210169363854" at="20,0,42,7">
-        <var name="klasa" id="5675761210169363855" />
-      </scope>
-      <scope id="5675761210169363833" at="18,91,42,7">
-        <var name="umldijklasa" id="5675761210169373901" />
-      </scope>
-      <scope id="5675761210169363833" at="18,0,44,0">
-        <var name="enclosingNode" id="5675761210169363833" />
-        <var name="model" id="5675761210169363833" />
-        <var name="newNode" id="5675761210169363833" />
-        <var name="sampleNode" id="5675761210169363833" />
-      </scope>
-      <unit id="5675761210169363863" at="21,408,25,7" name="MasterUML.actions.nf_ElementiUMLProfilDijagramKlasa$1" />
-      <unit id="5675761210169363833" at="17,0,45,0" name="MasterUML.actions.nf_ElementiUMLProfilDijagramKlasa$NodeFactory_5675761210169363833" />
-      <unit id="5675761210169363832" at="16,0,46,0" name="MasterUML.actions.nf_ElementiUMLProfilDijagramKlasa" />
     </file>
   </root>
 </debug-info>

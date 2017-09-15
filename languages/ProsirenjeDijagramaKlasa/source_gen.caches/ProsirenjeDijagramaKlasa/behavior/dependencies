@@ -10,5 +10,33 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.ElementiUMLProfila_BehaviorDescriptor" file="ElementiUMLProfila_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.Kolona_BehaviorDescriptor" file="Kolona_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.OgranicenjaPrimarniKljuc_BehaviorDescriptor" file="OgranicenjaPrimarniKljuc_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.OgranicenjaSpoljniKljuc_BehaviorDescriptor" file="OgranicenjaSpoljniKljuc_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.Ogranicenja_BehaviorDescriptor" file="Ogranicenja_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.Tabela_BehaviorDescriptor" file="Tabela_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ProsirenjeDijagramaKlasa.behavior.UMLProfilDijagramKlasa_BehaviorDescriptor" file="UMLProfilDijagramKlasa_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
 </dependenciesRoot>
 

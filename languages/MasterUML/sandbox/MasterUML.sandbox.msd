@@ -13,6 +13,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:95e80464-dc8c-4520-ad10-bc8df94efd78:MasterUML" version="0" />
+    <language slang="l:b3d58ef4-9e3d-4de2-b3bf-e70ac74854df:ProsirenjeDijagramaKlasa" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

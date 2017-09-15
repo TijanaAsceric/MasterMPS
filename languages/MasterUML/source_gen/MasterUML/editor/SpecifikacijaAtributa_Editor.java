@@ -27,7 +27,6 @@ public class SpecifikacijaAtributa_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_z9q5r3_b0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_z9q5r3_c0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_z9q5r3_d0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_z9q5r3_e0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_z9q5r3_a0(EditorContext editorContext, SNode node) {
@@ -77,21 +76,6 @@ public class SpecifikacijaAtributa_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_tip");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
-    return editorCell;
-  }
-  private EditorCell createProperty_z9q5r3_e0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("primarniKljuc");
-    provider.setNoTargetText("<no primarniKljuc>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_primarniKljuc");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

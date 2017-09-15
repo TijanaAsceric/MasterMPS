@@ -19,6 +19,8 @@ import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import MasterUML.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.intentions.IntentionAspectDescriptor;
 import MasterUML.intentions.IntentionsDescriptor;
+import jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor;
+import MasterUML.migration.MigrationDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import MasterUML.structure.ConceptPresentationAspectImpl;
@@ -38,7 +40,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   public int getVersion() {
-    return 0;
+    return 7;
   }
 
   public SLanguageId getId() {
@@ -46,7 +48,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{};
+    return new String[]{"ProsirenjeDijagramaKlasa"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
@@ -78,6 +80,11 @@ public class Language extends LanguageRuntime {
       if (aspectClass.getName().equals("jetbrains.mps.intentions.IntentionAspectDescriptor")) {
         if (aspectClass == IntentionAspectDescriptor.class) {
           return (T) new IntentionsDescriptor();
+        }
+      }
+      if (aspectClass.getName().equals("jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor")) {
+        if (aspectClass == MigrationAspectDescriptor.class) {
+          return (T) new MigrationDescriptor();
         }
       }
       if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.StructureAspectDescriptor")) {

@@ -6,23 +6,40 @@ import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import java.util.Map;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import java.util.HashMap;
-import java.util.Collection;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.concept.SConceptAdapterById;
 import jetbrains.mps.smodel.adapter.structure.concept.SInterfaceConceptAdapterById;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(0);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(7);
+  /*package*/ final ConceptDescriptor myConceptElementiUMLProfila = createDescriptorForElementiUMLProfila();
+  /*package*/ final ConceptDescriptor myConceptKolona = createDescriptorForKolona();
+  /*package*/ final ConceptDescriptor myConceptOgranicenja = createDescriptorForOgranicenja();
+  /*package*/ final ConceptDescriptor myConceptOgranicenjaPrimarniKljuc = createDescriptorForOgranicenjaPrimarniKljuc();
+  /*package*/ final ConceptDescriptor myConceptOgranicenjaSpoljniKljuc = createDescriptorForOgranicenjaSpoljniKljuc();
+  /*package*/ final ConceptDescriptor myConceptTabela = createDescriptorForTabela();
+  /*package*/ final ConceptDescriptor myConceptUMLProfilDijagramKlasa = createDescriptorForUMLProfilDijagramKlasa();
 
   public StructureAspectDescriptor() {
+    myIndexMap.put(myConceptElementiUMLProfila.getId(), 0);
+    myIndexMap.put(myConceptKolona.getId(), 1);
+    myIndexMap.put(myConceptOgranicenja.getId(), 2);
+    myIndexMap.put(myConceptOgranicenjaPrimarniKljuc.getId(), 3);
+    myIndexMap.put(myConceptOgranicenjaSpoljniKljuc.getId(), 4);
+    myIndexMap.put(myConceptTabela.getId(), 5);
+    myIndexMap.put(myConceptUMLProfilDijagramKlasa.getId(), 6);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList();
+    return Arrays.asList(myConceptElementiUMLProfila, myConceptKolona, myConceptOgranicenja, myConceptOgranicenjaPrimarniKljuc, myConceptOgranicenjaSpoljniKljuc, myConceptTabela, myConceptUMLProfilDijagramKlasa);
   }
 
   @Override
@@ -33,6 +50,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       return null;
     }
     switch (((int) index)) {
+      case 0:
+        return myConceptElementiUMLProfila;
+      case 1:
+        return myConceptKolona;
+      case 2:
+        return myConceptOgranicenja;
+      case 3:
+        return myConceptOgranicenjaPrimarniKljuc;
+      case 4:
+        return myConceptOgranicenjaSpoljniKljuc;
+      case 5:
+        return myConceptTabela;
+      case 6:
+        return myConceptUMLProfilDijagramKlasa;
       default:
         throw new IllegalStateException();
     }
@@ -48,4 +79,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return (res == null ? -1 : res);
   }
 
+  private static ConceptDescriptor createDescriptorForElementiUMLProfila() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.ElementiUMLProfila", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x3ecc66e9a26011d7L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).abstract_().sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "4525104879238123991")).create();
+  }
+  private static ConceptDescriptor createDescriptorForKolona() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.Kolona", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x4ec45abfc9ea5b4cL)).super_("ProsirenjeDijagramaKlasa.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x3ecc66e9a26011d7L)).parents("ProsirenjeDijagramaKlasa.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x3ecc66e9a27f5f6eL, "primarniKljuc", new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "4525104879240175470")), new ConceptDescriptorBuilder.Prop(0x3ecc66e9a29b68c2L, "tip", new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "4525104879242012866")), new ConceptDescriptorBuilder.Prop(0x1b60372de842719fL, "notnull", new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "1972637307098001823"))).properties("primarniKljuc", "tip", "notnull").sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "5675761210166500172")).create();
+  }
+  private static ConceptDescriptor createDescriptorForOgranicenja() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.Ogranicenja", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x25b8dd4a0db7811aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x142d3f2de722424L, "naziv", new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "90867982568399908"))).properties("naziv").referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x142d3f2ddd8b49cL, "referenca", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x4ec45abfc9ea5b49L), true, new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "90867982558344348"))).references("referenca").sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "2718165685245542682")).create();
+  }
+  private static ConceptDescriptor createDescriptorForOgranicenjaPrimarniKljuc() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.OgranicenjaPrimarniKljuc", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x1b60372de7c97345L)).super_("ProsirenjeDijagramaKlasa.structure.Ogranicenja").version(1).super_(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x25b8dd4a0db7811aL)).parents("ProsirenjeDijagramaKlasa.structure.Ogranicenja", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x25b8dd4a0db7811aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "1972637307090072389")).create();
+  }
+  private static ConceptDescriptor createDescriptorForOgranicenjaSpoljniKljuc() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.OgranicenjaSpoljniKljuc", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x1b60372de80e12caL)).super_("ProsirenjeDijagramaKlasa.structure.Ogranicenja").version(1).super_(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x25b8dd4a0db7811aL)).parents("ProsirenjeDijagramaKlasa.structure.Ogranicenja").parentIds(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x25b8dd4a0db7811aL)).sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "1972637307094569674")).create();
+  }
+  private static ConceptDescriptor createDescriptorForTabela() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.Tabela", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x4ec45abfc9ea5b49L)).super_("ProsirenjeDijagramaKlasa.structure.ElementiUMLProfila").version(1).super_(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x3ecc66e9a26011d7L)).parents("ProsirenjeDijagramaKlasa.structure.ElementiUMLProfila", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x3ecc66e9a26011d7L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x4ec45abfc9ea5b4fL, "kolone", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x4ec45abfc9ea5b4cL), false, true, false, new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "5675761210166500175")), new ConceptDescriptorBuilder.Link(0x1b60372de7d06bf9L, "ogranicenjaPK", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x1b60372de7c97345L), true, true, false, new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "1972637307090529273")), new ConceptDescriptorBuilder.Link(0x1b60372de81147f5L, "ogranicenjaFK", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x1b60372de80e12caL), true, true, false, new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "1972637307094779893"))).children(new String[]{"kolone", "ogranicenjaPK", "ogranicenjaFK"}, new boolean[]{true, true, true}).sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "5675761210166500169")).create();
+  }
+  private static ConceptDescriptor createDescriptorForUMLProfilDijagramKlasa() {
+    return new ConceptDescriptorBuilder("ProsirenjeDijagramaKlasa.structure.UMLProfilDijagramKlasa", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x4ec45abfc9dbe397L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(0x4ec45abfc9fc90f6L, "dijKlasa", MetaIdFactory.conceptId(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL), false, new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "5675761210167693558"))).references("dijKlasa").childDescriptors(new ConceptDescriptorBuilder.Link(0x3ecc66e9a26011ddL, "elementi", MetaIdFactory.conceptId(0xb3d58ef49e3d4de2L, 0xb3bfe70ac74854dfL, 0x3ecc66e9a26011d7L), true, true, false, new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "4525104879238123997"))).children(new String[]{"elementi"}, new boolean[]{true}).rootable().sourceNode(new SNodePointer("r:a617ba7d-04ea-4a53-b330-8a8602ff87a2(ProsirenjeDijagramaKlasa.structure)", "5675761210165552023")).create();
+  }
 }

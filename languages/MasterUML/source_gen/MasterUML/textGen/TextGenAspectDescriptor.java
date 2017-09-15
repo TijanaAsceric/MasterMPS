@@ -31,16 +31,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
             return new DijagramKlasa_TextGen();
           }
           break;
-        case 1:
-          if (true) {
-            return new Kolona_TextGen();
-          }
-          break;
-        case 2:
-          if (true) {
-            return new UMLProfilDijagramKlasa_TextGen();
-          }
-          break;
         default:
           // default 
       }
@@ -57,25 +47,13 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
         continue;
       }
-      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9dbe397L, "MasterUML.structure.UMLProfilDijagramKlasa"))) {
-        String fname = getFileName_UMLProfilDijagramKlasa(root);
-        String ext = getFileExtension_UMLProfilDijagramKlasa(root);
-        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
-        continue;
-      }
     }
   }
   private static String getFileName_DijagramKlasa(SNode node) {
     return SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
-  private static String getFileName_UMLProfilDijagramKlasa(SNode node) {
-    return node.getName();
-  }
   private static String getFileExtension_DijagramKlasa(SNode node) {
     return "txt";
-  }
-  private static String getFileExtension_UMLProfilDijagramKlasa(SNode node) {
-    return "sql";
   }
   private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
     HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
@@ -85,5 +63,5 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, "MasterUML.structure.DijagramKlasa"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9ea5b4cL, "MasterUML.structure.Kolona"), MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x4ec45abfc9dbe397L, "MasterUML.structure.UMLProfilDijagramKlasa"));
+  private static final Map<SAbstractConcept, Integer> indices_t8hmqt_a0c = buildConceptIndices(MetaAdapterFactory.getConcept(0x95e80464dc8c4520L, 0xad10bc8df94efd78L, 0x7558a0229d99fd9eL, "MasterUML.structure.DijagramKlasa"));
 }
